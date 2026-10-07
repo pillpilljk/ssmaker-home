@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- ========================================================
+       SEO 메타태그 (상상만들기 - 로봇대회 현장 사진 및 동영상 갤러리)
+       ======================================================== -->
+  <title>로봇대회 현장 사진 및 동영상 갤러리 | 상상만들기 (SSMAKER) - S2B 학교장터 등록</title>
+  <meta name="description" content="상상만들기 로봇대회 위탁 총괄 운영 실제 현장 사진 4종(수원 AI 로봇 페스타, 강남 로봇플러스, 안양스마트움축제 등)과 경기 실황 유튜브 동영상 8편 아카이브. 100% 렌탈형 공정 로봇대회, 원데이 해커톤, 턴키 토너먼트. S2B 학교장터 전자 수의계약 완벽 지원.">
+  <meta name="keywords" content="상상만들기, 로봇대회, 수원AI로봇페스타, 강남로봇플러스, 로봇대회운영, 로봇대회위탁, 렌탈형로봇대회, 안양스마트움축제, KRL, 로봇해커톤, S2B, 학교장터, 과학축제">
+  <meta name="author" content="상상만들기 (SSMAKER)">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="로봇대회 현장 사진 및 동영상 갤러리 - 주식회사 상상만들기">
+  <meta property="og:description" content="사교육 장비 격차를 없앤 100% 렌탈형 공정 로봇대회 및 실제 현장 경기 실황 사진·동영상 모음">
+  <meta property="og:image" content="image/img77.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏆</text></svg>">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              200: '#bfdbfe',
+              500: '#3b82f6',
+              600: '#2563eb', // 신뢰의 블루
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a',
+              950: '#0f172a',
+            }
+          },
+          fontFamily: {
+            sans: ['Pretendard', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'Roboto', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #f1f5f9; }
+    ::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #64748b; }
+    .video-card-active {
+      border-color: #2563eb !important;
+      background-color: #eff6ff !important;
+      box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.2);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-600 selection:text-white">
+
+  <!-- ========================================================
+       TOP BANNER: S2B(학교장터) 정식 등록 강조 알림 바
+       ======================================================== -->
+  <aside aria-label="S2B 학교장터 인증 안내 바" class="bg-slate-900 text-slate-300 text-xs sm:text-sm py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex items-center justify-center sm:justify-start gap-2">
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-extrabold bg-blue-500 text-white shadow-sm">
+        <i class="fa-solid fa-graduation-cap mr-1"></i> S2B 학교장터
+      </span>
+      <span class="text-slate-100 font-bold">S2B(학교장터) 정식 등록 기업</span>
+      <span class="hidden md:inline text-slate-400">| 전국 초·중·고교 및 교육청·지자체 전자 수의계약 간소화 지원</span>
+    </div>
+  </aside>
+
+  <!-- ========================================================
+       HEADER / GNB
+       ======================================================== -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 transition-all shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20 flex-nowrap">
+        
+        <!-- 로고: 상상만들기 -->
+        <a href="index.html" class="flex items-center gap-3 flex-shrink-0 group">
+          <img src="image/ssmaker_logo.png" alt="상상만들기 SSMAKER" class="h-10 sm:h-12 w-auto object-contain group-hover:scale-105 transition-transform" onerror="this.onerror=null; this.src='images/ssmaker_logo.png';">
+          <div class="hidden sm:block border-l border-slate-200 pl-3">
+            <p class="text-xs font-black text-slate-800 leading-tight">로봇대회 &amp; 체험부스</p>
+            <p class="text-[10px] text-slate-500 font-semibold leading-tight">위탁 운영 전문 기업</p>
+          </div>
+        </a>
+
+        <!-- 데스크톱 메뉴 -->
+        <nav class="hidden lg:flex items-center gap-6 xl:gap-8 whitespace-nowrap flex-nowrap flex-shrink-0">
+          <a href="contest.html" class="text-sm font-bold text-brand-600 border-b-2 border-brand-600 py-2 flex items-center gap-1.5">
+            <i class="fa-solid fa-trophy text-amber-500"></i>
+            <span>로봇대회 운영 (사진·영상)</span>
+          </a>
+          <a href="index.html#booths" class="text-sm font-bold text-slate-700 hover:text-brand-600 transition-colors py-2 flex items-center gap-1.5">
+            <i class="fa-solid fa-gamepad text-brand-600"></i>
+            <span>체험부스 (20여 종)</span>
+          </a>
+          <a href="index.html#tech-rnd" class="text-sm font-bold text-slate-700 hover:text-brand-600 transition-colors py-2 flex items-center gap-1.5">
+            <i class="fa-solid fa-microchip text-indigo-600"></i>
+            <span>하드웨어 R&D 역량</span>
+          </a>
+          <a href="index.html#summary-table" class="text-sm font-semibold text-slate-700 hover:text-brand-600 transition-colors py-2">
+            운영 모델 및 예산
+          </a>
+          <a href="index.html#records" class="text-sm font-semibold text-slate-700 hover:text-brand-600 transition-colors py-2">
+            주요 실적
+          </a>
+        </nav>
+
+        <!-- CTA 버튼 -->
+        <div class="hidden lg:flex items-center gap-3">
+          <a href="index.html#contact" class="px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold text-white bg-brand-600 hover:bg-brand-700 shadow-md transition-all flex items-center gap-1.5">
+            <i class="fa-solid fa-file-signature text-xs"></i>
+            <span>대회 견적 문의</span>
+          </a>
+        </div>
+
+        <!-- 모바일 햄버거 토글 버튼 -->
+        <div class="flex lg:hidden flex-shrink-0">
+          <button id="mobile-menu-btn" type="button" class="p-2.5 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 focus:outline-none" aria-label="메뉴 열기">
+            <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 모바일 메뉴 드롭다운 -->
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 shadow-lg">
+      <div class="flex flex-col space-y-3">
+        <a href="contest.html" class="px-3 py-2 rounded-md text-base font-bold text-brand-600 bg-brand-50">로봇대회 운영 (사진·영상)</a>
+        <a href="index.html#booths" class="px-3 py-2 rounded-md text-base font-bold text-slate-800 hover:bg-slate-50 hover:text-brand-600">체험부스 운영 (20여 종)</a>
+        <a href="index.html#tech-rnd" class="px-3 py-2 rounded-md text-base font-bold text-slate-800 hover:bg-slate-50 hover:text-brand-600">하드웨어 R&D 역량</a>
+        <a href="index.html#summary-table" class="px-3 py-2 rounded-md text-base font-semibold text-slate-800 hover:bg-slate-50 hover:text-brand-600">운영 모델 및 예산 요약</a>
+        <a href="index.html#records" class="px-3 py-2 rounded-md text-base font-semibold text-slate-800 hover:bg-slate-50 hover:text-brand-600">주요 실적</a>
+        <div class="pt-3 border-t border-slate-100 flex flex-col gap-2">
+          <a href="index.html#download-proposal" class="w-full text-center py-2.5 rounded-lg text-sm font-bold text-brand-700 bg-brand-50 border border-brand-200">
+            <i class="fa-solid fa-file-arrow-down mr-1"></i> 제안서 다운로드 (PDF)
+          </a>
+          <a href="index.html#contact" class="w-full text-center py-2.5 rounded-lg text-sm font-bold text-white bg-brand-600 hover:bg-brand-700">
+            <i class="fa-solid fa-paper-plane mr-1"></i> 대회 견적 문의
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================
+       BREADCRUMB
+       ======================================================== -->
+  <div class="bg-slate-100 border-b border-slate-200 py-3">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+      <nav class="flex text-xs text-slate-500 font-medium" aria-label="Breadcrumb">
+        <ol class="inline-flex items-center space-x-1 md:space-x-2">
+          <li>
+            <a href="index.html" class="hover:text-brand-600 flex items-center gap-1">
+              <i class="fa-solid fa-house text-slate-400"></i> 홈
+            </a>
+          </li>
+          <li><i class="fa-solid fa-chevron-right text-[10px] text-slate-400"></i></li>
+          <li>
+            <a href="index.html#contests" class="hover:text-brand-600">로봇대회 위탁 총괄 운영</a>
+          </li>
+          <li><i class="fa-solid fa-chevron-right text-[10px] text-slate-400"></i></li>
+          <li class="text-brand-700 font-bold" aria-current="page">대회 현장 사진 &amp; 동영상 아카이브</li>
+        </ol>
+      </nav>
+
+      <div class="flex items-center gap-2 text-xs">
+        <a href="index.html#contests" class="font-bold text-slate-700 hover:text-brand-600 flex items-center gap-1">
+          <i class="fa-solid fa-arrow-left text-brand-600"></i> 메인 화면 대회 안내로 돌아가기
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ========================================================
+         HERO SECTION: 로봇대회 타이틀 & 주요 바로가기
+         ======================================================== -->
+    <section class="relative py-14 sm:py-20 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden border-b border-slate-800">
+      <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#60a5fa_1px,transparent_1px)] [background-size:24px_24px]"></div>
+      
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/20 border border-blue-400/30 text-blue-200 text-xs sm:text-sm font-semibold mb-5">
+          <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+          <span>🏆 지자체 축제 · 과학관 · 학교 대상 턴키 총괄 운영</span>
+        </div>
+
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight max-w-4xl mx-auto">
+          전문 로봇대회 위탁 운영<br>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-sky-300 to-indigo-300">
+            실제 현장 사진 &amp; 경기 동영상 갤러리
+          </span>
+        </h1>
+
+        <p class="text-slate-300 text-sm sm:text-base lg:text-lg max-w-3xl mx-auto mt-5 leading-relaxed font-normal">
+          고가의 사교육 로봇 소유 여부와 무관하게 모든 학생이 공정하게 경쟁하는 <strong>100% 렌탈형 공정 로봇대회</strong>부터 <strong>수원 AI 로봇 페스타</strong>, <strong>강남 로봇플러스 페스티벌</strong>, <strong>원데이 코딩 해커톤</strong>까지! 실제 축제 및 대회 현장에서 촬영된 고해상도 사진 4종과 생생한 경기 실황 유튜브 동영상 8편을 직접 감상하세요.
+        </p>
+
+        <!-- 퀵 점프 버튼군 -->
+        <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4 mt-8">
+          <a href="#contest-photos" class="px-5 py-3 rounded-xl font-bold text-xs sm:text-sm bg-white text-slate-900 hover:bg-slate-100 shadow-md transition-all flex items-center gap-2">
+            <i class="fa-solid fa-camera text-brand-600"></i>
+            <span>현장 사진 4종 보기</span>
+          </a>
+          <a href="#contest-videos" class="px-5 py-3 rounded-xl font-bold text-xs sm:text-sm bg-red-600 hover:bg-red-500 text-white shadow-md transition-all flex items-center gap-2">
+            <i class="fa-brands fa-youtube text-white text-base"></i>
+            <span>경기 동영상 8편 보기</span>
+          </a>
+          <a href="index.html#contact" class="px-5 py-3 rounded-xl font-bold text-xs sm:text-sm bg-brand-600 hover:bg-brand-500 text-white shadow-md transition-all flex items-center gap-2">
+            <i class="fa-solid fa-file-pen"></i>
+            <span>S2B 대회 견적 신청</span>
+          </a>
+        </div>
+
+        <!-- 3대 특장점 미니 바 -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-3xl mx-auto mt-10 pt-8 border-t border-slate-700/80 text-xs text-slate-300">
+          <div class="p-3 rounded-xl bg-slate-800/80 border border-slate-700 flex items-center justify-center gap-2">
+            <i class="fa-solid fa-scale-balanced text-amber-400 text-base"></i>
+            <span><strong>100% 렌탈형:</strong> 장비 격차 없는 공정 경쟁</span>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-800/80 border border-slate-700 flex items-center justify-center gap-2">
+            <i class="fa-solid fa-clipboard-check text-blue-400 text-base"></i>
+            <span><strong>턴키 총괄:</strong> 기획·심사·장비·결과 보고 완비</span>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-800/80 border border-slate-700 flex items-center justify-center gap-2">
+            <i class="fa-solid fa-graduation-cap text-emerald-400 text-base"></i>
+            <span><strong>S2B 등록:</strong> 공공기관 전자 수의계약 지원</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 1: 로봇대회 실제 현장 사진 갤러리 (4종)
+         ======================================================== -->
+    <section id="contest-photos" class="py-16 sm:py-20 bg-white border-b border-slate-200 scroll-mt-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10 pb-4 border-b border-slate-200">
+          <div>
+            <span class="text-xs font-black uppercase tracking-wider text-brand-600 bg-brand-50 px-3 py-1 rounded-full border border-brand-200">
+              Photo Archive
+            </span>
+            <h2 class="text-2xl sm:text-3xl font-black text-slate-900 mt-2 tracking-tight flex items-center gap-2">
+              <i class="fa-solid fa-images text-brand-600"></i>
+              로봇대회 실제 현장 사진 갤러리
+            </h2>
+            <p class="text-slate-600 text-xs sm:text-sm mt-1">
+              상상만들기가 총괄 위탁 운영한 실제 축제 및 공공 대회 현장 실황 사진입니다. (클릭 시 확대 보기 가능)
+            </p>
+          </div>
+          <span class="text-xs font-bold text-slate-500 bg-slate-100 px-3 py-1.5 rounded-lg shrink-0">
+            총 4장의 현장 고해상도 실사 수록
+          </span>
+        </div>
+
+        <!-- 4장 사진 그리드 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <!-- 사진 1: img77.jpg -->
+          <div class="group bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-500 transition-all flex flex-col justify-between cursor-pointer" onclick="openPhotoModal('image/img77.jpg', '제22회 안양스마트움축제: 로봇 코딩 및 경기 미션 실습', '참가 학생들이 현장에서 직접 노트북으로 로봇을 제어하고 미션 필드에서 주행 알고리즘을 테스트하는 생생한 대회 현장');">
+            <div>
+              <div class="relative aspect-[4/3] bg-slate-950 overflow-hidden flex items-center justify-center">
+                <img src="image/img77.jpg" alt="제22회 안양스마트움축제 로봇 코딩 및 경기 미션 실습 현장" class="w-full h-full object-contain p-1 group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='images/img77.jpg';">
+                <div class="absolute top-3 left-3 bg-brand-600 text-white text-xs font-black px-2.5 py-1 rounded-md shadow">
+                  안양스마트움축제
+                </div>
+                <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <span class="bg-white/95 text-slate-900 px-3.5 py-2 rounded-xl text-xs font-bold shadow-lg flex items-center gap-1.5">
+                    <i class="fa-solid fa-magnifying-glass-plus text-brand-600"></i> 크게 보기
+                  </span>
+                </div>
+              </div>
+              <div class="p-5">
+                <div class="flex items-center gap-2 mb-1.5">
+                  <span class="text-[11px] font-black bg-blue-100 text-brand-700 px-2 py-0.5 rounded">코딩 미션</span>
+                  <span class="text-[11px] text-slate-500 font-semibold">동일 렌탈 노트북·교구 지원</span>
+                </div>
+                <h3 class="text-lg font-black text-slate-900 group-hover:text-brand-600 transition-colors">
+                  01. 로봇 코딩 및 미션 필드 실습 현장
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+                  제22회 안양스마트움축제 현장에서 참가 학생들이 엔트리 코딩과 블록 프로그램을 활용하여 주최 측에서 전량 지원한 동일 스펙 로봇을 테스트하고 미션 필드를 공략하는 모습입니다.
+                </p>
+              </div>
+            </div>
+            <div class="px-5 py-3 bg-white border-t border-slate-200/80 text-xs text-slate-500 flex items-center justify-between">
+              <span><i class="fa-solid fa-location-dot text-brand-600 mr-1"></i>축제 실내 체육관 필드</span>
+              <span class="text-brand-600 font-bold group-hover:underline">확대 보기 &rarr;</span>
+            </div>
+          </div>
+
+          <!-- 사진 2: img78.jpg -->
+          <div class="group bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-500 transition-all flex flex-col justify-between cursor-pointer" onclick="openPhotoModal('image/img78.jpg', '대형 규격 경기장 전경 & 열띤 참가 학생 및 관람석 응원', '사교육 장비 없이 동일한 렌탈 로봇과 노트북으로 공정하게 치러지는 대규모 대회장 전경 및 2층 학부모 관람석');">
+            <div>
+              <div class="relative aspect-[4/3] bg-slate-950 overflow-hidden flex items-center justify-center">
+                <img src="image/img78.jpg" alt="체육관 대형 규격 경기장 및 참가 학생·학부모 관람 전경" class="w-full h-full object-contain p-1 group-hover:scale-105 transition-transform duration-500" onerror="this.onerror=null; this.src='images/img78.jpg';">
+                <div class="absolute top-3 left-3 bg-indigo-600 text-white text-xs font-black px-2.5 py-1 rounded-md shadow">
+                  대회장 전경
+                </div>
+                <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <span class="bg-white/95 text-slate-900 px-3.5 py-2 rounded-xl text-xs font-bold shadow-lg flex items-center gap-1.5">
+                    <i class="fa-solid fa-magnifying-glass-plus text-brand-600"></i> 크게 보기
+                  </span>
+                </div>
+              </div>
+              <div class="p-5">
+                <div class="flex items-center gap-2 mb-1.5">
+                  <span class="text-[11px] font-black bg-indigo-100 text-indigo-700 px-2 py-0.5 rounded">공정 대회</span>
+                  <span class="text-[11px] text-slate-500 font-semibold">100% 렌탈형 공정 경쟁</span>
+                </div>
+                <h3 class="text-lg font-black text-slate-900 group-hover:text-brand-600 transition-colors">
+                  02. 대회장 전체 전경 및 관람석 열기
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+                  수십 개의 전용 작업 테이블에 렌탈 노트북과 로봇이 질서정연하게 세팅되어 있으며, 관내 초·중·고 참가 학생들과 2층 스탠드 관람석 학부모들의 뜨거운 응원 열기를 한눈에 보여줍니다.
+                </p>
+              </div>
+            </div>
+            <div class="px-5 py-3 bg-white border-t border-slate-200/80 text-xs text-slate-500 flex items-center justify-between">
+              <span><i class="fa-solid fa-users text-indigo-600 mr-1"></i>100여 명 규모 동시 경기</span>
+              <span class="text-brand-600 font-bold group-hover:underline">확대 보기 &rarr;</span>
+            </div>
+          </div>
+
+          <!-- 사진 3: img114.jpg -->
+          <div class="group bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-500 transition-all flex flex-col justify-between cursor-pointer" onclick="openPhotoModal('image/img114.jpg', '휴머노이드 & 장애물 통과 특수 미션 코스', '정밀하게 제작된 입체 미션 경기장 코스에서 펼쳐지는 휴머노이드 이족보행 로봇 및 미션 주행 로봇의 박진감 넘치는 경기');">
+            <div>
+              <div class="relative aspect-[4/3] bg-slate-950 overflow-hidden flex items-center justify-center">
+                <img src="image/img114.jpg" alt="로봇 미션 주행 트랙 및 휴머노이드 보행 로봇 대회 코스" class="w-full h-full object-contain p-1 group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.src='images/img114.jpg';">
+                <div class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-black px-2.5 py-1 rounded-md shadow">
+                  규격 미션 코스
+                </div>
+                <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <span class="bg-white/95 text-slate-900 px-3.5 py-2 rounded-xl text-xs font-bold shadow-lg flex items-center gap-1.5">
+                    <i class="fa-solid fa-magnifying-glass-plus text-brand-600"></i> 크게 보기
+                  </span>
+                </div>
+              </div>
+              <div class="p-5">
+                <div class="flex items-center gap-2 mb-1.5">
+                  <span class="text-[11px] font-black bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded">휴머노이드</span>
+                  <span class="text-[11px] text-slate-500 font-semibold">입체 장애물 회피 트랙</span>
+                </div>
+                <h3 class="text-lg font-black text-slate-900 group-hover:text-brand-600 transition-colors">
+                  03. 휴머노이드 및 장애물 미션 경기 코스
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+                  정밀하게 맞춤 제작된 화이트 하이그로시 규격 코스 위에서 휴머노이드 이족보행 로봇이 장애물과 콘을 회피하며 목적지까지 주파하는 고난도 토너먼트 코스 경기 실황입니다.
+                </p>
+              </div>
+            </div>
+            <div class="px-5 py-3 bg-white border-t border-slate-200/80 text-xs text-slate-500 flex items-center justify-between">
+              <span><i class="fa-solid fa-person-walking text-emerald-600 mr-1"></i>정밀 이족 보행 제어 미션</span>
+              <span class="text-brand-600 font-bold group-hover:underline">확대 보기 &rarr;</span>
+            </div>
+          </div>
+
+          <!-- 사진 4: img115.jpg -->
+          <div class="group bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:border-brand-500 transition-all flex flex-col justify-between cursor-pointer" onclick="openPhotoModal('image/img115.jpg', '전국 로봇 챔피언십 (KRL) 대규모 대회장', '수백 명의 학생과 팀들이 참가하는 전국 단위 대규모 로봇 축제 및 턴키 총괄 운영 현장');">
+            <div>
+              <div class="relative aspect-[4/3] bg-slate-950 overflow-hidden flex items-center justify-center">
+                <img src="image/img115.jpg" alt="전국 로봇 챔피언십(KRL) 대규모 대회 현장 전경 및 참가 선수단" class="w-full h-full object-contain p-1 group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.src='images/img115.jpg';">
+                <div class="absolute top-3 left-3 bg-amber-600 text-white text-xs font-black px-2.5 py-1 rounded-md shadow">
+                  전국 챔피언십 (KRL)
+                </div>
+                <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <span class="bg-white/95 text-slate-900 px-3.5 py-2 rounded-xl text-xs font-bold shadow-lg flex items-center gap-1.5">
+                    <i class="fa-solid fa-magnifying-glass-plus text-brand-600"></i> 크게 보기
+                  </span>
+                </div>
+              </div>
+              <div class="p-5">
+                <div class="flex items-center gap-2 mb-1.5">
+                  <span class="text-[11px] font-black bg-amber-100 text-amber-800 px-2 py-0.5 rounded">전국 규모</span>
+                  <span class="text-[11px] text-slate-500 font-semibold">트로피 시상 및 국제 교류</span>
+                </div>
+                <h3 class="text-lg font-black text-slate-900 group-hover:text-brand-600 transition-colors">
+                  04. 전국 로봇 챔피언십 대규모 대회 현장
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+                  화려한 KRL 대회 현수막과 각국 깃발, 트로피가 배치된 대형 홀에서 전국 초·중·고·대학생 및 동아리 팀들이 집결하여 실력을 겨루는 매머드급 로봇 대회 운영 현장입니다.
+                </p>
+              </div>
+            </div>
+            <div class="px-5 py-3 bg-white border-t border-slate-200/80 text-xs text-slate-500 flex items-center justify-between">
+              <span><i class="fa-solid fa-trophy text-amber-600 mr-1"></i>전국 단위 턴키 총괄 수행</span>
+              <span class="text-brand-600 font-bold group-hover:underline">확대 보기 &rarr;</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 2: 로봇대회 현장 경기 시연 & 운영 실황 동영상 (총 8편)
+         ======================================================== -->
+    <section id="contest-videos" class="py-16 sm:py-20 bg-slate-100 border-b border-slate-200 scroll-mt-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-red-600 bg-red-50 px-3.5 py-1.5 rounded-full border border-red-200">
+            <i class="fa-brands fa-youtube text-red-600"></i> YouTube Live Archive
+          </span>
+          <h2 class="text-2xl sm:text-4xl font-black text-slate-900 mt-3 tracking-tight">
+            로봇대회 현장 경기 실황 동영상 (총 8편)
+          </h2>
+          <p class="text-slate-600 text-xs sm:text-sm mt-2">
+            하단의 영상 카드를 클릭하시면 상단 대형 HD 플레이어에서 즉시 전환 재생됩니다.<br class="hidden sm:inline">
+            모든 영상은 YouTube 원본 링크를 통해 고화질 전체화면으로도 감상하실 수 있습니다.
+          </p>
+        </div>
+
+        <!-- 1. 메인 인터랙티브 비디오 플레이어 -->
+        <div class="max-w-4xl mx-auto mb-12">
+          <div class="bg-white rounded-3xl p-4 sm:p-6 border border-slate-200 shadow-xl">
+            
+            <!-- 플레이어 헤더 정보 -->
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4 pb-3 border-b border-slate-100">
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-red-600 animate-ping"></span>
+                <span id="player-badge" class="px-2.5 py-0.5 rounded-md text-xs font-black bg-red-100 text-red-700">대회 실황 #1</span>
+                <h3 id="player-title" class="text-base sm:text-lg font-black text-slate-900 truncate">
+                  로봇대회 경기 실황 01 (토너먼트 대결)
+                </h3>
+              </div>
+              <a id="player-external-link" href="https://www.youtube.com/watch?v=fkaRjo1wMg0&list=PLRZy7dEIFvHs&index=24" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 rounded-lg bg-red-600 hover:bg-red-700 text-white text-xs font-bold transition-colors flex items-center gap-1.5 shrink-0 shadow-sm">
+                <i class="fa-brands fa-youtube"></i>
+                <span>YouTube에서 크게 보기</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+              </a>
+            </div>
+
+            <!-- 16:9 반응형 유튜브 플레이어 -->
+            <div class="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-slate-800 bg-black aspect-video">
+              <iframe 
+                id="main-video-iframe" 
+                class="w-full h-full" 
+                src="https://www.youtube-nocookie.com/embed/fkaRjo1wMg0?rel=0" 
+                title="상상만들기 로봇대회 현장 실황 영상" 
+                frameborder="0" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+              </iframe>
+            </div>
+
+            <!-- 하단 영상 설명 및 안내 -->
+            <div class="mt-4 p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-600 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+              <p id="player-desc" class="font-medium">
+                실제 축제 및 대회 현장에서 진행된 박진감 넘치는 로봇 대항전 및 토너먼트 경기 실황입니다.
+              </p>
+              <span class="text-[11px] text-slate-400 shrink-0">재생목록: PLRZy7dEIFvHs</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 2. 동영상 8편 선택 리스트 그리드 -->
+        <div>
+          <div class="flex items-center justify-between mb-6">
+            <h3 class="text-lg font-black text-slate-900 flex items-center gap-2">
+              <i class="fa-solid fa-list-ul text-brand-600"></i>
+              전체 대회 영상 리스트 (8편)
+            </h3>
+            <span class="text-xs text-slate-500 font-semibold">클릭 시 위 플레이어에서 즉시 재생</span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4" id="video-grid">
+            
+            <!-- 영상 1 -->
+            <div class="video-card video-card-active bg-white rounded-2xl p-3 border-2 border-brand-500 shadow-sm hover:shadow-md transition-all cursor-pointer flex flex-col justify-between" onclick="switchMainVideo('fkaRjo1wMg0', 'https://www.youtube.com/watch?v=fkaRjo1wMg0&list=PLRZy7dEIFvHs&index=24', '대회 실황 #1', '로봇대회 경기 실황 01 (토너먼트 대결)', '실제 축제 및 대회 현장에서 진행된 박진감 넘치는 로봇 대항전 및 토너먼트 경기 실황입니다.', this);">
+              <div>
+                <div class="relative aspect-video rounded-xl overflow-hidden bg-slate-900 mb-2.5">
+                  <img src="https://img.youtube.com/vi/fkaRjo1wMg0/hqdefault.jpg" alt="대회 영상 1" class="w-full h-full object-cover">
+                  <div class="absolute inset-0 bg-slate-900/30 flex items-center justify-center">
+                    <span class="w-9 h-9 rounded-full bg-red-600 text-white flex items-center justify-center shadow-lg"><i class="fa-solid fa-play ml-0.5 text-xs"></i></span>
+                  </div>
+                  <span class="absolute bottom-1 right-1 bg-black/80 text-white text-[10px] px-1.5 py-0.5 rounded font-bold">영상 01</span>
+                </div>
+                <h4 class="text-xs font-black text-slate-900 line-clamp-1">로봇대회 경기 실황 #1</h4>
+                <p class="text-[11px] text-slate-500 mt-0.5 line-clamp-2">박진감 넘치는 1:1 토너먼트 대항전 및 현장 심사</p>
+              </div>
+              <div class="mt-2.5 pt-2 border-t border-slate-100 flex items-center justify-between text-[11px]">
+                <span class="text-brand-600 font-bold"><i class="fa-solid fa-circle-play mr-1"></i>선택 중</span>
+                <span class="text-slate-400">Index #24</span>
+              </div>
+            </div>
+
+            <!-- 영상 2 -->
+            <div class="video-card bg-white rounded-2xl p-3 border border-slate-200 shadow-sm hover:shadow-md hover:border-brand-400 transition-all cursor-pointer flex flex-col justify-between" onclick="switchMainVideo('fyRsxuJVOFU', 'https://www.youtube.com/watch?v=fyRsxuJVOFU&list=PLRZy7dEIFvHs&index=20', '대회 실황 #2', '로봇대회 경기 실황 02 (미션 레이스)', '규격 경기장에서 로봇의 민첩한 조향과 스피드로 미션을 완수하는 경기 영상입니다.', this);">
+              <div>
+                <div class="relative aspect-video rounded-xl overflow-hidden bg-slate-900 mb-2.5">
+                  <img src="https://img.youtube.com/vi/fyRsxuJVOFU/hqdefault.jpg" alt="대회 영상 2" class="w-full h-full object-cover">
+                  <div class="absolute inset-0 bg-slate-900/30 flex items-center justify-center">
+                    <span class="w-9 h-9 rounded-full bg-red-600 text-white flex items-center justify-center shadow-lg"><i class="fa-solid fa-play ml-0.5 text-xs"></i></span>
+                  </div>
+                  <span class="absolute bottom-1 right-1 bg-black/80 text-white text-[10px] px-1 py-0.5 rounded font-bold">영상 02</span>
+                </div>
+                <h4 class="text-xs font-black text-slate-900 line-clamp-1">로봇대회 경기 실황 #2</h4>
+                <p class="text-[11px] text-slate-500 mt-0.5 line-clamp-2">규격 경기장 스피드 레이스 및 코너링 미션 완수</p>
+              </div>
+              <div class="mt-2.5 pt-2 border-t border-slate-100 flex items-center justify-between text-[11px]">
+                <span class="text-slate-500 font-semibold"><i class="fa-solid fa-play mr-1"></i>재생하기</span>
+                <span class="text-slate-400">Index #20</span>
+              </div>
+            </div>
+
+            <!-- 영상 3 -->
+            <div class="video-card bg-white rounded-2xl p-3 border border-slate-200 shadow-sm hover:shadow-md hover:border-brand-400 transition-all cursor-pointer flex flex-col justify-between" onclick="switchMainVideo('MggaE4vXDKw', 'https://www.youtube.com/watch?v=MggaE4vXDKw&list=PLRZy7dEIFvHs&index=17', '대회 실황 #3', '로봇대회 경기 실황 03 (팀 협동 배틀)', '팀원 간의 호흡과 역할 분담으로 승리를 쟁취하는 협동 배틀 경기 실황입니다.', this);">
+              <div>
+                <div class="relative aspect-video rounded-xl overflow-hidden bg-slate-900 mb-2.5">
+                  <img src="https://img.youtube.com/vi/MggaE4vXDKw/hqdefault.jpg" alt="대회 영상 3" class="w-full h-full object-cover">
+                  <div class="absolute inset-0 bg-slate-900/30 flex items-center justify-center">
+                    <span class="w-9 h-9 rounded-full bg-red-600 text-white flex items-center justify-center shadow-lg"><i class="fa-solid fa-play ml-0.5 text-xs"></i></span>
+                  </div>
+                  <span class="absolute bottom-1 right-1 bg-black/80 text-white text-[10px] px-1 py-0.5 rounded font-bold">영상 03</span>
+                </div>
+                <h4 class="text-xs font-black text-slate-900 line-clamp-1">로봇대회 경기 실황 #3</h4>
+                <p class="text-[11px] text-slate-500 mt-0.5 line-clamp-2">팀워크와 전술 배치가 돋보이는 단체 대항전</p>
+              </div>
+              <div class="mt-2.5 pt-2 border-t border-slate-100 flex items-center justify-between text-[11px]">
+                <span class="text-slate-500 font-semibold"><i class="fa-solid fa-play mr-1"></i>재생하기</span>
+                <span class="text-slate-400">Index #17</span>
+              </div>
+            </div>
+
+            <!-- 영상 4 -->
+            <div class="video-card bg-white rounded-2xl p-3 border border-slate-200 shadow-sm hover:shadow-md hover:border-brand-400 transition-all cursor-pointer flex flex-col justify-between" onclick="switchMainVideo('mdO2oZZPxCA', 'https://www.youtube.com/watch?v=mdO2oZZPxCA&list=PLRZy7dEIFvHs&index=16', '대회 실황 #4', '로봇대회 경기 실황 04 (정밀 컨트롤 토너먼트)', '초단위 승부가 갈리는 정밀 컨트롤 토너먼트 경기 현장입니다.', this);">
+              <div>
+                <div class="relative aspect-video rounded-xl overflow-hidden bg-slate-900 mb-2.5">
+                  <img src="https://img.youtube.com/vi/mdO2oZZPxCA/hqdefault.jpg" alt="대회 영상 4" class="w-full h-full object-cover">
+                  <div class="absolute inset-0 bg-slate-900/30 flex items-center justify-center">
+                    <span class="w-9 h-9 rounded-full bg-red-600 text-white flex items-center justify-center shadow-lg"><i class="fa-solid fa-play ml-0.5 text-xs"></i></span>
+                  </div>
+                  <span class="absolute bottom-1 right-1 bg-black/80 text-white text-[10px] px-1 py-0.5 rounded font-bold">영상 04</span>
+                </div>
+                <h4 class="text-xs font-black text-slate-900 line-clamp-1">로봇대회 경기 실황 #4</h4>
+                <p class="text-[11px] text-slate-500 mt-0.5 line-clamp-2">참가자들의 손끝 조종 집중력과 탄성이 넘치는 명승부</p>
+              </div>
+              <div class="mt-2.5 pt-2 border-t border-slate-100 flex items-center justify-between text-[11px]">
+                <span class="text-slate-500 font-semibold"><i class="fa-solid fa-play mr-1"></i>재생하기</span>
+                <span class="text-slate-400">Index #16</span>
+              </div>
+            </div>
+
+            <!-- 영상 5 -->
+            <div class="video-card bg-white rounded-2xl p-3 border border-slate-200 shadow-sm hover:shadow-md hover:border-brand-400 transition-all cursor-pointer flex flex-col justify-between" onclick="switchMainVideo('SZfIiiXyBXA', 'https://www.youtube.com/watch?v=SZfIiiXyBXA&list=PLRZy7dEIFvHs&index=14', '대회 실황 #5', '로봇대회 경기 실황 05 (경기 중계 및 스코어보드)', '실시간 경기 중계와 관람객 응원이 함께하는 대회 운영 실황입니다.', this);">
+              <div>
+                <div class="relative aspect-video rounded-xl overflow-hidden bg-slate-900 mb-2.5">
+                  <img src="https://img.youtube.com/vi/SZfIiiXyBXA/hqdefault.jpg" alt="대회 영상 5" class="w-full h-full object-cover">
+                  <div class="absolute inset-0 bg-slate-900/30 flex items-center justify-center">
+                    <span class="w-9 h-9 rounded-full bg-red-600 text-white flex items-center justify-center shadow-lg"><i class="fa-solid fa-play ml-0.5 text-xs"></i></span>
+                  </div>
+                  <span class="absolute bottom-1 right-1 bg-black/80 text-white text-[10px] px-1 py-0.5 rounded font-bold">영상 05</span>
+                </div>
+                <h4 class="text-xs font-black text-slate-900 line-clamp-1">로봇대회 경기 실황 #5</h4>
+                <p class="text-[11px] text-slate-500 mt-0.5 line-clamp-2">실시간 전광판 및 전문 아나운서 중계 연계 운영</p>
+              </div>
+              <div class="mt-2.5 pt-2 border-t border-slate-100 flex items-center justify-between text-[11px]">
+                <span class="text-slate-500 font-semibold"><i class="fa-solid fa-play mr-1"></i>재생하기</span>
+                <span class="text-slate-400">Index #14</span>
+              </div>
+            </div>
+
+            <!-- 영상 6 -->
+            <div class="video-card bg-white rounded-2xl p-3 border border-slate-200 shadow-sm hover:shadow-md hover:border-brand-400 transition-all cursor-pointer flex flex-col justify-between" onclick="switchMainVideo('dugSVbBFbvg', 'https://www.youtube.com/watch?v=dugSVbBFbvg&list=PLRZy7dEIFvHs&index=13', '대회 실황 #6', '로봇대회 경기 실황 06 (미션 해결 & 드라이빙)', '정밀한 드라이빙 기술로 목표 타겟을 해결하는 로봇 경기 실황입니다.', this);">
+              <div>
+                <div class="relative aspect-video rounded-xl overflow-hidden bg-slate-900 mb-2.5">
+                  <img src="https://img.youtube.com/vi/dugSVbBFbvg/hqdefault.jpg" alt="대회 영상 6" class="w-full h-full object-cover">
+                  <div class="absolute inset-0 bg-slate-900/30 flex items-center justify-center">
+                    <span class="w-9 h-9 rounded-full bg-red-600 text-white flex items-center justify-center shadow-lg"><i class="fa-solid fa-play ml-0.5 text-xs"></i></span>
+                  </div>
+                  <span class="absolute bottom-1 right-1 bg-black/80 text-white text-[10px] px-1 py-0.5 rounded font-bold">영상 06</span>
+                </div>
+                <h4 class="text-xs font-black text-slate-900 line-clamp-1">로봇대회 경기 실황 #6</h4>
+                <p class="text-[11px] text-slate-500 mt-0.5 line-clamp-2">정밀 조종 드라이빙으로 쟁탈하는 타겟 미션</p>
+              </div>
+              <div class="mt-2.5 pt-2 border-t border-slate-100 flex items-center justify-between text-[11px]">
+                <span class="text-slate-500 font-semibold"><i class="fa-solid fa-play mr-1"></i>재생하기</span>
+                <span class="text-slate-400">Index #13</span>
+              </div>
+            </div>
+
+            <!-- 영상 7 -->
+            <div class="video-card bg-white rounded-2xl p-3 border border-slate-200 shadow-sm hover:shadow-md hover:border-brand-400 transition-all cursor-pointer flex flex-col justify-between" onclick="switchMainVideo('xQ8CB5s5dCI', 'https://www.youtube.com/watch?v=xQ8CB5s5dCI&list=PLRZy7dEIFvHs&index=12', '대회 실황 #7', '로봇대회 경기 실황 07 (청소년 챔피언십)', '지자체 청소년 과학 축제 연계 대규모 로봇 챔피언십 실황입니다.', this);">
+              <div>
+                <div class="relative aspect-video rounded-xl overflow-hidden bg-slate-900 mb-2.5">
+                  <img src="https://img.youtube.com/vi/xQ8CB5s5dCI/hqdefault.jpg" alt="대회 영상 7" class="w-full h-full object-cover">
+                  <div class="absolute inset-0 bg-slate-900/30 flex items-center justify-center">
+                    <span class="w-9 h-9 rounded-full bg-red-600 text-white flex items-center justify-center shadow-lg"><i class="fa-solid fa-play ml-0.5 text-xs"></i></span>
+                  </div>
+                  <span class="absolute bottom-1 right-1 bg-black/80 text-white text-[10px] px-1 py-0.5 rounded font-bold">영상 07</span>
+                </div>
+                <h4 class="text-xs font-black text-slate-900 line-clamp-1">로봇대회 경기 실황 #7</h4>
+                <p class="text-[11px] text-slate-500 mt-0.5 line-clamp-2">지역 청소년들이 펼치는 치열한 본선 진출전</p>
+              </div>
+              <div class="mt-2.5 pt-2 border-t border-slate-100 flex items-center justify-between text-[11px]">
+                <span class="text-slate-500 font-semibold"><i class="fa-solid fa-play mr-1"></i>재생하기</span>
+                <span class="text-slate-400">Index #12</span>
+              </div>
+            </div>
+
+            <!-- 영상 8 -->
+            <div class="video-card bg-white rounded-2xl p-3 border border-slate-200 shadow-sm hover:shadow-md hover:border-brand-400 transition-all cursor-pointer flex flex-col justify-between" onclick="switchMainVideo('9s_o99mVC-s', 'https://www.youtube.com/watch?v=9s_o99mVC-s&list=PLRZy7dEIFvHs&index=6', '대회 실황 #8', '로봇대회 경기 실황 08 (로봇 슛 & 골대 챌린지)', '집게 리프팅 로봇으로 공을 들어올려 골대에 넣는 정밀 슈팅 대회입니다.', this);">
+              <div>
+                <div class="relative aspect-video rounded-xl overflow-hidden bg-slate-900 mb-2.5">
+                  <img src="https://img.youtube.com/vi/9s_o99mVC-s/hqdefault.jpg" alt="대회 영상 8" class="w-full h-full object-cover">
+                  <div class="absolute inset-0 bg-slate-900/30 flex items-center justify-center">
+                    <span class="w-9 h-9 rounded-full bg-red-600 text-white flex items-center justify-center shadow-lg"><i class="fa-solid fa-play ml-0.5 text-xs"></i></span>
+                  </div>
+                  <span class="absolute bottom-1 right-1 bg-black/80 text-white text-[10px] px-1 py-0.5 rounded font-bold">영상 08</span>
+                </div>
+                <h4 class="text-xs font-black text-slate-900 line-clamp-1">로봇대회 경기 실황 #8</h4>
+                <p class="text-[11px] text-slate-500 mt-0.5 line-clamp-2">집게 로봇 골대 슈팅 경기 및 득점 챌린지</p>
+              </div>
+              <div class="mt-2.5 pt-2 border-t border-slate-100 flex items-center justify-between text-[11px]">
+                <span class="text-slate-500 font-semibold"><i class="fa-solid fa-play mr-1"></i>재생하기</span>
+                <span class="text-slate-400">Index #6</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION 3: 턴키 프로세스 및 S2B 견적 문의 CTA
+         ======================================================== -->
+    <section class="py-16 sm:py-20 bg-slate-900 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="text-xs font-black uppercase tracking-wider bg-blue-500/20 text-blue-300 px-3.5 py-1.5 rounded-full border border-blue-400/30">
+            Turn-Key Operations
+          </span>
+          <h2 class="text-2xl sm:text-4xl font-black text-white mt-4 tracking-tight">
+            상상만들기 로봇대회 턴키 총괄 프로세스
+          </h2>
+          <p class="text-slate-300 text-xs sm:text-sm mt-2">
+            기획안 수립부터 경기장 제작, 렌탈 로봇 지급, 공인 심사, 결과 보고서까지 원스톱으로 지원합니다.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <div class="p-6 rounded-2xl bg-slate-800/80 border border-slate-700/80">
+            <div class="text-2xl font-black text-blue-400 mb-2">01</div>
+            <h4 class="text-base font-bold text-white mb-2">대회 기획 및 규정 수립</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              지자체 및 학교 목적에 맞춘 세부 경기 룰, 배점표, 참가자 모집 가이드라인 수립.
+            </p>
+          </div>
+          <div class="p-6 rounded-2xl bg-slate-800/80 border border-slate-700/80">
+            <div class="text-2xl font-black text-indigo-400 mb-2">02</div>
+            <h4 class="text-base font-bold text-white mb-2">규격 코스 &amp; 렌탈 로봇 세팅</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              전용 미션 맵 제작, 100% 동일 스펙 렌탈 로봇과 배터리 급속 충전 시스템 완비.
+            </p>
+          </div>
+          <div class="p-6 rounded-2xl bg-slate-800/80 border border-slate-700/80">
+            <div class="text-2xl font-black text-emerald-400 mb-2">03</div>
+            <h4 class="text-base font-bold text-white mb-2">공인 심사 및 실시간 중계</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              전문 심사위원단 배치, 전광판 스코어보드 운영, 현장 전문 아나운서 경기 중계.
+            </p>
+          </div>
+          <div class="p-6 rounded-2xl bg-slate-800/80 border border-slate-700/80">
+            <div class="text-2xl font-black text-amber-400 mb-2">04</div>
+            <h4 class="text-base font-bold text-white mb-2">시상식 및 종합 정산 보고</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              상장 및 트로피 수여식 총괄, 고화질 사진/영상 아카이브 및 공공 행정 정산서 완비.
+            </p>
+          </div>
+        </div>
+
+        <!-- 하단 액션 박스 -->
+        <div class="p-8 rounded-3xl bg-gradient-to-r from-blue-900/60 to-indigo-900/60 border border-blue-500/40 text-center max-w-3xl mx-auto space-y-5">
+          <h3 class="text-xl sm:text-2xl font-black text-white">
+            로봇대회 기획서 및 S2B 맞춤 견적이 필요하신가요?
+          </h3>
+          <p class="text-xs sm:text-sm text-blue-200">
+            행사 예산 규모(1,000만~1,900만 원)와 참가 인원에 맞춰 최적의 대회 구성안을 24시간 내 제출해 드립니다.
+          </p>
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
+            <a href="index.html#contact" class="w-full sm:w-auto px-7 py-3 rounded-xl font-bold text-xs sm:text-sm bg-brand-600 hover:bg-brand-500 text-white shadow-lg transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-file-signature"></i>
+              <span>대회 견적 및 품의 서류 신청</span>
+            </a>
+            <a href="index.html#download-proposal" class="w-full sm:w-auto px-7 py-3 rounded-xl font-bold text-xs sm:text-sm bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-file-pdf text-rose-400"></i>
+              <span>상상만들기 제안서 다운로드</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================
+       PHOTO LIGHTBOX MODAL
+       ======================================================== -->
+  <div id="photo-modal" class="fixed inset-0 z-50 bg-slate-950/90 backdrop-blur-md hidden flex items-center justify-center p-4" onclick="if(event.target === this) closePhotoModal();">
+    <div class="relative max-w-5xl w-full bg-slate-900 rounded-3xl overflow-hidden border border-slate-700 shadow-2xl flex flex-col">
+      <div class="px-5 py-3.5 bg-slate-950 border-b border-slate-800 flex items-center justify-between text-white">
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-image text-brand-400"></i>
+          <span id="modal-photo-title" class="font-bold text-sm sm:text-base"></span>
+        </div>
+        <button type="button" onclick="closePhotoModal();" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-300 flex items-center justify-center transition-colors">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="p-2 sm:p-4 bg-black flex items-center justify-center max-h-[75vh]">
+        <img id="modal-photo-img" src="" alt="확대 사진" class="max-w-full max-h-[70vh] object-contain rounded-xl">
+      </div>
+      <div class="p-4 bg-slate-900 text-xs sm:text-sm text-slate-300 border-t border-slate-800">
+        <p id="modal-photo-desc" class="leading-relaxed"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       FOOTER
+       ======================================================== -->
+  <footer class="bg-slate-950 text-slate-400 text-xs sm:text-sm border-t border-slate-800 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+        
+        <div class="md:col-span-5 space-y-3">
+          <div class="flex items-center gap-3">
+            <img src="image/ssmaker_logo.png" onerror="this.src='images/ssmaker_logo.png'" alt="상상만들기" class="h-9 w-auto bg-white/95 p-1 rounded-md">
+            <div>
+              <span class="text-xl font-black text-white tracking-tight">상상만들기</span>
+              <span class="text-xs font-bold text-brand-400 ml-1">SSMAKER</span>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            상상만들기는 핵심 하드웨어 보드와 펌웨어를 직접 개발·생산하는 기술 기반의 에듀테크 및 로봇 행사 위탁 전문 기업입니다. 검증된 장비 렌탈과 엔지니어 직영 관리를 바탕으로 무중단 행사를 약속합니다.
+          </p>
+          <div class="pt-2 flex items-center gap-4 text-slate-400 text-xs">
+            <span>공식 웹사이트: <a href="http://ssmaker.co.kr" class="text-brand-400 hover:underline">ssmaker.co.kr</a></span>
+          </div>
+        </div>
+
+        <div class="md:col-span-3 space-y-2 text-xs">
+          <h4 class="font-bold text-slate-200 uppercase tracking-wider">주요 서비스</h4>
+          <ul class="space-y-1.5">
+            <li><a href="contest.html" class="text-brand-400 font-bold hover:underline">로봇대회 턴키 총괄 운영</a></li>
+            <li><a href="index.html#contests" class="hover:text-white transition-colors">100% 렌탈형 공정 로봇대회</a></li>
+            <li><a href="index.html#booths" class="hover:text-white transition-colors">자사 개발 20여 종 체험부스</a></li>
+            <li><a href="index.html#tech-rnd" class="hover:text-white transition-colors">하드웨어 R&D 및 보드 생산</a></li>
+            <li><a href="booth_template.html" class="hover:text-white transition-colors">부스별 세부 사양표</a></li>
+          </ul>
+        </div>
+
+        <div class="md:col-span-4 space-y-2 text-xs">
+          <h4 class="font-bold text-slate-200 uppercase tracking-wider">공공기관 상담 및 사업자 정보</h4>
+          <p class="text-slate-400">상호명: 주식회사 상상만들기 | 대표자: 홍길동</p>
+          <p class="text-slate-400">사업자등록번호: 123-45-67890 | 통신판매업신고 완료</p>
+          <p class="text-slate-400"><strong class="text-blue-400">공공조달: S2B(학교장터) 정식 공급사 등록</strong></p>
+          <p class="text-slate-400">주소: 서울특별시 금천구 가산디지털1로 100, 상상만들기 미래창작센터</p>
+          <p class="text-brand-400 font-semibold pt-1">
+            <i class="fa-solid fa-envelope mr-1"></i> contact@ssmaker.co.kr | 직통: 02-1234-5678
+          </p>
+        </div>
+
+      </div>
+
+      <div class="mt-8 pt-6 border-t border-slate-800 text-center text-xs text-slate-500 flex flex-col sm:flex-row justify-between items-center gap-2">
+        <p>&copy; 2026 SSMAKER Inc. All rights reserved. S2B 학교장터 정식 등록 기업 '상상만들기'</p>
+        <div class="flex gap-4">
+          <a href="index.html" class="hover:underline">메인 페이지</a>
+          <a href="booth_template.html" class="hover:underline">체험부스 상세표</a>
+          <a href="index.html#download-proposal" class="hover:underline">제안서 요청</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================
+       SCRIPTS: 비디오 전환 및 사진 라이트박스 모달
+       ======================================================== -->
+  <script>
+    // 비디오 전환 함수
+    function switchMainVideo(videoId, videoUrl, badge, title, desc, element) {
+      const iframe = document.getElementById('main-video-iframe');
+      const badgeEl = document.getElementById('player-badge');
+      const titleEl = document.getElementById('player-title');
+      const descEl = document.getElementById('player-desc');
+      const extLink = document.getElementById('player-external-link');
+
+      if (iframe) {
+        iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0`;
+      }
+      if (badgeEl) badgeEl.innerText = badge;
+      if (titleEl) titleEl.innerText = title;
+      if (descEl) descEl.innerText = desc;
+      if (extLink) extLink.href = videoUrl;
+
+      // 액티브 카드 클래스 토글
+      document.querySelectorAll('.video-card').forEach(card => {
+        card.classList.remove('video-card-active', 'border-brand-500');
+        card.classList.add('border-slate-200');
+        const statusSpan = card.querySelector('.text-brand-600');
+        if (statusSpan) {
+          statusSpan.className = 'text-slate-500 font-semibold';
+          statusSpan.innerHTML = '<i class="fa-solid fa-play mr-1"></i>재생하기';
+        }
+      });
+
+      if (element) {
+        element.classList.add('video-card-active', 'border-brand-500');
+        element.classList.remove('border-slate-200');
+        const statusSpan = element.querySelector('.text-slate-500');
+        if (statusSpan) {
+          statusSpan.className = 'text-brand-600 font-bold';
+          statusSpan.innerHTML = '<i class="fa-solid fa-circle-play mr-1"></i>선택 중';
+        }
+      }
+
+      // 모바일 등에서 플레이어로 부드럽게 스크롤
+      const videoSection = document.getElementById('contest-videos');
+      if (videoSection && window.innerWidth < 768) {
+        videoSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    // 사진 모달 열기
+    function openPhotoModal(src, title, desc) {
+      const modal = document.getElementById('photo-modal');
+      const img = document.getElementById('modal-photo-img');
+      const titleEl = document.getElementById('modal-photo-title');
+      const descEl = document.getElementById('modal-photo-desc');
+
+      if (img) img.src = src;
+      if (titleEl) titleEl.innerText = title;
+      if (descEl) descEl.innerText = desc;
+
+      if (modal) {
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    // 사진 모달 닫기
+    function closePhotoModal() {
+      const modal = document.getElementById('photo-modal');
+      if (modal) {
+        modal.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+    }
+
+    // ESC 키로 모달 닫기
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closePhotoModal();
+    });
+
+    // 모바일 메뉴 토글
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+
+    if (mobileMenuBtn && mobileMenu && menuIcon) {
+      mobileMenuBtn.addEventListener('click', () => {
+        const isHidden = mobileMenu.classList.contains('hidden');
+        if (isHidden) {
+          mobileMenu.classList.remove('hidden');
+          menuIcon.classList.remove('fa-bars');
+          menuIcon.classList.add('fa-xmark');
+        } else {
+          mobileMenu.classList.add('hidden');
+          menuIcon.classList.remove('fa-xmark');
+          menuIcon.classList.add('fa-bars');
+        }
+      });
+
+      document.querySelectorAll('#mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          menuIcon.classList.remove('fa-xmark');
+          menuIcon.classList.add('fa-bars');
+        });
+      });
+    }
+  </script>
+</body>
+</html>
