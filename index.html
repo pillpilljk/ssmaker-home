@@ -2225,7 +2225,7 @@
             </h2>
             <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
               "우리 지역 학생들을 위한 뜻깊은 기획, 완벽한 실행으로 보답하겠습니다."<br class="hidden sm:inline">
-              행사 기획안, 안전관리계획서, 산출내역서가 포함된 <strong>상상만들기 종합 제안서</strong>를 받아보세요.
+              행사 기획안, 안전관리계획서, 산출내역서가 포함된 <strong>맞춤 기획안 및 표준 견적서</strong>를 24시간 내 신속히 회신드립니다.
             </p>
 
             <div class="pt-2 flex flex-wrap gap-3 justify-center lg:justify-start">
@@ -2239,11 +2239,11 @@
           </div>
 
           <div class="lg:col-span-4 flex flex-col items-center justify-center gap-4 text-center">
-            <a href="images/ssmaker_proposal_2026.pdf" download class="w-full py-4 px-6 rounded-xl font-black text-base text-slate-900 bg-white hover:bg-slate-100 shadow-xl transition-all flex items-center justify-center gap-3 group">
-              <i class="fa-solid fa-file-pdf text-rose-600 text-2xl group-hover:scale-110 transition-transform"></i>
+            <a href="#contact" class="w-full py-4 px-6 rounded-xl font-black text-base text-white bg-brand-600 hover:bg-brand-500 shadow-xl transition-all flex items-center justify-center gap-3 group">
+              <i class="fa-solid fa-paper-plane text-xl group-hover:scale-110 transition-transform"></i>
               <div class="text-left">
-                <div class="text-xs text-slate-500 font-semibold leading-tight">2026 최신판 공식 제안서</div>
-                <div class="text-sm font-black text-slate-900 leading-tight">행사 제안서 다운로드 (PDF)</div>
+                <div class="text-xs text-blue-200 font-semibold leading-tight">S2B 전자 수의계약 규격 지원</div>
+                <div class="text-sm font-black text-white leading-tight">S2B 맞춤 견적 및 기획안 신청</div>
               </div>
             </a>
 
@@ -2278,26 +2278,26 @@
           <p class="text-sm text-slate-500 mt-1">S2B 학교장터 전자 수의계약 규격에 맞춘 산출내역서를 24시간 내 회신드립니다.</p>
         </div>
 
-        <form class="space-y-4" onsubmit="event.preventDefault(); alert('S2B 견적 상담 신청이 접수되었습니다. 담당 엔지니어가 신속히 연락드리겠습니다.');">
+        <form id="contact-form" class="space-y-4" onsubmit="handleContactSubmit(event)">
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label class="block text-xs font-bold text-slate-700 mb-1">기관/학교명 <span class="text-rose-500">*</span></label>
-              <input type="text" required placeholder="예: OO초등학교 / OO교육지원청 / OO구청" class="w-full px-3.5 py-2.5 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent">
+              <label for="contact-org" class="block text-xs font-bold text-slate-700 mb-1">기관/학교명 <span class="text-rose-500">*</span></label>
+              <input type="text" id="contact-org" name="orgName" required placeholder="예: OO초등학교 / OO교육지원청 / OO구청" class="w-full px-3.5 py-2.5 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent">
             </div>
             <div>
-              <label class="block text-xs font-bold text-slate-700 mb-1">담당자 성함 및 직급 <span class="text-rose-500">*</span></label>
-              <input type="text" required placeholder="예: 홍길동 부장교사 / 주무관" class="w-full px-3.5 py-2.5 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent">
+              <label for="contact-name" class="block text-xs font-bold text-slate-700 mb-1">담당자 성함 및 직급 <span class="text-rose-500">*</span></label>
+              <input type="text" id="contact-name" name="managerName" required placeholder="예: 홍길동 부장교사 / 주무관" class="w-full px-3.5 py-2.5 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent">
             </div>
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label class="block text-xs font-bold text-slate-700 mb-1">연락처 <span class="text-rose-500">*</span></label>
-              <input type="tel" required placeholder="010-0000-0000" class="w-full px-3.5 py-2.5 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent">
+              <label for="contact-phone" class="block text-xs font-bold text-slate-700 mb-1">연락처 <span class="text-rose-500">*</span></label>
+              <input type="tel" id="contact-phone" name="phone" required placeholder="010-0000-0000" class="w-full px-3.5 py-2.5 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent">
             </div>
             <div>
-              <label class="block text-xs font-bold text-slate-700 mb-1">주요 관심 분야 <span class="text-rose-500">*</span></label>
-              <select class="w-full px-3.5 py-2.5 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent bg-white">
+              <label for="contact-category" class="block text-xs font-bold text-slate-700 mb-1">주요 관심 분야 <span class="text-rose-500">*</span></label>
+              <select id="contact-category" name="category" class="w-full px-3.5 py-2.5 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent bg-white">
                 <option selected>[S2B 학교 행사] 교내 로봇데이 및 창의융합축제</option>
                 <option>[테마 1] 로봇대회 총괄 운영 (렌탈형/해커톤/턴키)</option>
                 <option>[테마 2] 자사 개발 체험부스 패키지 (20여 종)</option>
@@ -2308,13 +2308,16 @@
           </div>
 
           <div>
-            <label class="block text-xs font-bold text-slate-700 mb-1">행사 예정 일자 및 요청 사항</label>
-            <textarea rows="3" placeholder="예정 행사 시기, 예상 참가 학생 수, 희망 부스 종목 등을 적어주시면 S2B 표준 산출내역서를 보내드립니다." class="w-full px-3.5 py-2.5 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent"></textarea>
+            <label for="contact-message" class="block text-xs font-bold text-slate-700 mb-1">행사 예정 일자 및 요청 사항</label>
+            <textarea id="contact-message" name="details" rows="3" placeholder="예정 행사 시기, 예상 참가 학생 수, 희망 부스 종목 등을 적어주시면 S2B 표준 산출내역서를 보내드립니다." class="w-full px-3.5 py-2.5 text-sm rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent"></textarea>
           </div>
 
+          <!-- 상태 알림 박스 (성공/오류) -->
+          <div id="contact-status-msg" class="hidden p-4 rounded-xl text-xs sm:text-sm font-semibold transition-all"></div>
+
           <div class="pt-2 text-center">
-            <button type="submit" class="w-full sm:w-auto px-8 py-3.5 rounded-xl font-bold text-sm text-white bg-brand-600 hover:bg-brand-700 shadow-md transition-all">
-              <i class="fa-solid fa-paper-plane mr-1.5"></i> S2B 맞춤 견적 및 기획안 요청
+            <button type="submit" id="contact-submit-btn" class="w-full sm:w-auto px-8 py-3.5 rounded-xl font-bold text-sm text-white bg-brand-600 hover:bg-brand-700 shadow-md transition-all flex items-center justify-center mx-auto gap-2">
+              <i class="fa-solid fa-paper-plane"></i> <span>S2B 맞춤 견적 및 기획안 요청</span>
             </button>
           </div>
         </form>
@@ -2342,9 +2345,9 @@
           </div>
         </div>
 
-        <a href="#download-proposal" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-xs sm:text-sm font-bold text-white bg-brand-600 hover:bg-brand-500 transition-all shadow-md flex-shrink-0">
-          <i class="fa-solid fa-file-arrow-down"></i>
-          행사 제안서 다운로드 (PDF)
+        <a href="#contact" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-xs sm:text-sm font-bold text-white bg-brand-600 hover:bg-brand-500 transition-all shadow-md flex-shrink-0">
+          <i class="fa-solid fa-paper-plane"></i>
+          S2B 맞춤 견적 신청
         </a>
       </div>
     </div>
@@ -2399,7 +2402,7 @@
         <div class="flex gap-4">
           <a href="#" class="hover:underline">개인정보처리방침</a>
           <a href="#" class="hover:underline">이용약관</a>
-          <a href="#download-proposal" class="hover:underline">제안서 요청</a>
+          <a href="#contact" class="hover:underline">견적 및 문의</a>
         </div>
       </div>
     </div>
@@ -3242,6 +3245,101 @@
           btnPoster.className = 'px-2.5 py-1 rounded-lg text-xs font-bold transition-all bg-brand-600 text-white flex items-center gap-1';
           btnVideo.className = 'px-2.5 py-1 rounded-lg text-xs font-bold transition-all bg-slate-700 hover:bg-slate-600 text-slate-300 hover:text-white flex items-center gap-1';
         }
+      }
+    }
+
+    // 구글 앱스 스크립트 웹앱 연동 견적 및 문의 접수 핸들러
+    async function handleContactSubmit(event) {
+      event.preventDefault();
+      
+      const form = document.getElementById('contact-form');
+      const submitBtn = document.getElementById('contact-submit-btn');
+      const statusMsg = document.getElementById('contact-status-msg');
+      if (!form || !submitBtn) return;
+
+      const originalBtnHtml = submitBtn.innerHTML;
+
+      // 구글 앱스 스크립트 배포 URL
+      const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzG3z6hfqjbpTyXNNqZuhy7tn0v9sTtq0an5jkS3pvwMh4JPXsiSI6VFutcUU8aaXFJWA/exec';
+
+      // 폼 데이터 수집
+      const org = (document.getElementById('contact-org')?.value || '').trim();
+      const name = (document.getElementById('contact-name')?.value || '').trim();
+      const phone = (document.getElementById('contact-phone')?.value || '').trim();
+      const category = (document.getElementById('contact-category')?.value || '').trim();
+      const message = (document.getElementById('contact-message')?.value || '').trim();
+      const timestamp = new Date().toLocaleString('ko-KR', { timeZone: 'Asia/Seoul' });
+
+      if (!org || !name || !phone) {
+        alert('필수 입력 항목(기관/학교명, 담당자 성함, 연락처)을 모두 입력해 주세요.');
+        return;
+      }
+
+      // 버튼 로딩 상태 전환
+      submitBtn.disabled = true;
+      submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
+      submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> <span>신청서 전송 중...</span>';
+
+      if (statusMsg) {
+        statusMsg.className = 'hidden';
+        statusMsg.innerHTML = '';
+      }
+
+      // 구글 앱스 스크립트 변수명과 1:1 정확 매칭
+      const params = new URLSearchParams();
+      params.append('orgName', org);
+      params.append('managerName', name);
+      params.append('phone', phone);
+      params.append('category', category);
+      params.append('details', message);
+
+      // 하위 호환 및 시트 열 헤더 별칭
+      params.append('organization', org);
+      params.append('name', name);
+      params.append('message', message);
+      params.append('timestamp', timestamp);
+      params.append('기관명', org);
+      params.append('학교명', org);
+      params.append('담당자', name);
+      params.append('성함', name);
+      params.append('연락처', phone);
+      params.append('전화번호', phone);
+      params.append('관심분야', category);
+      params.append('요청사항', message);
+      params.append('내용', message);
+      params.append('일시', timestamp);
+      params.append('접수일시', timestamp);
+
+      try {
+        await fetch(SCRIPT_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+          },
+          body: params.toString()
+        });
+
+        // 성공 안내 배너 및 알림
+        if (statusMsg) {
+          statusMsg.className = 'block mt-4 p-4 rounded-xl text-xs sm:text-sm font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200';
+          statusMsg.innerHTML = '<div class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600 text-base"></i><span><strong>견적 및 문의 신청이 성공적으로 접수되었습니다!</strong> 기재해주신 연락처(' + phone + ')로 담당 엔지니어가 24시간 내 신속히 연락드리겠습니다.</span></div>';
+        }
+
+        alert('S2B 견적 및 기획안 신청이 정상적으로 접수되었습니다.\n담당 엔지니어가 신속히 확인 후 연락드리겠습니다.');
+        form.reset();
+
+      } catch (error) {
+        console.error('Contact submission error:', error);
+        if (statusMsg) {
+          statusMsg.className = 'block mt-4 p-4 rounded-xl text-xs sm:text-sm font-semibold bg-amber-50 text-amber-900 border border-amber-200';
+          statusMsg.innerHTML = '<div class="flex items-start gap-2"><i class="fa-solid fa-triangle-exclamation text-amber-600 text-base mt-0.5"></i><div>일시적인 네트워크 지연이 발생할 수 있습니다. 빠른 처리를 원하시면 직통 전화(<strong>070-5167-3321</strong>) 또는 이메일(<strong>red@ssmaker.co.kr</strong>)로 문의해주시면 즉시 안내해 드립니다.</div></div>';
+        }
+        alert('전송 처리 중 일시적 오류가 발생했습니다.\n급하신 문의는 직통 070-5167-3321 로 연락 주시면 즉시 상담해 드립니다.');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.classList.remove('opacity-75', 'cursor-not-allowed');
+        submitBtn.innerHTML = originalBtnHtml;
       }
     }
 
