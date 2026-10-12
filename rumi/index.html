@@ -2,6 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>루미(Rumi) 언플러그드 & 엔트리 블록코딩 교사용 가이드 웹앱</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -3754,12 +3755,24 @@
               </div>
               <div class="video-player-wrap ${ratioClass}">
                 <iframe 
-                  src="https://www.youtube-nocookie.com/embed/${item.videoId}?rel=0" 
+                  src="https://www.youtube.com/embed/${item.videoId}?enablejsapi=1&playsinline=1&rel=0" 
                   title="${item.title} 실제 시연 영상" 
-                  loading="lazy"
+                  frameborder="0"
+                  referrerpolicy="strict-origin-when-cross-origin"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                   allowfullscreen>
                 </iframe>
+              </div>
+              <div class="file-protocol-notice" style="display: ${window.location.protocol === 'file:' ? 'block' : 'none'}; background:#fff1f2; border:1px solid #fecdd3; border-radius:8px; padding:10px 14px; margin-top:8px; font-size:0.83rem; color:#9f1239; line-height:1.55;">
+                <div style="font-weight:800; display:flex; align-items:center; gap:6px; margin-bottom:2px;">
+                  <span>💡</span>
+                  <span class="ko-txt">동영상 플레이어 구성 오류(153)가 발생하시나요?</span>
+                  <span class="mn-txt">Бичлэг тоглуулагчийн 153-р алдаа гарч байна уу?</span>
+                </div>
+                <div>
+                  <span class="ko-txt">Chrome/Edge 등 브라우저의 <strong>로컬 파일(file://) 보안 정책</strong>으로 인해 YouTube가 임베드 재생을 차단한 경우입니다. 상단 우측의 <strong>[YouTube에서 보기 ↗]</strong> 버튼을 누르시면 즉시 고화질로 시청하실 수 있으며, 프로젝트 폴더의 <strong>'웹앱_실행.bat'</strong>을 실행하시면 웹앱 내부에서도 오류 없이 바로 재생됩니다!</span>
+                  <span class="mn-txt">Хөтчийн <strong>file://</strong> аюулгүй байдлын бодлогоос үүдэлтэй алдаа юм. Дээрх <strong>[YouTube дээр үзэх ↗]</strong> товчийг дарж үзнэ үү, эсвэл <strong>'웹앱_실행.bat'</strong>-аар серверийг асааж үзнэ үү!</span>
+                </div>
               </div>
               <div class="video-caption-box">
                 <span style="font-size:1rem;">📌</span>
