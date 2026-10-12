@@ -195,6 +195,51 @@
       line-height: 1.45;
     }
 
+    
+    /* 칩 버튼 및 16단계 피드백 표 보조자막 스타일 */
+    body.show-mongol-sub .chip-btn {
+      padding: 6px 12px;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2px;
+    }
+    body.show-mongol-sub .chip-btn .mn-sub {
+      display: inline-block !important;
+      font-size: 0.74rem;
+      color: #92400e;
+      background: #fef3c7;
+      border-left: 2px solid #f59e0b;
+      padding: 1px 6px;
+      border-radius: 3px;
+      margin-top: 2px;
+      font-weight: 500;
+      line-height: 1.3;
+    }
+    body.show-mongol-sub .chip-btn.active .mn-sub {
+      color: #fef08a;
+      background: rgba(254, 240, 138, 0.25);
+      border-left-color: #fef08a;
+    }
+
+    body.show-mongol-sub .mode-seq-item .mn-sub {
+      display: block !important;
+      font-size: 0.68rem;
+      color: #92400e;
+      background: #fef3c7;
+      border-left: 2px solid #f59e0b;
+      padding: 2px 4px;
+      border-radius: 3px;
+      margin-top: 3px;
+      line-height: 1.25;
+      font-weight: 600;
+      text-align: center;
+    }
+    body.lang-mongol-full .chip-btn .mn-sub,
+    body.lang-mongol-full .mode-seq-item .mn-sub {
+      display: none !important;
+    }
+
     /* 메인 컨테이너 */
     main.container {
       max-width: 1140px;
@@ -1503,11 +1548,18 @@
         <div style="display:flex; align-items:center; gap:10px;">
           <span style="font-size:1.8rem;">🧸</span>
           <div>
-            <div style="font-weight: 800; color: #92400e; font-size: 1.05rem;">유치원 및 초등 저학년(1~3학년) 전용 언플러그드 커리큘럼</div>
-            <div style="font-size: 0.86rem; color: #b45309;">컴퓨터 모니터 없이 본체 2버튼(SELECT/START)과 전용 조종기만으로 온몸으로 체득하는 피지컬 코딩!</div>
+            <div style="font-weight: 800; color: #92400e; font-size: 1.05rem;">
+              <span class="ko-txt">유치원 및 초등 저학년(1~3학년) 전용 언플러그드 커리큘럼</span>
+              <span class="mn-txt">Цэцэрлэг ба бага анги (1~3-р анги)-д зориулсан Unplugged хөтөлбөр</span>
+            </div>
+            <div style="font-size: 0.86rem; color: #b45309;">
+              <span class="ko-txt">컴퓨터 모니터 없이 본체 2버튼(SELECT/START)과 전용 조종기만으로 온몸으로 체득하는 피지컬 코딩!</span>
+              <span class="mn-txt">Компьютергүйгээр төхөөрөмжийн 2 товч (SELECT/START) ба удирдлагаар биеэр мэдрэх биет кодчлол!</span>
+            </div>
+            <div class="mn-sub">🇲🇳 Цэцэрлэг, бага ангид зориулсан Unplugged хөтөлбөр: Мониторгүйгээр 2 товчлуур ба удирдлагаар суралцах биет кодинг!</div>
           </div>
         </div>
-        <span class="badge-kinder">Target: 유치원 ~ 초등 저학년</span>
+        <span class="badge-kinder">Target: 4~9 нас</span>
       </div>
 
       <!-- 언플러그드 내장 프로그램 모드 동작 방법 안내 카드 -->
@@ -1575,27 +1627,130 @@
         <!-- 16단계 피드백 순환표 -->
         <div style="background:#f8fafc; border:1px solid var(--gray-200); border-radius:var(--radius-sm); padding:14px;">
           <div style="font-size:0.85rem; font-weight:800; color:var(--gray-700); margin-bottom:6px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:6px;">
-            <span>🎵 SELECT 누를 때마다 순환하는 16가지 LED 색상 & 음계 피드백 순서표</span>
-            <span style="font-size:0.75rem; color:var(--gray-500); font-weight:500;">(도레미파솔라시도 ➔ 높은음 도레미파솔라시도 ➔ 1번으로 순환)</span>
+            <span>
+              <span class="ko-txt">🎵 SELECT 누를 때마다 순환하는 16가지 LED 색상 & 음계 피드백 순서표</span>
+              <span class="mn-txt">🎵 SELECT дарах бүрт солигдох 16 төрлийн LED өнгө & хөгийн дараалал</span>
+            </span>
+            <span style="font-size:0.75rem; color:var(--gray-500); font-weight:500;">
+              <span class="ko-txt">(도레미파솔라시도 ➔ 높은음 도레미파솔라시도 ➔ 1번으로 순환)</span>
+              <span class="mn-txt">(До-Ре-Ми-Фа-Соль-Ла-Си-До ➔ Өндөр До-Ре-Ми... ➔ 1 рүү дахин эхлэх)</span>
+            </span>
           </div>
+          <div class="mn-sub">🇲🇳 SELECT дарах бүрт өнгө ба ноот солигдох 16 алхамт хүснэгт</div>
 
           <div class="mode-sequence-grid">
-            <div class="mode-seq-item"><span class="seq-color-chip" style="background:#ef4444;"></span><strong>모드 1</strong><span>빨강</span><span style="color:#2563eb; font-weight:700;">'도'</span></div>
-            <div class="mode-seq-item"><span class="seq-color-chip" style="background:#f97316;"></span><strong>모드 2</strong><span>주황</span><span style="color:#2563eb; font-weight:700;">'레'</span></div>
-            <div class="mode-seq-item"><span class="seq-color-chip" style="background:#eab308;"></span><strong>모드 3</strong><span>노랑</span><span style="color:#2563eb; font-weight:700;">'미'</span></div>
-            <div class="mode-seq-item"><span class="seq-color-chip" style="background:#22c55e;"></span><strong>모드 4</strong><span>초록</span><span style="color:#2563eb; font-weight:700;">'파'</span></div>
-            <div class="mode-seq-item"><span class="seq-color-chip" style="background:#3b82f6;"></span><strong>모드 5</strong><span>파랑</span><span style="color:#2563eb; font-weight:700;">'솔'</span></div>
-            <div class="mode-seq-item"><span class="seq-color-chip" style="background:#1d4ed8;"></span><strong>모드 6</strong><span>남색</span><span style="color:#2563eb; font-weight:700;">'라'</span></div>
-            <div class="mode-seq-item"><span class="seq-color-chip" style="background:#a855f7;"></span><strong>모드 7</strong><span>보라</span><span style="color:#2563eb; font-weight:700;">'시'</span></div>
-            <div class="mode-seq-item"><span class="seq-color-chip" style="background:#f1f5f9; border:1px solid #94a3b8;"></span><strong>모드 8</strong><span>흰색</span><span style="color:#7c3aed; font-weight:700;">'높은 도'</span></div>
-            <div class="mode-seq-item"><span class="seq-color-chip" style="background:#ef4444; border:2px dashed #991b1b;"></span><strong>모드 9</strong><span>빨강(깜박임)</span><span style="color:#7c3aed; font-weight:700;">'높은 레'</span></div>
-            <div class="mode-seq-item"><span class="seq-color-chip" style="background:#f97316; border:2px dashed #9a3412;"></span><strong>모드 10</strong><span>주황(깜박임)</span><span style="color:#7c3aed; font-weight:700;">'높은 미'</span></div>
-            <div class="mode-seq-item"><span class="seq-color-chip" style="background:#eab308; border:2px dashed #854d0e;"></span><strong>모드 11</strong><span>노랑(깜박임)</span><span style="color:#7c3aed; font-weight:700;">'높은 파'</span></div>
-            <div class="mode-seq-item"><span class="seq-color-chip" style="background:#22c55e; border:2px dashed #166534;"></span><strong>모드 12</strong><span>초록(깜박임)</span><span style="color:#7c3aed; font-weight:700;">'높은 솔'</span></div>
-            <div class="mode-seq-item"><span class="seq-color-chip" style="background:#3b82f6; border:2px dashed #1e40af;"></span><strong>모드 13</strong><span>파랑(깜박임)</span><span style="color:#7c3aed; font-weight:700;">'높은 라'</span></div>
-            <div class="mode-seq-item"><span class="seq-color-chip" style="background:#1d4ed8; border:2px dashed #1e3a8a;"></span><strong>모드 14</strong><span>남색(깜박임)</span><span style="color:#7c3aed; font-weight:700;">'높은 시'</span></div>
-            <div class="mode-seq-item"><span class="seq-color-chip" style="background:#a855f7; border:2px dashed #6b21a8;"></span><strong>모드 15</strong><span>보라(깜박임)</span><span style="color:#7c3aed; font-weight:700;">'최고 높은 도'</span></div>
-            <div class="mode-seq-item"><span class="seq-color-chip" style="background:#ffffff; border:2px dashed #475569;"></span><strong>모드 16</strong><span>흰색(깜박임)</span><span style="color:#475569; font-weight:700;">순환 준비</span></div>
+            <div class="mode-seq-item">
+              <span class="seq-color-chip" style="background:#ef4444;"></span>
+              <strong><span class="ko-txt">모드 1</span><span class="mn-txt">Горим 1</span></strong>
+              <span><span class="ko-txt">빨강</span><span class="mn-txt">Улаан</span></span>
+              <span style="color:#2563eb; font-weight:700;"><span class="ko-txt">'도'</span><span class="mn-txt">'До'</span></span>
+              <span class="mn-sub inline">🇲🇳 Горим 1 (Улаан, До)</span>
+            </div>
+            <div class="mode-seq-item">
+              <span class="seq-color-chip" style="background:#f97316;"></span>
+              <strong><span class="ko-txt">모드 2</span><span class="mn-txt">Горим 2</span></strong>
+              <span><span class="ko-txt">주황</span><span class="mn-txt">Улбар шар</span></span>
+              <span style="color:#2563eb; font-weight:700;"><span class="ko-txt">'레'</span><span class="mn-txt">'Ре'</span></span>
+              <span class="mn-sub inline">🇲🇳 Горим 2 (Улбар шар, Ре)</span>
+            </div>
+            <div class="mode-seq-item">
+              <span class="seq-color-chip" style="background:#eab308;"></span>
+              <strong><span class="ko-txt">모드 3</span><span class="mn-txt">Горим 3</span></strong>
+              <span><span class="ko-txt">노랑</span><span class="mn-txt">Шар</span></span>
+              <span style="color:#2563eb; font-weight:700;"><span class="ko-txt">'미'</span><span class="mn-txt">'Ми'</span></span>
+              <span class="mn-sub inline">🇲🇳 Горим 3 (Шар, Ми)</span>
+            </div>
+            <div class="mode-seq-item">
+              <span class="seq-color-chip" style="background:#22c55e;"></span>
+              <strong><span class="ko-txt">모드 4</span><span class="mn-txt">Горим 4</span></strong>
+              <span><span class="ko-txt">초록</span><span class="mn-txt">Ногоон</span></span>
+              <span style="color:#2563eb; font-weight:700;"><span class="ko-txt">'파'</span><span class="mn-txt">'Фа'</span></span>
+              <span class="mn-sub inline">🇲🇳 Горим 4 (Ногоон, Фа)</span>
+            </div>
+            <div class="mode-seq-item">
+              <span class="seq-color-chip" style="background:#3b82f6;"></span>
+              <strong><span class="ko-txt">모드 5</span><span class="mn-txt">Горим 5</span></strong>
+              <span><span class="ko-txt">파랑</span><span class="mn-txt">Цэнхэр</span></span>
+              <span style="color:#2563eb; font-weight:700;"><span class="ko-txt">'솔'</span><span class="mn-txt">'Соль'</span></span>
+              <span class="mn-sub inline">🇲🇳 Горим 5 (Цэнхэр, Соль)</span>
+            </div>
+            <div class="mode-seq-item">
+              <span class="seq-color-chip" style="background:#1d4ed8;"></span>
+              <strong><span class="ko-txt">모드 6</span><span class="mn-txt">Горим 6</span></strong>
+              <span><span class="ko-txt">남색</span><span class="mn-txt">Хөх</span></span>
+              <span style="color:#2563eb; font-weight:700;"><span class="ko-txt">'라'</span><span class="mn-txt">'Ла'</span></span>
+              <span class="mn-sub inline">🇲🇳 Горим 6 (Хөх, Ла)</span>
+            </div>
+            <div class="mode-seq-item">
+              <span class="seq-color-chip" style="background:#a855f7;"></span>
+              <strong><span class="ko-txt">모드 7</span><span class="mn-txt">Горим 7</span></strong>
+              <span><span class="ko-txt">보라</span><span class="mn-txt">Нил ягаан</span></span>
+              <span style="color:#2563eb; font-weight:700;"><span class="ko-txt">'시'</span><span class="mn-txt">'Си'</span></span>
+              <span class="mn-sub inline">🇲🇳 Горим 7 (Нил ягаан, Си)</span>
+            </div>
+            <div class="mode-seq-item">
+              <span class="seq-color-chip" style="background:#f1f5f9; border:1px solid #94a3b8;"></span>
+              <strong><span class="ko-txt">모드 8</span><span class="mn-txt">Горим 8</span></strong>
+              <span><span class="ko-txt">흰색</span><span class="mn-txt">Цагаан</span></span>
+              <span style="color:#7c3aed; font-weight:700;"><span class="ko-txt">'높은 도'</span><span class="mn-txt">'Өндөр До'</span></span>
+              <span class="mn-sub inline">🇲🇳 Горим 8 (Цагаан, Өндөр До)</span>
+            </div>
+            <div class="mode-seq-item">
+              <span class="seq-color-chip" style="background:#ef4444; border:2px dashed #991b1b;"></span>
+              <strong><span class="ko-txt">모드 9</span><span class="mn-txt">Горим 9</span></strong>
+              <span><span class="ko-txt">빨강(깜박임)</span><span class="mn-txt">Улаан(анивчих)</span></span>
+              <span style="color:#7c3aed; font-weight:700;"><span class="ko-txt">'높은 레'</span><span class="mn-txt">'Өндөр Ре'</span></span>
+              <span class="mn-sub inline">🇲🇳 Горим 9 (Улаан анивчих, Өндөр Ре)</span>
+            </div>
+            <div class="mode-seq-item">
+              <span class="seq-color-chip" style="background:#f97316; border:2px dashed #9a3412;"></span>
+              <strong><span class="ko-txt">모드 10</span><span class="mn-txt">Горим 10</span></strong>
+              <span><span class="ko-txt">주황(깜박임)</span><span class="mn-txt">Улбар шар(анивчих)</span></span>
+              <span style="color:#7c3aed; font-weight:700;"><span class="ko-txt">'높은 미'</span><span class="mn-txt">'Өндөр Ми'</span></span>
+              <span class="mn-sub inline">🇲🇳 Горим 10 (Улбар шар анивчих, Өндөр Ми)</span>
+            </div>
+            <div class="mode-seq-item">
+              <span class="seq-color-chip" style="background:#eab308; border:2px dashed #854d0e;"></span>
+              <strong><span class="ko-txt">모드 11</span><span class="mn-txt">Горим 11</span></strong>
+              <span><span class="ko-txt">노랑(깜박임)</span><span class="mn-txt">Шар(анивчих)</span></span>
+              <span style="color:#7c3aed; font-weight:700;"><span class="ko-txt">'높은 파'</span><span class="mn-txt">'Өндөр Фа'</span></span>
+              <span class="mn-sub inline">🇲🇳 Горим 11 (Шар анивчих, Өндөр Фа)</span>
+            </div>
+            <div class="mode-seq-item">
+              <span class="seq-color-chip" style="background:#22c55e; border:2px dashed #166534;"></span>
+              <strong><span class="ko-txt">모드 12</span><span class="mn-txt">Горим 12</span></strong>
+              <span><span class="ko-txt">초록(깜박임)</span><span class="mn-txt">Ногоон(анивчих)</span></span>
+              <span style="color:#7c3aed; font-weight:700;"><span class="ko-txt">'높은 솔'</span><span class="mn-txt">'Өндөр Соль'</span></span>
+              <span class="mn-sub inline">🇲🇳 Горим 12 (Ногоон анивчих, Өндөр Соль)</span>
+            </div>
+            <div class="mode-seq-item">
+              <span class="seq-color-chip" style="background:#3b82f6; border:2px dashed #1e40af;"></span>
+              <strong><span class="ko-txt">모드 13</span><span class="mn-txt">Горим 13</span></strong>
+              <span><span class="ko-txt">파랑(깜박임)</span><span class="mn-txt">Цэнхэр(анивчих)</span></span>
+              <span style="color:#7c3aed; font-weight:700;"><span class="ko-txt">'높은 라'</span><span class="mn-txt">'Өндөр Ла'</span></span>
+              <span class="mn-sub inline">🇲🇳 Горим 13 (Цэнхэр анивчих, Өндөр Ла)</span>
+            </div>
+            <div class="mode-seq-item">
+              <span class="seq-color-chip" style="background:#1d4ed8; border:2px dashed #1e3a8a;"></span>
+              <strong><span class="ko-txt">모드 14</span><span class="mn-txt">Горим 14</span></strong>
+              <span><span class="ko-txt">남색(깜박임)</span><span class="mn-txt">Хөх(анивчих)</span></span>
+              <span style="color:#7c3aed; font-weight:700;"><span class="ko-txt">'높은 시'</span><span class="mn-txt">'Өндөр Си'</span></span>
+              <span class="mn-sub inline">🇲🇳 Горим 14 (Хөх анивчих, Өндөр Си)</span>
+            </div>
+            <div class="mode-seq-item">
+              <span class="seq-color-chip" style="background:#a855f7; border:2px dashed #6b21a8;"></span>
+              <strong><span class="ko-txt">모드 15</span><span class="mn-txt">Горим 15</span></strong>
+              <span><span class="ko-txt">보라(깜박임)</span><span class="mn-txt">Нил ягаан(анивчих)</span></span>
+              <span style="color:#7c3aed; font-weight:700;"><span class="ko-txt">'최고 높은 도'</span><span class="mn-txt">'Дээд До'</span></span>
+              <span class="mn-sub inline">🇲🇳 Горим 15 (Нил ягаан анивчих, Дээд До)</span>
+            </div>
+            <div class="mode-seq-item">
+              <span class="seq-color-chip" style="background:#ffffff; border:2px dashed #475569;"></span>
+              <strong><span class="ko-txt">모드 16</span><span class="mn-txt">Горим 16</span></strong>
+              <span><span class="ko-txt">흰색(깜박임)</span><span class="mn-txt">Цагаан(анивчих)</span></span>
+              <span style="color:#475569; font-weight:700;"><span class="ko-txt">순환 준비</span><span class="mn-txt">Эхлэл</span></span>
+              <span class="mn-sub inline">🇲🇳 Горим 16 (Цагаан анивчих, Эхлэл)</span>
+            </div>
           </div>
         </div>
 
@@ -1620,13 +1775,41 @@
 
         <!-- 단원별 필터 칩 -->
         <div class="filter-chips">
-          <button class="chip-btn active" data-unit="all">전체 차시 보기 (14)</button>
-          <button class="chip-btn" data-unit="video" style="background:#fee2e2; color:#b91c1c; border-color:#fca5a5; font-weight:800;">🎬 시연 영상 있는 모드 (12)</button>
-          <button class="chip-btn" data-unit="1단원">1단원: 로봇 기초 & 무선 조종기 (감정/정지/RC/페어링)</button>
-          <button class="chip-btn" data-unit="2단원">2단원: 반응 로봇 & 스마트 펫 (회피/일정간격/척력)</button>
-          <button class="chip-btn" data-unit="3단원">3단원: 스스로 생각하는 자율주행 (오토센싱/5mm·2cm 라인/스모)</button>
-          <button class="chip-btn" data-unit="4단원">4단원: 로봇 창의 음악회 & 예술 (STEAM)</button>
-          <button class="chip-btn" data-unit="5단원">5단원 & 마스터: 게임 & 경로 코딩 (기억/역산)</button>
+          <button class="chip-btn active" data-unit="all">
+            <span class="ko-txt">전체 차시 보기 (14)</span>
+            <span class="mn-txt">Бүх хичээл (14)</span>
+            <span class="mn-sub inline">🇲🇳 Бүх хичээл (14)</span>
+          </button>
+          <button class="chip-btn" data-unit="video" style="background:#fee2e2; color:#b91c1c; border-color:#fca5a5; font-weight:800;">
+            <span class="ko-txt">🎬 시연 영상 있는 모드 (12)</span>
+            <span class="mn-txt">🎬 Бичлэгтэй горимууд (12)</span>
+            <span class="mn-sub inline">🇲🇳 🎬 Бичлэгтэй горимууд (12)</span>
+          </button>
+          <button class="chip-btn" data-unit="1단원">
+            <span class="ko-txt">1단원: 로봇 기초 & 무선 조종기 (감정/정지/RC/페어링)</span>
+            <span class="mn-txt">1-р бүлэг: Роботын үндэс & Удирдлага (Сэтгэл хөдлөл/Зогсох/RC/Хослолт)</span>
+            <span class="mn-sub inline">🇲🇳 1-р бүлэг: Роботын үндэс & Удирдлага (RC/Хослолт)</span>
+          </button>
+          <button class="chip-btn" data-unit="2단원">
+            <span class="ko-txt">2단원: 반응 로봇 & 스마트 펫 (회피/일정간격/척력)</span>
+            <span class="mn-txt">2-р бүлэг: Хариу үйлдэлт робот & Тэжээвэр амьтан (Бултах/Зай барих/Түлхэлцэх)</span>
+            <span class="mn-sub inline">🇲🇳 2-р бүлэг: Хариу үйлдэлт робот & Тэжээвэр амьтан</span>
+          </button>
+          <button class="chip-btn" data-unit="3단원">
+            <span class="ko-txt">3단원: 스스로 생각하는 자율주행 (오토센싱/5mm·2cm 라인/스모)</span>
+            <span class="mn-txt">3-р бүлэг: Бие даасан жолоодлого (Auto-Sensing/5мм·2см шугам/Сүмо)</span>
+            <span class="mn-sub inline">🇲🇳 3-р бүлэг: Бие даасан жолоодлого (Auto-Sensing)</span>
+          </button>
+          <button class="chip-btn" data-unit="4단원">
+            <span class="ko-txt">4단원: 로봇 창의 음악회 & 예술 (STEAM)</span>
+            <span class="mn-txt">4-р бүлэг: Робот хөгжмийн тоглолт & Урлаг (STEAM)</span>
+            <span class="mn-sub inline">🇲🇳 4-р бүлэг: Робот хөгжмийн тоглолт (STEAM)</span>
+          </button>
+          <button class="chip-btn" data-unit="5단원">
+            <span class="ko-txt">5단원 & 마스터: 게임 & 경로 코딩 (기억/역산)</span>
+            <span class="mn-txt">5-р бүлэг: Тоглоом & Санах ойн зам кодчлол (Санах ой/Урвуу тооцоолол)</span>
+            <span class="mn-sub inline">🇲🇳 5-р бүлэг: Санах ойн зам кодчлол (Санах ой/Урвуу)</span>
+          </button>
         </div>
       </div>
 
@@ -1636,8 +1819,14 @@
       <!-- 검색 결과 없을 때 표시 -->
       <div class="empty-state" id="emptyState">
         <div class="empty-icon">🔎</div>
-        <h3 style="font-size: 1.15rem; color: var(--gray-700); margin-bottom: 6px;">검색 조건에 맞는 차시가 없습니다</h3>
-        <p style="color: var(--gray-500); font-size: 0.9rem;">검색어나 단원 필터를 다시 확인해 주세요.</p>
+        <h3 style="font-size: 1.15rem; color: var(--gray-700); margin-bottom: 6px;">
+          <span class="ko-txt">검색 조건에 맞는 차시가 없습니다</span>
+          <span class="mn-txt">Хайлтын үр дүнд тохирох хичээл олдсонгүй</span>
+        </h3>
+        <p style="color: var(--gray-500); font-size: 0.9rem;">
+          <span class="ko-txt">검색어나 단원 필터를 다시 확인해 주세요.</span>
+          <span class="mn-txt">Хайлтын үг эсвэл бүлгийн шүүлтүүрээ шалгана уу.</span>
+        </p>
       </div>
 
     </section>
@@ -1650,277 +1839,480 @@
         
         <div class="section-header">
           <div>
-            <h2 class="section-title">💻 [초등부 & 중등 저학년] 엔트리 블록코딩 실습 매뉴얼</h2>
-            <p class="section-sub">USB 연결부터 모터, 네오픽셀 RGB LED, 라인트레이서(line/lt/rt) 정밀 교차로 제어 및 격자 미션</p>
+            <h2 class="section-title">
+              <span class="ko-txt">💻 [초등부 & 중등 저학년] 엔트리 블록코딩 실습 매뉴얼</span>
+              <span class="mn-txt">💻 [Дунд & Ахлах анги] Entry блок кодчлолын дадлагын гарын авлага</span>
+            </h2>
+            <p class="section-sub">
+              <span class="ko-txt">USB 연결부터 모터, 네오픽셀 RGB LED, 라인트레이서(line/lt/rt) 정밀 교차로 제어 및 격자 미션</span>
+              <span class="mn-txt">USB Bluetooth холболтоос мотор, NeoPixel RGB LED, шугам дагагч (line/lt/rt) нарийн удирдлага ба тор замын даалгавар</span>
+            </p>
+            <div class="mn-sub">🇲🇳 Дунд, ахлах анги: Entry блок кодчлолоор 루미 роботыг удирдах практик дадлагын заавар</div>
           </div>
-          <span class="badge-entry">Target: 초등 3~6학년 & 중등 1~2학년</span>
+          <span class="badge-entry">Target: 9~14 нас (3~8-р анги)</span>
         </div>
 
         <!-- 1. 통신 구조 -->
         <div style="background: #f5f3ff; border: 1px solid #ddd6fe; border-radius: var(--radius-md); padding: 20px; margin-bottom: 24px;">
           <h3 style="color: #5b21b6; font-size: 1.08rem; margin-bottom: 8px; display:flex; align-items:center; gap:8px;">
-            <span>🧠</span> 엔트리 블록코딩과 루미 하드웨어의 통신 구조
+            <span>🧠</span> 
+            <span class="ko-txt">엔트리 블록코딩과 루미 하드웨어의 통신 구조</span>
+            <span class="mn-txt">Entry блок кодчлол ба Руми төхөөрөмжийн харилцан холболтын бүтэц</span>
           </h3>
           <p style="color: #6d28d9; font-size: 0.92rem; line-height: 1.65;">
-            "루미 로봇은 센서값(적외선 거리 센서, 바닥 라인 센서)을 컴퓨터로 전송하고, <strong>컴퓨터의 엔트리가 두뇌(CPU) 역할</strong>을 하여 블록 코딩에 따라 연산한 뒤 모터나 LED 제어 명령을 루미로 다시 전송합니다."<br>
-            따라서 엔트리 실행 중에는 컴퓨터와 루미가 지속적으로 블루투스 무선 통신을 유지해야 하며, <strong>오프라인 설치형 엔트리</strong>를 사용하면 인터넷이 없는 환경에서도 100% 원활하게 수업할 수 있습니다.
+            <span class="ko-txt">"루미 로봇은 센서값(적외선 거리 센서, 바닥 라인 센서)을 컴퓨터로 전송하고, <strong>컴퓨터의 엔트리가 두뇌(CPU) 역할</strong>을 하여 블록 코딩에 따라 연산한 뒤 모터나 LED 제어 명령을 루미로 다시 전송합니다."<br>따라서 엔트리 실행 중에는 컴퓨터와 루미가 지속적으로 블루투스 무선 통신을 유지해야 하며, <strong>오프라인 설치형 엔트리</strong>를 사용하면 인터넷이 없는 환경에서도 100% 원활하게 수업할 수 있습니다.</span>
+            <span class="mn-txt">"Руми робот нь мэдрэгчийн утгыг (хэт улаан туяаны зайн мэдрэгч, замын шугамын мэдрэгч) компьютерт илгээж, <strong>компьютерийн Entry програм нь тархи (CPU)-ны үүрэг гүйцэтгэн</strong> тооцоолсны дараа мотор ба LED-ийн удирдлагын тушаалыг Руми руу буцаан илгээдэг."<br>Иймд Entry ажиллаж байх үед компьютер ба Руми нь Bluetooth-ээр тасралтгүй холбоотой байх шаардлагатай бөгөөд <strong>офлайн суулгах Entry програм</strong>-ыг ашигласнаар интернетгүй орчинд ч хичээлийг 100% саадгүй явуулах боломжтой.</span>
           </p>
+          <div class="mn-sub">🇲🇳 Руми мэдрэгчийн өгөгдлийг илгээж, Entry тооцоолон буцаан моторыг удирдах 2 талт холболттой. Офлайн програм интернет шаардахгүй.</div>
         </div>
 
         <!-- 2. 개발환경 설정 5단계 -->
         <h3 style="font-size: 1.2rem; font-weight:800; color:var(--gray-900); margin: 28px 0 14px; display:flex; align-items:center; gap:8px;">
-          <span>🔌</span> 1. 개발환경 설정과 무선 연결 5단계
+          <span>🔌</span> 
+          <span class="ko-txt">1. 개발환경 설정과 무선 연결 5단계</span>
+          <span class="mn-txt">1. Хөгжүүлэлтийн орчин ба 5 алхамт утасгүй холболт</span>
         </h3>
+        <div class="mn-sub">🇲🇳 Entry програм болон Bluetooth Dongle-оор роботоо компьютертэй холбох 5 алхам</div>
 
         <div class="entry-setup-steps">
           <div class="setup-step-box">
             <span class="step-badge">STEP 1</span>
-            <h4>USB 드라이버 설치</h4>
-            <p>로봇과 컴퓨터 간 통신을 위해 <strong>CH340 / CH341 드라이버</strong>(CH341SER.exe)를 실행하여 설치합니다. (오류 시 UNINSTALL 후 재설치)</p>
+            <h4>
+              <span class="ko-txt">USB 드라이버 설치</span>
+              <span class="mn-txt">USB Драйвер суулгах</span>
+            </h4>
+            <p>
+              <span class="ko-txt">로봇과 컴퓨터 간 통신을 위해 <strong>CH340 / CH341 드라이버</strong>(CH341SER.exe)를 실행하여 설치합니다.</span>
+              <span class="mn-txt">Компьютер ба робот хоорондын холболтод зориулж <strong>CH340 / CH341 драйвер</strong> (CH341SER.exe) ажиллуулан суулгана.</span>
+            </p>
+            <div class="mn-sub">🇲🇳 Алхам 1: CH340 драйвер суулгах</div>
           </div>
 
           <div class="setup-step-box">
             <span class="step-badge">STEP 2</span>
-            <h4>엔트리 오프라인 설치</h4>
-            <p><strong>playentry.org</strong>에서 PC용 엔트리 프로그램과 함께 <strong>'엔트리 하드웨어 연결 프로그램'</strong>을 다운로드하여 설치합니다.</p>
+            <h4>
+              <span class="ko-txt">엔트리 오프라인 설치</span>
+              <span class="mn-txt">Entry офлайн програм суулгах</span>
+            </h4>
+            <p>
+              <span class="ko-txt"><strong>playentry.org</strong>에서 PC용 엔트리 프로그램과 함께 <strong>'엔트리 하드웨어 연결 프로그램'</strong>을 다운로드하여 설치합니다.</span>
+              <span class="mn-txt"><strong>playentry.org</strong> сайтаас PC-д зориулсан Entry програм ба <strong>'Entry техник хангамж холболтын програм'</strong>-ыг татаж суулгана.</span>
+            </p>
+            <div class="mn-sub">🇲🇳 Алхам 2: Entry програм татах</div>
           </div>
 
           <div class="setup-step-box">
             <span class="step-badge">STEP 3</span>
-            <h4>동글 연결 & 루미 전원 ON</h4>
-            <p><strong>블루투스 동글</strong>을 컴퓨터 USB에 꽂고 루미 전원을 켭니다. <em>(동글을 꽂고 바로 루미를 켜면 페어링 속도가 가장 빠릅니다!)</em></p>
+            <h4>
+              <span class="ko-txt">동글 연결 & 루미 전원 ON</span>
+              <span class="mn-txt">Dongle холбох & Асаах</span>
+            </h4>
+            <p>
+              <span class="ko-txt"><strong>블루투스 동글</strong>을 컴퓨터 USB에 꽂고 루미 전원을 켭니다. <em>(동글 꽂고 바로 켜면 페어링이 가장 빠릅니다!)</em></span>
+              <span class="mn-txt"><strong>Bluetooth Dongle</strong>-ийг USB-д залгаад Румиг асаана. <em>(Залгаад шууд асаахад хамгийн хурдан холбогдоно!)</em></span>
+            </p>
+            <div class="mn-sub">🇲🇳 Алхам 3: Bluetooth Dongle холбож роботоо асаах</div>
           </div>
 
           <div class="setup-step-box">
             <span class="step-badge">STEP 4</span>
-            <h4>하드웨어 '라인코딩' 선택</h4>
-            <p>엔트리 하드웨어 창에서 <strong>[라인코딩]</strong>을 찾아 선택하고 연결된 <strong>COM 포트</strong>를 연결합니다. (연결 성공 후 창 최소화)</p>
+            <h4>
+              <span class="ko-txt">하드웨어 '라인코딩' 선택</span>
+              <span class="mn-txt">'Шугам кодчлол' сонгох</span>
+            </h4>
+            <p>
+              <span class="ko-txt">엔트리 하드웨어 창에서 <strong>[라인코딩]</strong>을 찾아 선택하고 연결된 <strong>COM 포트</strong>를 연결합니다.</span>
+              <span class="mn-txt">Entry техник хангамжийн цонхноос <strong>[Line Coding]</strong>-г хайж сонгоод харгалзах <strong>COM портыг</strong> холбоно.</span>
+            </p>
+            <div class="mn-sub">🇲🇳 Алхам 4: Төхөөрөмжүүд дундаас '라인코딩' сонгох</div>
           </div>
 
           <div class="setup-step-box">
             <span class="step-badge">STEP 5</span>
-            <h4>초록색 블록 & 스피커 테스트</h4>
-            <p>엔트리 블록 메뉴에 초록색 라인코딩 블록들이 나타나면 성공! <strong>[스피커 5 옥타브 도 음 0.25초 연주]</strong> 블록으로 첫 소리 테스트를 진행합니다.</p>
+            <h4>
+              <span class="ko-txt">초록색 블록 & 스피커 테스트</span>
+              <span class="mn-txt">Ногоон блок & Дуу шалгах</span>
+            </h4>
+            <p>
+              <span class="ko-txt">엔트리 블록 메뉴에 초록색 블록들이 나타나면 성공! <strong>[스피커 5 옥타브 도 음 0.25초 연주]</strong> 블록으로 첫 소리 테스트를 진행합니다.</span>
+              <span class="mn-txt">Entry цэсэнд ногоон өнгийн блокууд гарч ирвэл амжилттай! <strong>[5-р октавын До эгшгийг 0.25 сек дуугаргах]</strong> блокоор анхны дуугаа шалгана.</span>
+            </p>
+            <div class="mn-sub">🇲🇳 Алхам 5: Ногоон блокоор анхны дууг шалгах</div>
           </div>
         </div>
 
         <!-- 3. 모터 제어 핵심 블록 -->
         <h3 style="font-size: 1.2rem; font-weight:800; color:var(--gray-900); margin: 36px 0 14px; display:flex; align-items:center; gap:8px;">
-          <span>⚙️</span> 2. 모터 제어 핵심 블록 및 엔지니어링 팁
+          <span>⚙️</span> 
+          <span class="ko-txt">2. 모터 제어 핵심 블록 및 엔지니어링 팁</span>
+          <span class="mn-txt">2. Мотор удирдлагын гол блокууд ба инженерчлэлийн зөвлөмж</span>
         </h3>
+        <div class="mn-sub">🇲🇳 Мотор удирдах wheel, delay, motor блокуудын тайлбар ба инженерийн зөвлөгөө</div>
 
         <div class="entry-block-doc-grid">
           <div class="entry-block-card">
-            <div style="font-size:0.8rem; font-weight:800; color:var(--purple); text-transform:uppercase;">연속 제어 기본 블록</div>
-            <div class="block-syntax-pill">wheel( 왼쪽 속도 , 오른쪽 속도 );</div>
+            <div style="font-size:0.8rem; font-weight:800; color:var(--purple); text-transform:uppercase;">
+              <span class="ko-txt">연속 제어 기본 블록</span>
+              <span class="mn-txt">Тасралтгүй хөдөлгөөний блок</span>
+            </div>
+            <div class="block-syntax-pill"><span class="ko-txt">wheel( 왼쪽 속도 , 오른쪽 속도 );</span><span class="mn-txt">wheel( Зүүн хурд , Баруун хурд );</span></div>
             <p style="font-size:0.88rem; color:var(--gray-700); line-height:1.6;">
-              루미의 좌/우 모터 속도를 개별 설정합니다. 정지 명령이 실행되기 전까지 <strong>설정한 속도로 지속 회전</strong>합니다. (-20 ~ +20 속도 범위)
+              <span class="ko-txt">루미의 좌/우 모터 속도를 개별 설정합니다. 정지 명령이 실행되기 전까지 <strong>설정한 속도로 지속 회전</strong>합니다. (-20 ~ +20 속도 범위)</span>
+              <span class="mn-txt">Зүүн ба баруун моторын хурдыг тусад нь тохируулна. Зогсоох команд ирэх хүртэл <strong>тохируулсан хурдаар тасралтгүй эргэнэ</strong>. (-20-оос +20 хурд)</span>
             </p>
             <div style="background:#f1f5f9; padding:10px 12px; border-radius:6px; margin:10px 0; font-size:0.82rem;">
-              • <code>wheel(5, 5); delay(1000); wheel(0, 0);</code> ➔ 1초간 이동 후 정지<br>
-              • ⚠️ 뒤에 <code>wheel(0,0)</code> 정지 블록을 넣지 않으면 로봇이 멈추지 않고 계속 달립니다!
+              <span class="ko-txt">• <code>wheel(5, 5); delay(1000); wheel(0, 0);</code> ➔ 1초간 이동 후 정지<br>• ⚠️ 뒤에 <code>wheel(0,0)</code> 정지 블록을 넣지 않으면 로봇이 멈추지 않고 계속 달립니다!</span>
+              <span class="mn-txt">• <code>wheel(5, 5); delay(1000); wheel(0, 0);</code> ➔ 1 сек явж зогсоно<br>• ⚠️ Ард нь <code>wheel(0,0)</code> зогсоох блок тавихгүй бол зогсолтгүй гүйнэ!</span>
             </div>
+            <div class="mn-sub">🇲🇳 wheel() блок нь зогсоох блок залгах хүртэл тасралтгүй явдаг үндсэн мотор блок.</div>
           </div>
 
           <div class="entry-block-card">
-            <div style="font-size:0.8rem; font-weight:800; color:var(--purple); text-transform:uppercase;">동작 시간 제어</div>
-            <div class="block-syntax-pill delay">delay( ms 밀리초 );</div>
+            <div style="font-size:0.8rem; font-weight:800; color:var(--purple); text-transform:uppercase;">
+              <span class="ko-txt">동작 시간 제어</span>
+              <span class="mn-txt">Хугацаа тохируулах блок</span>
+            </div>
+            <div class="block-syntax-pill delay"><span class="ko-txt">delay( ms 밀리초 );</span><span class="mn-txt">delay( ms миллисекунд );</span></div>
             <p style="font-size:0.88rem; color:var(--gray-700); line-height:1.6;">
-              설정된 시간(1000 = 1초)만큼 다음 실행을 잠시 멈춥니다. 주행 경로를 맞추거나 회전 각도를 정밀하게 제어할 때 사용됩니다.
+              <span class="ko-txt">설정된 시간(1000 = 1초)만큼 다음 실행을 잠시 멈춥니다. 주행 경로를 맞추거나 회전 각도를 정밀하게 제어할 때 사용됩니다.</span>
+              <span class="mn-txt">Тохируулсан хугацаанд (1000 = 1 сек) дараагийн үйлдлийг түр хүлээнэ. Зам тохируулах, эргэлтийн өнцгийг нарийн удирдахад ашиглана.</span>
             </p>
             <div style="background:#f1f5f9; padding:10px 12px; border-radius:6px; margin:10px 0; font-size:0.82rem;">
-              • 🏎️ <strong>관성 꿀팁:</strong> 직진 후 회전하기 전 짧게 <code>delay(200)</code>로 멈춰 서면 바퀴의 미끄러짐과 관성을 억제해 회전 정확도가 크게 향상됩니다!
+              <span class="ko-txt">• 🏎️ <strong>관성 꿀팁:</strong> 직진 후 회전하기 전 짧게 <code>delay(200)</code>로 멈춰 서면 바퀴의 미끄러짐과 관성을 억제해 회전 정확도가 크게 향상됩니다!</span>
+              <span class="mn-txt">• 🏎️ <strong>Инерцийн зөвлөгөө:</strong> Чигээрээ яваад эргэхээс өмнө <code>delay(200)</code> зогсолт хийвэл гулсалт буурч эргэлт маш нарийн болно!</span>
             </div>
+            <div class="mn-sub">🇲🇳 delay(ms) блок нь дараагийн код ажиллах хүртэл түр хүлээлгэх хугацаа (1000ms = 1 секунд).</div>
           </div>
 
           <div class="entry-block-card">
-            <div style="font-size:0.8rem; font-weight:800; color:var(--purple); text-transform:uppercase;">일체형 거리 이동 블록</div>
-            <div class="block-syntax-pill motor">motor( 왼쪽 속도 , 오른쪽 속도 , 동작시간 ms );</div>
+            <div style="font-size:0.8rem; font-weight:800; color:var(--purple); text-transform:uppercase;">
+              <span class="ko-txt">일체형 거리 이동 블록</span>
+              <span class="mn-txt">Нэгдсэн зайн хөдөлгөөний блок</span>
+            </div>
+            <div class="block-syntax-pill motor"><span class="ko-txt">motor( 왼쪽 속도 , 오른쪽 속도 , 동작시간 ms );</span><span class="mn-txt">motor( Зүүн хурд , Баруун хурд , Хугацаа ms );</span></div>
             <p style="font-size:0.88rem; color:var(--gray-700); line-height:1.6;">
-              <code>wheel + delay</code>를 하나로 합쳐 설정한 시간 동안 모터를 움직이는 편리한 블록입니다. (최대 동작 시간: 1000ms = 1초)
+              <span class="ko-txt"><code>wheel + delay</code>를 하나로 합쳐 설정한 시간 동안 모터를 움직이는 편리한 블록입니다. (최대 동작 시간: 1000ms = 1초)</span>
+              <span class="mn-txt"><code>wheel + delay</code>-г нэгтгэн заасан хугацаанд моторыг хөдөлгөх хялбар блок юм. (Хамгийн их хугацаа: 1000ms = 1 сек)</span>
             </p>
             <div style="background:#f1f5f9; padding:10px 12px; border-radius:6px; margin:10px 0; font-size:0.82rem;">
-              • <strong>편차 보정 팁:</strong> 오른쪽으로 휘면 왼쪽 모터 속도를 1~2 낮춥니다. (예: <code>motor(17, 19, 500)</code>)<br>
-              • 정밀 직선 주행을 원할 때는 <code>ffmotor</code> 미세 보정 함수 블록을 사용합니다.
+              <span class="ko-txt">• <strong>편차 보정 팁:</strong> 오른쪽으로 휘면 왼쪽 모터 속도를 1~2 낮춥니다. (예: <code>motor(17, 19, 500)</code>)<br>• 정밀 직선 주행을 원할 때는 <code>ffmotor</code> 미세 보정 함수 블록을 사용합니다.</span>
+              <span class="mn-txt">• <strong>Хазайлтын засвар:</strong> Баруун тийш хазайвал зүүн моторын хурдыг 1~2-оор бууруулна. (ж нь: <code>motor(17, 19, 500)</code>)<br>• Шулуун явахын тулд <code>ffmotor</code> нарийн тохируулгат функцийг ашиглана.</span>
             </div>
+            <div class="mn-sub">🇲🇳 motor() блок нь хурд болон хугацааг нэг дор өгдөг цогц хөдөлгөөний блок.</div>
           </div>
         </div>
 
         <!-- 4. 네오픽셀 RGB LED 제어 -->
         <h3 style="font-size: 1.2rem; font-weight:800; color:var(--gray-900); margin: 36px 0 14px; display:flex; align-items:center; gap:8px;">
-          <span>💡</span> 3. 네오픽셀 RGB LED 제어 (눈 색상 및 조명 연출)
+          <span>💡</span> 
+          <span class="ko-txt">3. 네오픽셀 RGB LED 제어 (눈 색상 및 조명 연출)</span>
+          <span class="mn-txt">3. NeoPixel RGB LED удирдлага (Нүдний өнгө ба гэрэлтүүлэг)</span>
         </h3>
+        <div class="mn-sub">🇲🇳 NeoPixel RGB LED өнгө тохируулах led(R, G, B, OUT1) блок ба гэрлийн 3 өнгийн хүснэгт</div>
 
         <div class="entry-block-doc-grid">
           <div class="entry-block-card led-card">
-            <div style="font-size:0.8rem; font-weight:800; color:#db2777; text-transform:uppercase;">RGB LED 기본 블록</div>
-            <div class="block-syntax-pill led">led( R밝기 , G밝기 , B밝기 , LED번호 );</div>
+            <div style="font-size:0.8rem; font-weight:800; color:#db2777; text-transform:uppercase;">
+              <span class="ko-txt">RGB LED 기본 블록</span>
+              <span class="mn-txt">RGB LED үндсэн блок</span>
+            </div>
+            <div class="block-syntax-pill led">
+              <span class="ko-txt">led( R밝기 , G밝기 , B밝기 , LED번호 );</span>
+              <span class="mn-txt">led( Rтод , Gтод , Bтод , LEDдугаар );</span>
+            </div>
             <p style="font-size:0.88rem; color:var(--gray-700); line-height:1.6;">
-              루미의 눈에 내장된 풀컬러 네오픽셀 LED의 빛을 제어합니다.
+              <span class="ko-txt">루미의 눈에 내장된 풀컬러 네오픽셀 LED의 빛을 제어합니다.</span>
+              <span class="mn-txt">Румигийн нүдэнд суурилуулсан бүрэн өнгөт NeoPixel LED-ийн гэрлийг удирдана.</span>
             </p>
             <div style="background:#fdf2f8; padding:10px 12px; border-radius:6px; margin:10px 0; font-size:0.82rem; color:#9d174d;">
-              • <strong>밝기 범위:</strong> 0 ~ 255 (0: 끄기, 255: 최대 밝기)<br>
-              • <strong>LED 번호:</strong> <code>OUT1</code> ➔ 내장 눈 LED (OUT2, OUT3은 향후 확장 포트)
+              <span class="ko-txt">
+                • <strong>밝기 범위:</strong> 0 ~ 255 (0: 끄기, 255: 최대 밝기)<br>
+                • <strong>LED 번호:</strong> <code>OUT1</code> ➔ 내장 눈 LED (OUT2, OUT3은 향후 확장 포트)
+              </span>
+              <span class="mn-txt">
+                • <strong>Тод байдлын хязгаар:</strong> 0 ~ 255 (0: унтраах, 255: дээд тод)<br>
+                • <strong>LED дугаар:</strong> <code>OUT1</code> ➔ Нүдний суурилуулсан LED (OUT2, OUT3 нь өргөтгөл)
+              </span>
             </div>
             
-            <div style="font-weight:700; font-size:0.85rem; color:#9d174d; margin-top:10px;">🎨 빛의 삼원색 혼합 기준표</div>
+            <div style="font-weight:700; font-size:0.85rem; color:#9d174d; margin-top:10px;">
+              <span class="ko-txt">🎨 빛의 삼원색 혼합 기준표</span>
+              <span class="mn-txt">🎨 Гэрлийн 3 үндсэн өнгө ба холимгийн хүснэгт</span>
+            </div>
             <table class="color-palette-table">
               <thead>
-                <tr><th>색상명</th><th>HEX 코드</th><th>RGB 값 (R, G, B)</th></tr>
+                <tr>
+                  <th><span class="ko-txt">색상명</span><span class="mn-txt">Өнгө</span></th>
+                  <th>HEX</th>
+                  <th>RGB (R, G, B)</th>
+                </tr>
               </thead>
               <tbody>
-                <tr><td><span class="color-chip" style="background:#ffffff;"></span> White (흰색)</td><td>#FFFFFF</td><td>(255, 255, 255)</td></tr>
-                <tr><td><span class="color-chip" style="background:#ff0000;"></span> Red (빨간색)</td><td>#FF0000</td><td>(255, 0, 0)</td></tr>
-                <tr><td><span class="color-chip" style="background:#00ff00;"></span> Lime (초록색)</td><td>#00FF00</td><td>(0, 255, 0)</td></tr>
-                <tr><td><span class="color-chip" style="background:#0000ff;"></span> Blue (파란색)</td><td>#0000FF</td><td>(0, 0, 255)</td></tr>
-                <tr><td><span class="color-chip" style="background:#ffff00;"></span> Yellow (노란색)</td><td>#FFFF00</td><td>(255, 255, 0)</td></tr>
-                <tr><td><span class="color-chip" style="background:#00ffff;"></span> Cyan (하늘색)</td><td>#00FFFF</td><td>(0, 255, 255)</td></tr>
-                <tr><td><span class="color-chip" style="background:#ff00ff;"></span> Magenta (자주색)</td><td>#FF00FF</td><td>(255, 0, 255)</td></tr>
-                <tr><td><span class="color-chip" style="background:#d2691e;"></span> Chocolate (갈색)</td><td>#D2691E</td><td>(210, 105, 30)</td></tr>
+                <tr><td><span class="color-chip" style="background:#ffffff;"></span> White (<span class="ko-txt">흰색</span><span class="mn-txt">Цагаан</span>)</td><td>#FFFFFF</td><td>(255, 255, 255)</td></tr>
+                <tr><td><span class="color-chip" style="background:#ff0000;"></span> Red (<span class="ko-txt">빨간색</span><span class="mn-txt">Улаан</span>)</td><td>#FF0000</td><td>(255, 0, 0)</td></tr>
+                <tr><td><span class="color-chip" style="background:#00ff00;"></span> Lime (<span class="ko-txt">초록색</span><span class="mn-txt">Ногоон</span>)</td><td>#00FF00</td><td>(0, 255, 0)</td></tr>
+                <tr><td><span class="color-chip" style="background:#0000ff;"></span> Blue (<span class="ko-txt">파란색</span><span class="mn-txt">Цэнхэр</span>)</td><td>#0000FF</td><td>(0, 0, 255)</td></tr>
+                <tr><td><span class="color-chip" style="background:#ffff00;"></span> Yellow (<span class="ko-txt">노란색</span><span class="mn-txt">Шар</span>)</td><td>#FFFF00</td><td>(255, 255, 0)</td></tr>
+                <tr><td><span class="color-chip" style="background:#00ffff;"></span> Cyan (<span class="ko-txt">하늘색</span><span class="mn-txt">Цайвар цэнхэр</span>)</td><td>#00FFFF</td><td>(0, 255, 255)</td></tr>
+                <tr><td><span class="color-chip" style="background:#ff00ff;"></span> Magenta (<span class="ko-txt">자주색</span><span class="mn-txt">Ягаан</span>)</td><td>#FF00FF</td><td>(255, 0, 255)</td></tr>
+                <tr><td><span class="color-chip" style="background:#d2691e;"></span> Chocolate (<span class="ko-txt">갈색</span><span class="mn-txt">Хүрэн</span>)</td><td>#D2691E</td><td>(210, 105, 30)</td></tr>
               </tbody>
             </table>
+            <div class="mn-sub">🇲🇳 R, G, B утгуудыг 0-ээс 255 хооронд хольж олон өнгө гаргана.</div>
           </div>
 
           <div class="entry-block-card led-card">
-            <div style="font-size:0.8rem; font-weight:800; color:#db2777; text-transform:uppercase;">실전 LED 미션 & 손쉬운 함수</div>
+            <div style="font-size:0.8rem; font-weight:800; color:#db2777; text-transform:uppercase;">
+              <span class="ko-txt">실전 LED 미션 & 손쉬운 함수</span>
+              <span class="mn-txt">Бодит LED даалгавар & Хялбар функц</span>
+            </div>
             
             <div style="background:#fdf2f8; border:1px solid #fbcfe8; border-radius:6px; padding:12px; margin-bottom:12px;">
-              <h5 style="color:#9d174d; font-size:0.88rem; margin-bottom:4px;">🔹 파란색(Blue) LED 깜빡이기 코드 예제</h5>
+              <h5 style="color:#9d174d; font-size:0.88rem; margin-bottom:4px;">
+                <span class="ko-txt">🔹 파란색(Blue) LED 깜빡이기 코드 예제</span>
+                <span class="mn-txt">🔹 Цэнхэр (Blue) LED анивчуулах кодын жишээ</span>
+              </h5>
               <div style="font-family:monospace; font-size:0.82rem; color:#831843;">
-                [계속 반복하기]<br>
-                &nbsp;&nbsp;<code>led(0, 0, 255, OUT1);</code> (파랑 ON)<br>
-                &nbsp;&nbsp;[1 초 기다리기]<br>
-                &nbsp;&nbsp;<code>led(0, 0, 0, OUT1);</code> (OFF)<br>
-                &nbsp;&nbsp;[1 초 기다리기]
+                <div><span class="ko-txt">[계속 반복하기]</span><span class="mn-txt">[Үргэлж давтах]</span></div>
+                <div>&nbsp;&nbsp;<code>led(0, 0, 255, OUT1);</code> <span class="ko-txt">(파랑 ON)</span><span class="mn-txt">(Цэнхэр асаах)</span></div>
+                <div>&nbsp;&nbsp;<span class="ko-txt">[1 초 기다리기]</span><span class="mn-txt">[1 сек хүлээх]</span></div>
+                <div>&nbsp;&nbsp;<code>led(0, 0, 0, OUT1);</code> <span class="ko-txt">(OFF)</span><span class="mn-txt">(Унтраах)</span></div>
+                <div>&nbsp;&nbsp;<span class="ko-txt">[1 초 기다리기]</span><span class="mn-txt">[1 сек хүлээх]</span></div>
               </div>
             </div>
 
             <div style="background:#f8fafc; border:1px solid var(--gray-200); border-radius:6px; padding:12px; margin-bottom:12px;">
-              <h5 style="color:var(--gray-800); font-size:0.88rem; margin-bottom:4px;">🔹 0.3초 간격 무지개 순차 변경 미션</h5>
+              <h5 style="color:var(--gray-800); font-size:0.88rem; margin-bottom:4px;">
+                <span class="ko-txt">🔹 0.3초 간격 무지개 순차 변경 미션</span>
+                <span class="mn-txt">🔹 0.3 сек зайтай солонгын өнгө солих даалгавар</span>
+              </h5>
               <p style="font-size:0.82rem; color:var(--gray-600);">
-                <code>RED → ORANGE → YELLOW → GREEN → BLUE → CYAN → MAGENTA → WHITE</code> 순으로 0.3초 간격 변경!
+                <code>RED → ORANGE → YELLOW → GREEN → BLUE → CYAN → MAGENTA → WHITE</code>
+                <span class="ko-txt">순으로 0.3초 간격 변경!</span>
+                <span class="mn-txt">дарааллаар 0.3 сек зайтай солигдоно!</span>
               </p>
             </div>
 
             <div style="background:#ede9fe; border:1px solid #ddd6fe; border-radius:6px; padding:12px;">
-              <h5 style="color:#6d28d9; font-size:0.88rem; margin-bottom:4px;">🌟 손쉬운 한글 LED 제어 함수 (씨앗 프로그램)</h5>
+              <h5 style="color:#6d28d9; font-size:0.88rem; margin-bottom:4px;">
+                <span class="ko-txt">🌟 손쉬운 LED 제어 블록</span>
+                <span class="mn-txt">🌟 Хялбар сонголттой LED блок</span>
+              </h5>
               <p style="font-size:0.82rem; color:#5b21b6;">
-                복잡한 숫자를 외우지 않고 <strong>[RGB LED 1 색상 빨,주,노,초,파,남,보,흰,끄기]</strong> 블록으로 한글만 선택하여 즉시 제어할 수 있습니다.
+                <span class="ko-txt">복잡한 숫자를 외우지 않고 <strong>[RGB LED 1 색상 빨,주,노,초,파,남,보,흰,끄기]</strong> 드롭다운 블록으로 즉시 제어할 수 있습니다.</span>
+                <span class="mn-txt">Тоо цээжлэхгүйгээр <strong>[RGB LED 1 өнгө: Улаан, Шар, Ногоон, Цэнхэр, Цагаан, Унтраах]</strong> цэснээс сонгоод шууд удирдаж болно.</span>
               </p>
             </div>
+            <div class="mn-sub">🇲🇳 0.3 сек тутамд LED өнгө солих ба цэснээс өнгө сонгох хялбар блок</div>
           </div>
         </div>
 
         <!-- 5. 바닥 적외선 센서 라인트레이서 -->
         <h3 style="font-size: 1.2rem; font-weight:800; color:var(--gray-900); margin: 36px 0 14px; display:flex; align-items:center; gap:8px;">
-          <span>🛣️</span> 4. 바닥 센서 라인트레이서 (line / lt / rt 블록 정밀 해부)
+          <span>🛣️</span> 
+          <span class="ko-txt">4. 바닥 센서 라인트레이서 (line / lt / rt 블록 정밀 해부)</span>
+          <span class="mn-txt">4. Замын мэдрэгч Шугам дагагч (line / lt / rt блокын дэлгэрэнгүй)</span>
         </h3>
+        <div class="mn-sub">🇲🇳 Шугам дагах, уулзвараар эргэх line, lt, rt блокуудын дэлгэрэнгүй тайлбар</div>
 
         <div style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:var(--radius-sm); padding:14px 18px; margin-bottom:18px;">
           <h4 style="color:#166534; font-size:0.95rem; margin-bottom:4px; display:flex; align-items:center; gap:6px;">
-            <span>🎯</span> 라인트레이서 주행 전 필수: 오토센싱(Auto-Sensing 자동 보정)
+            <span>🎯</span> 
+            <span class="ko-txt">라인트레이서 주행 전 필수: 오토센싱(Auto-Sensing 자동 보정)</span>
+            <span class="mn-txt">Шугам дагагч явахаас өмнө: Auto-Sensing (Мэдрэгчийг автоматаар тохируулах)</span>
           </h4>
           <p style="font-size:0.86rem; color:#15803d; line-height:1.5;">
-            바닥 센서는 검은색과 흰색의 빛 반사율 차이를 감지합니다. 교실 바닥 재질과 조명 밝기에 따라 감도가 달라지므로, <strong>주행 전 오토센싱을 먼저 실행</strong>하여 센서 기준값을 최적화해야 로봇이 탈선하지 않습니다.
+            <span class="ko-txt">바닥 센서는 검은색과 흰색의 빛 반사율 차이를 감지합니다. 교실 바닥 재질과 조명 밝기에 따라 감도가 달라지므로, <strong>주행 전 오토센싱을 먼저 실행</strong>하여 센서 기준값을 최적화해야 로봇이 탈선하지 않습니다.</span>
+            <span class="mn-txt">Замын мэдрэгч нь хар ба цагаан өнгөнөөс ойх гэрлийг мэдэрдэг. Ангийн шал ба гэрэлтүүлгээс шалтгаалан мэдрэмж өөрчлөгддөг тул <strong>явуулахаас өмнө Auto-Sensing заавал хийж</strong> робот шугамаас гарахаас сэргийлнэ.</span>
           </p>
+          <div class="mn-sub">🇲🇳 Шугам дагагч ажиллуулахаас өмнө шалны өнгөнд тааруулан Auto-Sensing хийх ёстой.</div>
         </div>
 
         <div class="entry-block-doc-grid">
           
           <div class="entry-block-card line-card">
-            <div style="font-size:0.8rem; font-weight:800; color:var(--teal); text-transform:uppercase;">교차로 감지 직진 블록</div>
-            <div class="block-syntax-pill line">line( 교차로 형태 , 직진 속도 , 추가 직진 시간 );</div>
+            <div style="font-size:0.8rem; font-weight:800; color:var(--teal); text-transform:uppercase;">
+              <span class="ko-txt">교차로 감지 직진 블록</span>
+              <span class="mn-txt">Уулзвар мэдрэх чигээрээ явах блок</span>
+            </div>
+            <div class="block-syntax-pill line">
+              <span class="ko-txt">line( 교차로 형태 , 직진 속도 , 추가 직진 시간 );</span>
+              <span class="mn-txt">line( Уулзварын хэлбэр , Хурд , Нэмэлт явах хугацаа );</span>
+            </div>
             <p style="font-size:0.88rem; color:var(--gray-700); line-height:1.6;">
-              선을 따라 달리다가 지정한 모양의 교차로를 만나면 반응하는 자율주행 핵심 블록입니다.
+              <span class="ko-txt">선을 따라 달리다가 지정한 모양의 교차로를 만나면 반응하는 자율주행 핵심 블록입니다.</span>
+              <span class="mn-txt">Шугам даган явж байгаад заасан хэлбэрийн уулзвартай таармагц хариу үйлдэл үзүүлэх жолоодлогын гол блок юм.</span>
             </p>
             <div style="background:#f0fdfa; padding:10px 12px; border-radius:6px; margin:10px 0; font-size:0.82rem; color:#115e59;">
-              • <strong>교차로 형태:</strong> <code>T1</code> (십자 ➕ 및 삼거리 ┳), <code>L1</code> (좌측 갈림길 ㅓ), <code>R1</code> (우측 갈림길 ㅏ)<br>
-              • <strong>직진 속도:</strong> 0 ~ 20 (기본 주행 속도)<br>
-              • <strong>교차로 감지 후 추가 직진 시간:</strong> 교차로 검은 라인을 통과하기 위한 시간 (0이면 감지 즉시 정지)
+              <span class="ko-txt">
+                • <strong>교차로 형태:</strong> <code>T1</code> (십자 ➕ 및 삼거리 ┳), <code>L1</code> (좌측 갈림길 ㅓ), <code>R1</code> (우측 갈림길 ㅏ)<br>
+                • <strong>직진 속도:</strong> 0 ~ 20 (기본 주행 속도)<br>
+                • <strong>교차로 감지 후 추가 직진 시간:</strong> 교차로 검은 라인을 통과하기 위한 시간 (0이면 감지 즉시 정지)
+              </span>
+              <span class="mn-txt">
+                • <strong>Уулзварын хэлбэр:</strong> <code>T1</code> (дөрвөн зам ➕ ба гурван зам ┳), <code>L1</code> (зүүн салаа ㅓ), <code>R1</code> (баруун салаа ㅏ)<br>
+                • <strong>Хурд:</strong> 0 ~ 20 (Үндсэн явах хурд)<br>
+                • <strong>Нэмэлт явах хугацаа:</strong> Хар шугамыг бүрэн давах хугацаа (0 бол мэдрээд шууд зогсоно)
+              </span>
             </div>
 
             <div style="background:#fff; border:1px solid #99f6e4; border-radius:6px; padding:10px; margin-top:8px;">
-              <div style="font-weight:800; font-size:0.82rem; color:#0f766e;">💡 추가 직진 시간이 왜 1 이상(50~150ms)이어야 할까요?</div>
+              <div style="font-weight:800; font-size:0.82rem; color:#0f766e;">
+                <span class="ko-txt">💡 추가 직진 시간이 왜 1 이상(50~150ms)이어야 할까요?</span>
+                <span class="mn-txt">💡 Нэмэлт явах хугацаа яагаад 1-ээс их (50~150ms) байх ёстой вэ?</span>
+              </div>
               <p style="font-size:0.8rem; color:#475569; margin-top:4px; line-height:1.45;">
-                추가 직진 시간이 0이면 교차로 검은 선 위에서 즉시 멈춥니다. 그러면 다음 <code>line</code> 블록이 실행되자마자 "어? 이미 교차로네!" 하고 1칸만 가고 끝나버립니다.<br>
-                따라서 <strong>교차로 검은 선이 끝나는 구간까지 살짝 더 직진(50~150ms)</strong> 시켜야 흰색 바닥에 정렬되어 다음 주행이나 회전이 100% 안정적으로 이어집니다!
+                <span class="ko-txt">
+                  추가 직진 시간이 0이면 교차로 검은 선 위에서 즉시 멈춥니다. 그러면 다음 <code>line</code> 블록이 실행되자마자 "어? 이미 교차로네!" 하고 1칸만 가고 끝나버립니다.<br>
+                  따라서 <strong>교차로 검은 선이 끝나는 구간까지 살짝 더 직진(50~150ms)</strong> 시켜야 흰색 바닥에 정렬되어 다음 주행이나 회전이 100% 안정적으로 이어집니다!
+                </span>
+                <span class="mn-txt">
+                  Нэмэлт явах хугацаа 0 байвал уулзварын хар шугам дээр шууд зогсоно. Ингэвэл дараагийн <code>line</code> блок ажилламагц "Уулзвар дээр байна" гэж үзээд шууд зогсоно.<br>
+                  Тиймээс <strong>хар шугамыг бүрэн давтал бага зэрэг нэмж чигээрээ явуулж (50~150ms)</strong> цагаан шал дээр байрлуулснаар дараагийн хөдөлгөөн 100% найдвартай болно!
+                </span>
               </p>
             </div>
+            <div class="mn-sub">🇲🇳 line(хэлбэр, хурд, нэмэлт_хугацаа) нь уулзварыг таньж чигээрээ явах блок юм.</div>
           </div>
 
           <div class="entry-block-card line-card">
-            <div style="font-size:0.8rem; font-weight:800; color:var(--teal); text-transform:uppercase;">교차로 회전 블록</div>
-            <div class="block-syntax-pill line">lt( 속도 , 초기 모터 회전 시간 ); / rt( 속도 , 초기 모터 회전 시간 );</div>
+            <div style="font-size:0.8rem; font-weight:800; color:var(--teal); text-transform:uppercase;">
+              <span class="ko-txt">교차로 회전 블록</span>
+              <span class="mn-txt">Уулзвараар эргэх блок</span>
+            </div>
+            <div class="block-syntax-pill line">
+              <span class="ko-txt">lt( 속도 , 초기 모터 회전 시간 ); / rt( 속도 , 초기 모터 회전 시간 );</span>
+              <span class="mn-txt">lt( Хурд , Эхний эргэх хугацаа ); / rt( Хурд , Эхний эргэх хугацаа );</span>
+            </div>
             <p style="font-size:0.88rem; color:var(--gray-700); line-height:1.6;">
-              교차로에서 좌회전(lt) 또는 우회전(rt)을 수행하는 제자리 차동 회전 블록입니다.
+              <span class="ko-txt">교차로에서 좌회전(lt) 또는 우회전(rt)을 수행하는 제자리 차동 회전 블록입니다.</span>
+              <span class="mn-txt">Уулзвар дээр зүүн тийш (lt) эсвэл баруун тийш (rt) байрандаа эргэх блок юм.</span>
             </p>
             <div style="background:#f0fdfa; padding:10px 12px; border-radius:6px; margin:10px 0; font-size:0.82rem; color:#115e59;">
-              • <strong>모터 속도:</strong> 0 ~ 20<br>
-              • <strong>초기 모터 회전 시간:</strong> 회전 시작 시 센서 감지를 무시하고 강제로 회전하는 시간 (예: 100ms)<br>
-              • <em>(참고: 블록 이름의 lt1, rt8 등 뒤의 숫자는 엔트리 버전상의 표기이며 루미 제어 기능은 동일합니다.)</em>
+              <span class="ko-txt">
+                • <strong>모터 속도:</strong> 0 ~ 20<br>
+                • <strong>초기 모터 회전 시간:</strong> 회전 시작 시 센서 감지를 무시하고 강제로 회전하는 시간 (예: 100ms)<br>
+                • <em>(참고: 블록 이름의 lt1, rt8 등 뒤의 숫자는 엔트리 버전상의 표기이며 루미 제어 기능은 동일합니다.)</em>
+              </span>
+              <span class="mn-txt">
+                • <strong>Моторын хурд:</strong> 0 ~ 20<br>
+                • <strong>Эхний эргэх хугацаа:</strong> Эргэлт эхлэх үед мэдрэгчийг алгасан хүчээр эргэх хугацаа (ж нь: 100ms)<br>
+                • <em>(Тайлбар: lt1, rt8 зэрэг ард нь байгаа тоо нь Entry-ийн хувилбарын тэмдэглэгээ бөгөөд адилхан ажиллана.)</em>
+              </span>
             </div>
 
             <div style="background:#fff; border:1px solid #99f6e4; border-radius:6px; padding:10px; margin-top:8px;">
-              <div style="font-weight:800; font-size:0.82rem; color:#0f766e;">💡 초기 모터 회전 시간이 필요한 이유</div>
+              <div style="font-weight:800; font-size:0.82rem; color:#0f766e;">
+                <span class="ko-txt">💡 초기 모터 회전 시간이 필요한 이유</span>
+                <span class="mn-txt">💡 Эхний эргэх хугацаа шаардлагатай шалтгаан</span>
+              </div>
               <p style="font-size:0.8rem; color:#475569; margin-top:4px; line-height:1.45;">
-                로봇 센서가 이미 라인 근처에 있을 때 회전을 시작하면 센서가 즉시 검은색을 감지하여 <strong>충분히 회전하지 못하고 멈추는 오류</strong>가 발생합니다. 초기 시간(예: 100ms) 동안 센서를 무시하고 돌린 뒤, 그 후 센서로 검은색 감지 ➔ 흰색 감지 시 딱 멈추게 설계되었습니다.<br>
-                • <strong>좌회전 정지 기준:</strong> 왼쪽 센서<br>
-                • <strong>우회전 정지 기준:</strong> 오른쪽 센서
+                <span class="ko-txt">
+                  로봇 센서가 이미 라인 근처에 있을 때 회전을 시작하면 센서가 즉시 검은색을 감지하여 <strong>충분히 회전하지 못하고 멈추는 오류</strong>가 발생합니다. 초기 시간(예: 100ms) 동안 센서를 무시하고 돌린 뒤, 그 후 센서로 검은색 감지 ➔ 흰색 감지 시 딱 멈추게 설계되었습니다.<br>
+                  • <strong>좌회전 정지 기준:</strong> 왼쪽 센서<br>
+                  • <strong>우회전 정지 기준:</strong> 오른쪽 센서
+                </span>
+                <span class="mn-txt">
+                  Мэдрэгч шугам дээр байх үед эргэж эхэлбэл хар шугамыг шууд мэдрээд <strong>гүйцэд эргэлгүй зогсох алдаа</strong> гардаг. Иймд эхний хугацаанд (100ms) мэдрэгчийг алгасан эргүүлээд, дараа нь мэдрэгчээр хар өнгө ➔ цагаан өнгө мэдрэх үед яг зөв зогсохоор бүтээгдсэн.<br>
+                  • <strong>Зүүн эргэлтийн зогсох жишиг:</strong> Зүүн мэдрэгч<br>
+                  • <strong>Баруун эргэлтийн зогсох жишиг:</strong> Баруун мэдрэгч
+                </span>
               </p>
             </div>
+            <div class="mn-sub">🇲🇳 lt(), rt() нь эргэлтийн эхний хугацааг тохируулж 90 градус нарийн эргэх боломж олгодог.</div>
           </div>
 
         </div>
 
         <!-- 6. 실전 격자 라인트레이서 미션 1~4 -->
         <h3 style="font-size: 1.2rem; font-weight:800; color:var(--gray-900); margin: 36px 0 14px; display:flex; align-items:center; gap:8px;">
-          <span>🏁</span> 5. 실전 격자 라인트레이서 미션 (미션 1~4 & 융합 과제)
+          <span>🏁</span> 
+          <span class="ko-txt">5. 실전 격자 라인트레이서 미션 (미션 1~4 & 융합 과제)</span>
+          <span class="mn-txt">5. Бодит тор замын шугам дагагч даалгавар (Даалгавар 1~4 & Нэгдсэн төсөл)</span>
         </h3>
+        <div class="mn-sub">🇲🇳 Тор зам дээр уулзвараар чиглэл сонгон барианд хүрэх практик даалгавар</div>
 
         <div class="mission-interactive-panel">
           <div>
             <h4 style="font-size:1.05rem; font-weight:800; color:var(--gray-900); margin-bottom:4px;">
-              [격자 미션] 교차로 맵에서 직진과 회전을 조합하여 목적지 완주하기!
+              <span class="ko-txt">[격자 미션] 교차로 맵에서 직진과 회전을 조합하여 목적지 완주하기!</span>
+              <span class="mn-txt">[Тор замын даалгавар] Уулзварын зураг дээр чигээрээ явах ба эргэлтийг хослуулан барианд хүрэх!</span>
             </h4>
             <p style="font-size:0.88rem; color:var(--gray-600);">
-              교차로마다 <code>line(T1, 20, 80)</code>과 <code>lt1(20, 100)</code> 또는 <code>rt8(20, 100)</code>을 조립하여 정밀 자율주행 경로를 완성합니다.
+              <span class="ko-txt">교차로마다 <code>line(T1, 20, 80)</code>과 <code>lt1(20, 100)</code> 또는 <code>rt8(20, 100)</code>을 조립하여 정밀 자율주행 경로를 완성합니다.</span>
+              <span class="mn-txt">Уулзвар бүрт <code>line(T1, 20, 80)</code> ба <code>lt1(20, 100)</code>, <code>rt8(20, 100)</code> блокуудыг холбон нарийн автомат жолоодлогын замыг бүтээнэ.</span>
             </p>
+            <div class="mn-sub">🇲🇳 006 Тор замын даалгавар: Улаан сумын дагуу чиглэлээ зөв тохируулан явах кодын зураглал</div>
           </div>
 
-          <div class="line-grid-visual">
-            <div class="line-cross-cell">┼</div>
-            <div class="line-cross-cell">┼</div>
-            <div class="line-cross-cell">┼</div>
-            <div class="line-cross-cell" style="background:#fee2e2; color:#b91c1c;">🏁 E</div>
-
-            <div class="line-cross-cell">┼</div>
-            <div class="line-cross-cell">┼</div>
-            <div class="line-cross-cell" style="background:#fef3c7; color:#b45309;">➔ 우회전</div>
-            <div class="line-cross-cell">┼</div>
-
-            <div class="line-cross-cell">┼</div>
-            <div class="line-cross-cell" style="background:#e0f2fe; color:#0369a1;">➔ 좌회전</div>
-            <div class="line-cross-cell">┼</div>
-            <div class="line-cross-cell">┼</div>
-
-            <div class="line-cross-cell" style="background:#dcfce7; color:#15803d;">🚩 S</div>
-            <div class="line-cross-cell">┼</div>
-            <div class="line-cross-cell">┼</div>
-            <div class="line-cross-cell">┼</div>
+          <!-- 요청하신 006 미션 이미지 파일 적용 -->
+          <div class="mission-map-visual" style="text-align:center; margin:16px auto; max-width:440px;">
+            <img src="image/006.PNG" alt="격자 교차로 미션 주행 경로 맵 (Mission 006)" style="width:100%; border-radius:8px; border:2px solid #cbd5e1; box-shadow:0 2px 8px rgba(0,0,0,0.08); background:white;">
+            <div style="font-size:0.82rem; color:var(--gray-500); margin-top:6px;">
+              <span class="ko-txt">🗺️ [006 미션 맵] 출발 ➔ 직진 2칸 ➔ 좌회전 ➔ 직진 1칸 ➔ 우회전 ➔ 직진 2칸 ➔ 우회전 ➔ 직진 2칸 ➔ 도착!</span>
+              <span class="mn-txt">🗺️ [006 Даалгаврын зураг] Эхлэл ➔ 2 уулзвар чигээрээ ➔ Зүүн ➔ 1 уулзвар чигээрээ ➔ Баруун ➔ 2 уулзвар чигээрээ ➔ Баруун ➔ 2 уулзвар чигээрээ ➔ Бариа!</span>
+            </div>
           </div>
 
           <div style="background:white; border:1px solid var(--gray-200); border-radius:var(--radius-sm); padding:18px;">
             <div style="font-size:0.9rem; font-weight:800; color:var(--purple); margin-bottom:8px;">
-              🎯 실전 융합 미션: 경로 주행 완주 후 도-레-미-파 연주 & 빨간 LED 켜기
+              <span class="ko-txt">🎯 006 실전 융합 미션: 맵 완주 후 도-레-미-파 연주 & 빨간 LED 켜기</span>
+              <span class="mn-txt">🎯 006 Бодит төсөлт даалгавар: Замыг дуусгаад До-Ре-Ми-Фа эгшиглүүлэн улаан LED асаах</span>
             </div>
+            <div class="mn-sub">🇲🇳 006 Тор замын дагуу явж барианд хүрээд хөгжим тоглох Entry код</div>
             <div style="font-family:monospace; font-size:0.86rem; color:#1e293b; display:flex; flex-direction:column; gap:6px;">
-              <div>1. [시작하기 버튼을 클릭했을 때]</div>
-              <div>2. <code>line( T1 , 20 , 80 );</code> ➔ (1칸 교차로 직진)</div>
-              <div>3. <code>line( T1 , 20 , 80 );</code> ➔ (2칸 교차로 직진)</div>
-              <div>4. <code>lt1( 20 , 100 );</code> ➔ (교차로에서 좌회전)</div>
-              <div>5. <code>line( T1 , 20 , 80 );</code> ➔ (목적지까지 직진)</div>
-              <div>6. <code>led( 255 , 0 , 0 , OUT1 );</code> ➔ <span style="color:#dc2626; font-weight:bold;">(도착 완료! 눈 LED를 빨간색으로 변경)</span></div>
-              <div>7. [스피커 도 ➔ 레 ➔ 미 ➔ 파 0.25초 순차 연주] ➔ <span style="color:#16a34a; font-weight:bold;">(승리의 멜로디 울리기!)</span></div>
+              <div>
+                <span class="ko-txt">1. [시작하기 버튼을 클릭했을 때]</span>
+                <span class="mn-txt">1. [Эхлүүлэх товчийг дарахад]</span>
+              </div>
+              <div>
+                <span class="ko-txt">2. <code>line( T1 , 20 , 80 );</code> ➔ (1번째 교차로 직진)</span>
+                <span class="mn-txt">2. <code>line( T1 , 20 , 80 );</code> ➔ (1-р уулзвараар чигээрээ)</span>
+              </div>
+              <div>
+                <span class="ko-txt">3. <code>line( T1 , 20 , 80 );</code> ➔ (2번째 교차로 직진)</span>
+                <span class="mn-txt">3. <code>line( T1 , 20 , 80 );</code> ➔ (2-р уулзвараар чигээрээ)</span>
+              </div>
+              <div>
+                <span class="ko-txt">4. <code>lt1( 20 , 100 );</code> ➔ (교차로에서 좌회전 90도)</span>
+                <span class="mn-txt">4. <code>lt1( 20 , 100 );</code> ➔ (Уулзвараар 90° зүүн тийш эргэх)</span>
+              </div>
+              <div>
+                <span class="ko-txt">5. <code>line( T1 , 20 , 80 );</code> ➔ (3번째 교차로 직진)</span>
+                <span class="mn-txt">5. <code>line( T1 , 20 , 80 );</code> ➔ (3-р уулзвараар чигээрээ)</span>
+              </div>
+              <div>
+                <span class="ko-txt">6. <code>rt8( 20 , 100 );</code> ➔ (교차로에서 우회전 90도)</span>
+                <span class="mn-txt">6. <code>rt8( 20 , 100 );</code> ➔ (Уулзвараар 90° баруун тийш эргэх)</span>
+              </div>
+              <div>
+                <span class="ko-txt">7. <code>line( T1 , 20 , 80 );</code> ➔ (4번째 교차로 직진)</span>
+                <span class="mn-txt">7. <code>line( T1 , 20 , 80 );</code> ➔ (4-р уулзвараар чигээрээ)</span>
+              </div>
+              <div>
+                <span class="ko-txt">8. <code>line( T1 , 20 , 80 );</code> ➔ (5번째 교차로 직진)</span>
+                <span class="mn-txt">8. <code>line( T1 , 20 , 80 );</code> ➔ (5-р уулзвараар чигээрээ)</span>
+              </div>
+              <div>
+                <span class="ko-txt">9. <code>rt8( 20 , 100 );</code> ➔ (교차로에서 우회전 90도)</span>
+                <span class="mn-txt">9. <code>rt8( 20 , 100 );</code> ➔ (Уулзвараар 90° баруун тийш эргэх)</span>
+              </div>
+              <div>
+                <span class="ko-txt">10. <code>line( T1 , 20 , 80 );</code> ➔ (6번째 교차로 직진)</span>
+                <span class="mn-txt">10. <code>line( T1 , 20 , 80 );</code> ➔ (6-р уулзвараар чигээрээ)</span>
+              </div>
+              <div>
+                <span class="ko-txt">11. <code>line( T1 , 20 , 80 );</code> ➔ (최종 목적지 교차로 도착)</span>
+                <span class="mn-txt">11. <code>line( T1 , 20 , 80 );</code> ➔ (Эцсийн барианд очиж хүрэх)</span>
+              </div>
+              <div>
+                <span class="ko-txt">12. <code>led( 255 , 0 , 0 , OUT1 );</code> ➔ <strong style="color:#dc2626;">(도착 완료! 눈 LED를 빨간색으로 변경)</strong></span>
+                <span class="mn-txt">12. <code>led( 255 , 0 , 0 , OUT1 );</code> ➔ <strong style="color:#dc2626;">(Барианд хүрлээ! Нүдний LED-г улаан болгох)</strong></span>
+              </div>
+              <div>
+                <span class="ko-txt">13. [스피커 도 ➔ 레 ➔ 미 ➔ 파 0.25초 순차 연주] ➔ <strong style="color:#16a34a;">(승리의 멜로디 울리기!)</strong></span>
+                <span class="mn-txt">13. [5-р октавын До ➔ Ре ➔ Ми ➔ Фа 0.25 сек эгшиглүүлэх] ➔ <strong style="color:#16a34a;">(Ялалтын аялгуу дуугаргах!)</strong></span>
+              </div>
             </div>
           </div>
         </div>
@@ -1935,8 +2327,15 @@
       <div class="section-card">
         <div class="section-header">
           <div>
-            <h2 class="section-title">🤖 루미 로봇 & 하드웨어 시스템</h2>
-            <p class="section-sub">유치원 유아의 안전부터 중학생의 코딩 확장성까지 고려된 일체형 피지컬 로봇</p>
+            <h2 class="section-title">
+              <span class="ko-txt">🤖 루미 로봇 & 하드웨어 시스템</span>
+              <span class="mn-txt">🤖 Руми робот ба техник хангамжийн систем</span>
+            </h2>
+            <p class="section-sub">
+              <span class="ko-txt">유치원 유아의 안전부터 중학생의 코딩 확장성까지 고려된 일체형 피지컬 로봇</span>
+              <span class="mn-txt">Цэцэрлэгийн хүүхдийн аюулгүй байдлаас дунд ангийнхны кодчлолын өргөтгөл хүртэл бүрэн шийдсэн робот</span>
+            </p>
+            <div class="mn-sub">🇲🇳 Руми роботын бүтээц, мэдрэгч, утасгүй удирдлага болон техникийн үзүүлэлтүүд</div>
           </div>
           <span class="badge" style="background:var(--primary); color:white;">Hardware Specs</span>
         </div>
@@ -1948,9 +2347,16 @@
             </div>
             <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
               <span style="font-size:1.3rem;">💡</span>
-              <h3 style="margin-bottom:0;">본체 2버튼 즉시 제어</h3>
+              <h3 style="margin-bottom:0;">
+                <span class="ko-txt">본체 2버튼 즉시 제어</span>
+                <span class="mn-txt">Төхөөрөмжийн 2 товчлуур</span>
+              </h3>
             </div>
-            <p><strong>SELECT</strong> 버튼으로 1~15번 내장 프로그램을 선택하고, <strong>START</strong> 버튼으로 즉시 실행합니다. 유치원 유아도 부팅 대기나 마우스 조작 없이 3초 만에 스스로 작동할 수 있습니다.</p>
+            <p>
+              <span class="ko-txt"><strong>SELECT</strong> 버튼으로 1~15번 내장 프로그램을 선택하고, <strong>START</strong> 버튼으로 즉시 실행합니다. 유치원 유아도 부팅 대기나 마우스 조작 없이 3초 만에 스스로 작동할 수 있습니다.</span>
+              <span class="mn-txt"><strong>SELECT</strong> товчоор 1~15 суулгагдсан горимыг сонгож, <strong>START</strong> товчоор шууд ажиллуулна. Бага насны хүүхэд ч 3 секундэд бие даан ажиллуулах боломжтой.</span>
+            </p>
+            <div class="mn-sub">🇲🇳 SELECT-ээр горимоо сонгоод START-аар шууд эхлүүлнэ.</div>
           </div>
 
           <div class="feature-card">
@@ -1959,9 +2365,16 @@
             </div>
             <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
               <span style="font-size:1.3rem;">👀</span>
-              <h3 style="margin-bottom:0;">전방 듀얼 적외선(IR) 센서</h3>
+              <h3 style="margin-bottom:0;">
+                <span class="ko-txt">전방 듀얼 적외선(IR) 센서</span>
+                <span class="mn-txt">Урд талын хос IR мэдрэгч</span>
+              </h3>
             </div>
-            <p>사선 배치된 2개의 적외선 센서로 거리(cm)를 정밀 측정합니다. 펫 산책(3cm 유지), 장애물 회피, 손짓 기어 변속, 테레민 연속 주파수 연주를 구현합니다.</p>
+            <p>
+              <span class="ko-txt">사선 배치된 2개의 적외선 센서로 거리를 감지합니다. 펫 산책(일정 간격 유지), 장애물 회피, 손짓 기어 변속, 테레민 연속 주파수 연주를 구현합니다.</span>
+              <span class="mn-txt">Урд талын 2 диагональ IR мэдрэгчээр зайн харьцааг мэдэрнэ. Тэжээвэр амьтан шиг дагах, саад тойрох, хурд тохируулах, теремин хөгжим тоглох үйлдлүүд хийнэ.</span>
+            </p>
+            <div class="mn-sub">🇲🇳 Урд талын 2 IR мэдрэгч нь саад мэдрэх, дагах үйлдлийг гүйцэтгэнэ.</div>
           </div>
 
           <div class="feature-card">
@@ -1970,9 +2383,16 @@
             </div>
             <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
               <span style="font-size:1.3rem;">🛣️</span>
-              <h3 style="margin-bottom:0;">바닥 듀얼 라인 센서</h3>
+              <h3 style="margin-bottom:0;">
+                <span class="ko-txt">바닥 듀얼 라인 센서</span>
+                <span class="mn-txt">Шалны хос шугам мэдрэгч</span>
+              </h3>
             </div>
-            <p>로봇 하단의 2개 센서가 흑/백 지면을 감지하여 고정밀 라인트레이싱을 수행합니다. 자동 감도 보정(오토센싱) 기능으로 바닥 밝기가 달라도 선과 교차로를 안정적으로 읽어냅니다.</p>
+            <p>
+              <span class="ko-txt">로봇 하단의 2개 센서가 흑/백 지면을 감지하여 고정밀 라인트레이싱을 수행합니다. 자동 감도 보정(오토센싱) 기능으로 바닥 밝기가 달라도 선과 교차로를 안정적으로 읽어냅니다.</span>
+              <span class="mn-txt">Доод талын 2 мэдрэгч нь хар ба цагаан гадаргууг мэдэрч өндөр нарийвчлалтай шугам дагана. Auto-Sensing автоматаар тохируулах чадвартай тул ямар ч гадаргуу дээр найдвартай ажиллана.</span>
+            </p>
+            <div class="mn-sub">🇲🇳 Шалны 2 мэдрэгч нь шугам дагах ба Auto-Sensing авто тохируулга хийнэ.</div>
           </div>
 
           <div class="feature-card">
@@ -1981,9 +2401,16 @@
             </div>
             <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
               <span style="font-size:1.3rem;">🎵</span>
-              <h3 style="margin-bottom:0;">Full-Color LED & 스피커</h3>
+              <h3 style="margin-bottom:0;">
+                <span class="ko-txt">Full-Color LED & 스피커</span>
+                <span class="mn-txt">Бүрэн өнгөт LED ба Чанга яригч</span>
+              </h3>
             </div>
-            <p>RGB LED 1개와 주파수 제어 스피커가 내장되어 무지개 감정 표현, 도레미파 음계 합주, 테레민 글리산도 사운드를 생생하게 출력합니다.</p>
+            <p>
+              <span class="ko-txt">RGB LED 1개와 주파수 제어 스피커가 내장되어 무지개 감정 표현, 도레미파 음계 합주, 테레민 글리산도 사운드를 생생하게 출력합니다.</span>
+              <span class="mn-txt">Бүрэн өнгөт RGB LED ба чанга яригч нь солонгын өнгөөр сэтгэл хөдлөл илэрхийлэх, До-Ре-Ми-Фа хөгжим дуугаргах, теремин дууг бодитойгоор гаргана.</span>
+            </p>
+            <div class="mn-sub">🇲🇳 RGB LED ба чанга яригчаар сэтгэл хөдлөл, хөгжмийн аялгуу илэрхийлнэ.</div>
           </div>
 
           <div class="feature-card">
@@ -1992,36 +2419,80 @@
             </div>
             <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
               <span style="font-size:1.3rem;">🎮</span>
-              <h3 style="margin-bottom:0;">2.4GHz 무선 조종기 & 페어링</h3>
+              <h3 style="margin-bottom:0;">
+                <span class="ko-txt">2.4GHz 무선 조종기 & 페어링</span>
+                <span class="mn-txt">2.4GHz Утасгүй удирдлага & Хослолт</span>
+              </h3>
             </div>
-            <p>상하좌우(LU/LD/LL/LR) 방향키로 즉시 실시간 주행, L1 페어링 모드 버튼, RU(R_UP) 메모리 실행 버튼 탑재. <strong>최초 1회 페어링(루미 SELECT 롱프레스 + 조종기 L1 누르고 전원 ON)</strong>을 완료하면 영구 기억되어, 이후에는 방향키만 누르면 즉각 1:1 무선 조종이 가능합니다.</p>
+            <p>
+              <span class="ko-txt">상하좌우(LU/LD/LL/LR) 방향키로 즉시 실시간 주행, L1 페어링 모드 버튼, RU(R_UP) 메모리 실행 버튼 탑재. <strong>최초 1회 페어링(루미 SELECT 롱프레스 + 조종기 L1 누르고 전원 ON)</strong>을 완료하면 영구 기억되어, 이후에는 방향키만 누르면 즉각 1:1 무선 조종이 가능합니다.</span>
+              <span class="mn-txt">Чиглэлийн товчлуур (LU/LD/LL/LR)-аар бодит цагт шууд удирдана. <strong>Эхний 1 удаагийн хослолт (Руми SELECT удаан дарах + удирдлагын L1-ийг дарангаа асаах)</strong> дуусмагц байнга санах тул дараа нь зөвхөн чиглэлийн товчлуураар шууд удирдана.</span>
+            </p>
+            <div class="mn-sub">🇲🇳 Эхний 1 удаагийн хослолтын дараа чиглэлийн товчоор шууд 1:1 удирдах боломжтой.</div>
           </div>
         </div>
 
         <div class="hw-visual-box">
           <div style="font-size:1.05rem; font-weight:700; color:#93c5fd; margin-bottom:12px;">
-            ⚙️ 루미(Rumi) 하드웨어 엔지니어링 명세
+            <span class="ko-txt">⚙️ 루미(Rumi) 하드웨어 엔지니어링 명세</span>
+            <span class="mn-txt">⚙️ Руми (Rumi) Техник хангамжийн үзүүлэлтүүд</span>
           </div>
           <div class="hw-specs-grid">
             <div class="hw-item">
-              <div class="hw-item-name">🔋 전원 장치</div>
-              <div class="hw-item-val">충전식 리튬이온 배터리 내장</div>
-              <div class="hw-item-desc">마이크로 USB 충전 지원, 별도 건전지 구매/교체 비용 제로</div>
+              <div class="hw-item-name">
+                <span class="ko-txt">🔋 전원 장치</span>
+                <span class="mn-txt">🔋 Цахилгаан тэжээл</span>
+              </div>
+              <div class="hw-item-val">
+                <span class="ko-txt">충전식 리튬이온 배터리 내장</span>
+                <span class="mn-txt">Цэнэглэгддэг Лити-ион зай суурилуулсан</span>
+              </div>
+              <div class="hw-item-desc">
+                <span class="ko-txt">마이크로 USB 충전 지원, 별도 건전지 구매/교체 비용 제로</span>
+                <span class="mn-txt">Micro USB цэнэглэлт, нэмэлт батерей худалдан авах зардалгүй</span>
+              </div>
             </div>
             <div class="hw-item">
-              <div class="hw-item-name">📡 통신 모듈</div>
-              <div class="hw-item-val">블루투스 클래식(Classic Bluetooth) 내장 + NRF24 전용 무선</div>
-              <div class="hw-item-desc">엔트리 블록코딩(라인코딩 공유) 및 전용 조종기/스마트폰 앱 연동</div>
+              <div class="hw-item-name">
+                <span class="ko-txt">📡 통신 모듈</span>
+                <span class="mn-txt">📡 Харилцаа холбоо</span>
+              </div>
+              <div class="hw-item-val">
+                <span class="ko-txt">블루투스 클래식(Classic Bluetooth) 내장 + NRF24 전용 무선</span>
+                <span class="mn-txt">Classic Bluetooth суурилуулсан + NRF24 утасгүй долгион</span>
+              </div>
+              <div class="hw-item-desc">
+                <span class="ko-txt">엔트리 블록코딩(라인코딩 공유) 및 전용 조종기/스마트폰 앱 연동</span>
+                <span class="mn-txt">Entry блок кодчлол (Line Coding) ба зориулалтын удирдлагатай холбогдоно</span>
+              </div>
             </div>
             <div class="hw-item">
-              <div class="hw-item-name">🏎️ 구동 모터</div>
-              <div class="hw-item-val">고정밀 차동 기어드 모터 2개</div>
-              <div class="hw-item-desc">좌우 독립 휠 제어, 제자리 360도 회전 및 정밀 주행</div>
+              <div class="hw-item-name">
+                <span class="ko-txt">🏎️ 구동 모터</span>
+                <span class="mn-txt">🏎️ Хөдөлгүүрийн мотор</span>
+              </div>
+              <div class="hw-item-val">
+                <span class="ko-txt">고정밀 차동 기어드 모터 2개</span>
+                <span class="mn-txt">Өндөр нарийвчлалтай 2 араат мотор</span>
+              </div>
+              <div class="hw-item-desc">
+                <span class="ko-txt">좌우 독립 휠 제어, 제자리 360도 회전 및 정밀 주행</span>
+                <span class="mn-txt">Зүүн баруун дугуйг тусад нь удирдах, 360 градус эргэх, нарийн жолоодлого</span>
+              </div>
             </div>
             <div class="hw-item">
-              <div class="hw-item-name">🛡️ 외관 구조</div>
-              <div class="hw-item-val">충격 흡수형 돔(Dome) 설계</div>
-              <div class="hw-item-desc">어린이 손 끼임 방지, 낙하 충격 보호, 종이컵 범퍼 개조 용이</div>
+              <div class="hw-item-name">
+                <span class="ko-txt">🛡️ 외관 구조</span>
+                <span class="mn-txt">🛡️ Гадна бүтээц</span>
+              </div>
+              <div class="hw-item-val">
+                <span class="ko-txt">충격 흡수형 돔(Dome) 설계</span>
+                <span class="mn-txt">Цохилт шингээх дугуй бөмбөгөр дизайн</span>
+              </div>
+              <div class="hw-item-desc">
+                <span class="ko-txt">어린이 손 끼임 방지, 낙하 충격 보호, 종이컵 범퍼 개조 용이</span>
+                <span class="mn-txt">Хүүхдийн гар хавчигдахаас сэргийлсэн, уналтаас хамгаалагдсан бат бөх хийц</span>
+              </div>
             </div>
           </div>
         </div>
@@ -2036,8 +2507,15 @@
       <div class="section-card">
         <div class="section-header">
           <div>
-            <h2 class="section-title">⚖️ 언플러그드 vs 엔트리 코딩 비교</h2>
-            <p class="section-sub">학령별 인지 발달 단계와 교실 인프라(컴퓨터 유무)에 완벽하게 대응하는 2대 교육 트랙</p>
+            <h2 class="section-title">
+              <span class="ko-txt">⚖️ 언플러그드 vs 엔트리 코딩 비교</span>
+              <span class="mn-txt">⚖️ Unplugged vs Entry кодингийн харьцуулалт</span>
+            </h2>
+            <p class="section-sub">
+              <span class="ko-txt">학령별 인지 발달 단계와 교실 인프라(컴퓨터 유무)에 완벽하게 대응하는 2대 교육 트랙</span>
+              <span class="mn-txt">Хүүхдийн насны онцлог болон танхимын дэд бүтцэд (компьютертэй/компьютергүй) бүрэн нийцсэн 2 том сургалтын хөтөлбөр</span>
+            </p>
+            <div class="mn-sub">🇲🇳 Компьютер шаардахгүй Unplugged ба компьютерт суурилсан Entry блок кодингийн үндсэн харьцуулалт</div>
           </div>
         </div>
 
@@ -2045,62 +2523,131 @@
           <table class="compare-table">
             <thead>
               <tr>
-                <th style="width: 18%;">구분</th>
+                <th style="width: 18%;">
+                  <span class="ko-txt">구분</span>
+                  <span class="mn-txt">Ангилал</span>
+                </th>
                 <th style="width: 41%; background: #eff6ff; color: #1e40af;">
-                  🧸 언플러그드 모드 (차시별 가이드)
+                  <span class="ko-txt">🧸 언플러그드 모드 (차시별 가이드)</span>
+                  <span class="mn-txt">🧸 Unplugged горим (Хичээлийн хөтөлбөр)</span>
+                  <div class="mn-sub">🇲🇳 Компьютергүй биет тоглоомын горим</div>
                 </th>
                 <th style="width: 41%; background: #f5f3ff; color: #5b21b6;">
-                  💻 엔트리 블록코딩 모드 (Entry)
+                  <span class="ko-txt">💻 엔트리 블록코딩 모드 (Entry)</span>
+                  <span class="mn-txt">💻 Entry блок кодчлол (Entry)</span>
+                  <div class="mn-sub">🇲🇳 Компьютерт суурилсан алгоритм кодчлол</div>
                 </th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><strong>교육 대상</strong></td>
                 <td>
-                  <strong style="color:#b45309; font-size:1.02rem;">유치원 & 초등 저학년</strong><br>
-                  <span class="badge-kinder" style="margin-top:4px;">만 4세 ~ 초등학교 3학년</span>
+                  <strong>
+                    <span class="ko-txt">교육 대상</span>
+                    <span class="mn-txt">Зорилтот бүлэг</span>
+                  </strong>
                 </td>
                 <td>
-                  <strong style="color:#6d28d9; font-size:1.02rem;">초등부 & 중등 저학년</strong><br>
-                  <span class="badge-entry" style="margin-top:4px;">초등 3~6학년 & 중학교 1~2학년</span>
-                </td>
-              </tr>
-              <tr>
-                <td><strong>준비물 및 인프라</strong></td>
-                <td>
-                  <strong>PC / 인터넷 전혀 불필요!</strong><br>
-                  루미 본체 버튼, A4 용지, 마스킹 테이프, 종이컵 등 일반 문구류
+                  <strong style="color:#b45309; font-size:1.02rem;">
+                    <span class="ko-txt">유치원 & 초등 저학년</span>
+                    <span class="mn-txt">Цэцэрлэг & Бага анги</span>
+                  </strong><br>
+                  <span class="badge-kinder" style="margin-top:4px;">4~9 нас (Цэцэрлэг ~ 3-р анги)</span>
                 </td>
                 <td>
-                  <strong>컴퓨터 / 노트북 + USB 블루투스 동글</strong><br>
-                  엔트리 오프라인 프로그램(또는 웹 브라우저) 실행
-                </td>
-              </tr>
-              <tr>
-                <td><strong>학습 방식</strong></td>
-                <td>
-                  • 신체 활동, 게임, 스토리텔링 중심의 교감<br>
-                  • 입력(센서)과 출력(모터/LED/음계)의 인과관계 체득<br>
-                  • 모둠별 릴레이 이어달리기, 꼬리잡기 등 협동 놀이
-                </td>
-                <td>
-                  • 마우스로 드래그 앤 드롭하는 블록 알고리즘 조립<br>
-                  • 모터 속도/지연, RGB LED 조명, 교차로 line/lt/rt 코딩<br>
-                  • 인공지능(AI) 카메라 표지판 인식 및 자율주행 융합
+                  <strong style="color:#6d28d9; font-size:1.02rem;">
+                    <span class="ko-txt">초등부 & 중등 저학년</span>
+                    <span class="mn-txt">Дунд & Ахлах анги</span>
+                  </strong><br>
+                  <span class="badge-entry" style="margin-top:4px;">9~14 нас (3~8-р анги)</span>
                 </td>
               </tr>
               <tr>
-                <td><strong>수업의 강점</strong></td>
                 <td>
-                  • 컴퓨터 켜는 시간 0초! 수업 즉시 몰입<br>
-                  • 화면 피로도 없는 안전하고 따뜻한 피지컬 놀이<br>
-                  • 컴퓨터실이 없는 일반 교실에서 100% 즉시 가능
+                  <strong>
+                    <span class="ko-txt">준비물 및 인프라</span>
+                    <span class="mn-txt">Бэлтгэл & Дэд бүтэц</span>
+                  </strong>
                 </td>
                 <td>
-                  • 정규 정보 교과 과정과 1:1로 직결되는 표준 SW 교육<br>
-                  • 눈에 보이지 않는 센서 데이터를 화면에서 실시간 확인<br>
-                  • 문제 발생 시 스스로 코드를 고치는 논리적 디버깅 배양
+                  <strong>
+                    <span class="ko-txt">PC / 인터넷 전혀 불필요!</span>
+                    <span class="mn-txt">PC / Интернет огт шаардлагагүй!</span>
+                  </strong><br>
+                  <span class="ko-txt">루미 본체 버튼, A4 용지, 마스킹 테이프, 종이컵 등 일반 문구류</span>
+                  <span class="mn-txt">Руми төхөөрөмж, А4 цаас, цаасан скоч, цаасан аяга зэрэг бичгийн хэрэгсэл</span>
+                </td>
+                <td>
+                  <strong>
+                    <span class="ko-txt">컴퓨터 / 노트북 + USB 동글</span>
+                    <span class="mn-txt">Компьютер / Зөөврийн компьютер + USB Dongle</span>
+                  </strong><br>
+                  <span class="ko-txt">엔트리 오프라인 프로그램(또는 웹 브라우저) 실행</span>
+                  <span class="mn-txt">Entry офлайн програм (эсвэл вэб хөтөч) ажиллуулах</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>
+                    <span class="ko-txt">학습 방식</span>
+                    <span class="mn-txt">Сургалтын арга барил</span>
+                  </strong>
+                </td>
+                <td>
+                  <span class="ko-txt">
+                    • 신체 활동, 게임, 스토리텔링 중심의 교감<br>
+                    • 입력(센서)과 출력(모터/LED/음계)의 인과관계 체득<br>
+                    • 모둠별 릴레이 이어달리기, 꼬리잡기 등 협동 놀이
+                  </span>
+                  <span class="mn-txt">
+                    • Биеийн хөдөлгөөн, тоглоом, өгүүллэгт суурилсан харилцан үйлдэл<br>
+                    • Оролт (мэдрэгч) ба гаралт (мотор/LED/хөгжим)-ын шалтгаант холбоог ойлгох<br>
+                    • Багаар буухиа уралдаан, сүүл барих зэрэг хамтын тоглоом
+                  </span>
+                </td>
+                <td>
+                  <span class="ko-txt">
+                    • 마우스로 드래그 앤 드롭하는 블록 알고리즘 조립<br>
+                    • 모터 속도/지연, RGB LED 조명, 교차로 line/lt/rt 코딩<br>
+                    • 인공지능(AI) 카메라 표지판 인식 및 자율주행 융합
+                  </span>
+                  <span class="mn-txt">
+                    • Хулганаар блок чирж алгоритм угсрах сургалт<br>
+                    • Моторын хурд, хугацаа, RGB LED, замын уулзварын line/lt/rt кодчлол<br>
+                    • Хиймэл оюун (AI) камерын тэмдэг таних ба автомат жолоодлогын нэгдэл
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>
+                    <span class="ko-txt">수업의 강점</span>
+                    <span class="mn-txt">Хичээлийн давуу тал</span>
+                  </strong>
+                </td>
+                <td>
+                  <span class="ko-txt">
+                    • 컴퓨터 켜는 시간 0초! 수업 즉시 몰입<br>
+                    • 화면 피로도 없는 안전하고 따뜻한 피지컬 놀이<br>
+                    • 컴퓨터실이 없는 일반 교실에서 100% 즉시 가능
+                  </span>
+                  <span class="mn-txt">
+                    • Компьютер асаах хугацаа 0 секунд! Хичээлдээ шууд орох<br>
+                    • Дэлгэц харах ядаргаагүй, аюулгүй биеэр мэдрэх тоглоом<br>
+                    • Компьютерийн танхимгүй энгийн ангид ч 100% явуулах боломжтой
+                  </span>
+                </td>
+                <td>
+                  <span class="ko-txt">
+                    • 정규 정보 교과 과정과 1:1로 직결되는 표준 SW 교육<br>
+                    • 눈에 보이지 않는 센서 데이터를 화면에서 실시간 확인<br>
+                    • 문제 발생 시 스스로 코드를 고치는 논리적 디버깅 배양
+                  </span>
+                  <span class="mn-txt">
+                    • Албан ёсны мэдээлэл зүйн хичээлийн хөтөлбөртэй 1:1 нийцсэн стандарт програмчлал<br>
+                    • Нүдэнд үл үзэгдэх мэдрэгчийн утгыг дэлгэц дээр бодит цагт харах<br>
+                    • Алдаа гарсан үед кодыг өөрөө засах логик сэтгэлгээг хөгжүүлэх
+                  </span>
                 </td>
               </tr>
             </tbody>
@@ -2117,34 +2664,80 @@
       <div class="section-card">
         <div class="section-header">
           <div>
-            <h2 class="section-title">🏫 학력별 연계 교육 로드맵</h2>
-            <p class="section-sub">언플러그드로 시작해 엔트리 블록코딩으로 완성되는 성장 단계별 컴퓨팅 교육 체계</p>
+            <h2 class="section-title">
+              <span class="ko-txt">🏫 학력별 연계 교육 로드맵</span>
+              <span class="mn-txt">🏫 Насны ангилалд суурилсан сургалтын замын зураг</span>
+            </h2>
+            <p class="section-sub">
+              <span class="ko-txt">언플러그드로 시작해 엔트리 블록코딩으로 완성되는 성장 단계별 컴퓨팅 교육 체계</span>
+              <span class="mn-txt">Unplugged-аас эхлэн Entry блок кодчлолоор төгсөх насны онцлогт тохирсон компьютерийн шинжлэх ухааны сургалтын тогтолцоо</span>
+            </p>
+            <div class="mn-sub">🇲🇳 Нас, сэтгэхүйн хөгжилд нийцүүлэн Unplugged-аас Entry блок кодинг хүртэл холбосон замын зураг</div>
           </div>
         </div>
 
         <div class="roadmap-grid">
           <div class="roadmap-card rm-unplugged">
             <span class="rm-stage">Track 1 : Unplugged Physical Computing</span>
-            <h3 class="rm-title">🧸 유치원 & 초등 저학년</h3>
-            <p class="rm-desc">PC 없이 본체 버튼과 센서로 감각을 깨우고 협동하는 신체 놀이형 코딩 교육</p>
+            <h3 class="rm-title">
+              <span class="ko-txt">🧸 유치원 & 초등 저학년</span>
+              <span class="mn-txt">🧸 Цэцэрлэг & Бага анги (4~9 нас)</span>
+            </h3>
+            <p class="rm-desc">
+              <span class="ko-txt">PC 없이 본체 버튼과 센서로 감각을 깨우고 협동하는 신체 놀이형 코딩 교육</span>
+              <span class="mn-txt">Компьютергүйгээр төхөөрөмжийн товч ба мэдрэгчээр мэдрэхүйгээ нээж, хамтран тоглох кодинг</span>
+            </p>
             <ul class="rm-list">
-              <li><strong>[유치원] 감정 캡처 & 펫 산책:</strong> 무지개 LED로 기분 표현하기, 흰 종이를 들고 강아지 산책시키기 (모드 1, 4)</li>
-              <li><strong>[유치원·저학년] 무선 조종 & 첫 페어링:</strong> 2.4GHz 조종기와 루미의 1:1 페어링 및 L1 안전 락을 활용한 상하좌우 실시간 RC 주행 (3차시)</li>
-              <li><strong>[유치원] 센서 악기 테레민:</strong> 허공에 손을 오르내리며 까치발을 드는 신체 퍼포먼스 (모드 10, 11)</li>
-              <li><strong>[초등 저학년] 미로 탈출 & 안전구역:</strong> 책으로 만든 미로를 탈출하는 조건문(If) 체험 (모드 2, 3, 5)</li>
-              <li><strong>[초등 저학년] 메모리 경로 코딩:</strong> A4 라인 퍼즐 미로에서 목적지부터 거꾸로 역산(Reverse) 코딩 (모드 12)</li>
+              <li>
+                <span class="ko-txt"><strong>[유치원] 감정 캡처 & 펫 산책:</strong> 무지개 LED로 기분 표현하기, 흰 종이를 들고 강아지 산책시키기 (모드 1, 4)</span>
+                <span class="mn-txt"><strong>[Цэцэрлэг] Сэтгэл хөдлөл тодорхойлох & Тэжээвэр амьтан:</strong> Солонгын LED-ээр сэтгэлээ илэрхийлэх, цаасаар нохой шиг дагуулах (Горим 1, 4)</span>
+              </li>
+              <li>
+                <span class="ko-txt"><strong>[유치원·저학년] 무선 조종 & 첫 페어링:</strong> 2.4GHz 조종기와 루미의 1:1 페어링 및 방향키 실시간 RC 주행 (3차시)</span>
+                <span class="mn-txt"><strong>[Цэцэрлэг·Бага анги] Утасгүй удирдлага & Хослолт:</strong> 2.4GHz удирдлага ба Румигийн 1:1 хослолт, чиглэлийн товчоор шууд жолоодох (3-р хичээл)</span>
+              </li>
+              <li>
+                <span class="ko-txt"><strong>[유치원] 센서 악기 테레민:</strong> 허공에 손을 오르내리며 까치발을 드는 신체 퍼포먼스 (모드 10, 11)</span>
+                <span class="mn-txt"><strong>[Цэцэрлэг] Мэдрэгч хөгжим Теремин:</strong> Агаар дээр гараа өргөж буулган хөл дээрээ цовхрох хөгжмийн дасгал (Горим 10, 11)</span>
+              </li>
+              <li>
+                <span class="ko-txt"><strong>[초등 저학년] 미로 탈출 & 안전구역:</strong> 책으로 만든 미로를 탈출하는 조건문(If) 체험 (모드 2, 3, 5)</span>
+                <span class="mn-txt"><strong>[Бага анги] Лабиринтаас гарах & Аюулгүйн бүс:</strong> Номоор хийсэн төөрдөг байшингаас гарах If нөхцөл (Горим 2, 3, 5)</span>
+              </li>
+              <li>
+                <span class="ko-txt"><strong>[초등 저학년] 메모리 경로 코딩:</strong> A4 라인 퍼즐 미로에서 목적지부터 거꾸로 역산(Reverse) 코딩 (모드 12)</span>
+                <span class="mn-txt"><strong>[Бага анги] Санах ойн замын кодинг:</strong> А4 цаасан оньсон замаар барианаас нь буцааж тооцоолох (Reverse) кодинг (Горим 12)</span>
+              </li>
             </ul>
           </div>
 
           <div class="roadmap-card rm-entry">
             <span class="rm-stage">Track 2 : Software Block Coding & AI</span>
-            <h3 class="rm-title">💻 초등부 & 중등 저학년</h3>
-            <p class="rm-desc">USB 동글로 PC와 연결하여 엔트리 화면에서 블록 알고리즘과 AI 융합을 코딩하는 정규 SW 교육</p>
+            <h3 class="rm-title">
+              <span class="ko-txt">💻 초등부 & 중등 저학년</span>
+              <span class="mn-txt">💻 Дунд & Ахлах анги (9~14 нас)</span>
+            </h3>
+            <p class="rm-desc">
+              <span class="ko-txt">USB 동글로 PC와 연결하여 엔트리 화면에서 블록 알고리즘과 AI 융합을 코딩하는 정규 SW 교육</span>
+              <span class="mn-txt">USB Dongle-оор компьютертэй холбогдон Entry дээр алгоритм ба AI хослуулан суралцах стандарт програмчлал</span>
+            </p>
             <ul class="rm-list">
-              <li><strong>[초등 3~4학년] 모터 & LED 제어:</strong> <code>wheel</code>, <code>delay</code> 블록 및 네오픽셀 RGB 255 컬러 조명 연출</li>
-              <li><strong>[초등 4~5학년] 센서 모니터링:</strong> 전방 거리 센서값 그래프를 확인하며 충돌 방지 브레이크 구현</li>
-              <li><strong>[초등 5~6학년] 라인트레이서 line / lt / rt:</strong> 교차로 추가 직진 시간 및 초기 회전 시간 보정으로 완벽한 자율주행 완성</li>
-              <li><strong>[중등 1~2학년] AI 카메라 사물 인식:</strong> 표지판 이미지 분류 모델을 학습시켜 스스로 판단하는 스마트 주행차 구현</li>
+              <li>
+                <span class="ko-txt"><strong>[초등 3~4학년] 모터 & LED 제어:</strong> <code>wheel</code>, <code>delay</code> 블록 및 네오픽셀 RGB 255 컬러 조명 연출</span>
+                <span class="mn-txt"><strong>[3~4-р анги] Мотор & LED удирдлага:</strong> <code>wheel</code>, <code>delay</code> блок ба NeoPixel RGB 255 гэрэлтүүлэг</span>
+              </li>
+              <li>
+                <span class="ko-txt"><strong>[초등 4~5학년] 센서 모니터링:</strong> 전방 거리 센서값 그래프를 확인하며 충돌 방지 브레이크 구현</span>
+                <span class="mn-txt"><strong>[4~5-р анги] Мэдрэгчийг хянах:</strong> Зайн мэдрэгчийн графикийг дэлгэцээр харж мөргөлдөхөөс сэргийлэх тоормос</span>
+              </li>
+              <li>
+                <span class="ko-txt"><strong>[초등 5~6학년] 라인트레이서 line / lt / rt:</strong> 교차로 추가 직진 시간 및 초기 회전 시간 보정으로 완벽한 자율주행 완성</span>
+                <span class="mn-txt"><strong>[5~6-р анги] Шугам дагагч line / lt / rt:</strong> Уулзварын нэмэлт чигээрээ явах хугацаа ба эргэлтийн засвараар төгс замын даалгавар</span>
+              </li>
+              <li>
+                <span class="ko-txt"><strong>[중등 1~2학년] AI 카메라 사물 인식:</strong> 표지판 이미지 분류 모델을 학습시켜 스스로 판단하는 스마트 주행차 구현</span>
+                <span class="mn-txt"><strong>[7~8-р анги] AI Камерын дүрс таних:</strong> Замын тэмдгийн зургийг сургаж, өөрөө шийдвэр гаргадаг ухаалаг жолоодлого</span>
+              </li>
             </ul>
           </div>
         </div>
@@ -2159,7 +2752,10 @@
     <div class="footer-container">
       <div>
         <div style="font-weight: 800; color: white; margin-bottom: 4px; font-size: 1rem;">RumiBoard Unplugged & Entry Education Platform</div>
-        <div style="color:#94a3b8;">유·초·중등 교원을 위한 피지컬 컴퓨팅 & 엔트리 블록코딩 가이드 웹앱</div>
+        <div style="color:#94a3b8;">
+          <span class="ko-txt">유·초·중등 교원을 위한 피지컬 컴퓨팅 & 엔트리 블록코딩 가이드 웹앱</span>
+          <span class="mn-txt">Багш сурган хүмүүжүүлэгчдэд зориулсан Биет тооцоолол & Entry блок кодчлолын гарын авлага</span>
+        </div>
       </div>
       <div style="text-align: right; font-size: 0.82rem;">
         <div>Designed for Inspiring Future Leaders</div>
@@ -2250,13 +2846,55 @@
         remoteGuide: {
           image: "image/005.png",
           controls: [
-            { key: "L1 (페어링)", name: "페어링 모드 진입 버튼", desc: "조종기 전원을 켤 때 L1 버튼을 누른 채로 전원을 켜면 페어링 모드로 진입합니다. (최초 1회 연결 시 사용)" },
-            { key: "LU (상)", name: "Left Up (전진)", desc: "누르면 로봇이 앞으로 시원하게 직진 주행합니다." },
-            { key: "LD (하)", name: "Left Down (후진)", desc: "누르면 로봇이 뒤로 안전하게 후진 주행합니다." },
-            { key: "LL (좌)", name: "Left Left (좌회전)", desc: "누르면 왼쪽으로 제자리 회전 또는 좌회전합니다." },
-            { key: "LR (우)", name: "Left Right (우회전)", desc: "누르면 오른쪽으로 제자리 회전 또는 우회전합니다." },
-            { key: "RU (R_UP)", name: "메모리 코딩 실행", desc: "모드 12(메모리 경로 코딩)에서 저장된 명령들을 순서대로 일괄 자동 주행시키는 실행 버튼" },
-            { key: "RL + RR", name: "코딩 전체 초기화(리셋)", desc: "모드 12에서 오른쪽 RL과 RR 버튼을 동시에 누르면 저장된 경로 코드가 백지 초기화" }
+            { 
+              key: "L1", 
+              name: "페어링 모드 진입 버튼", 
+              mongolName: "Хослох горимын товчлуур",
+              desc: "조종기 전원을 켤 때 L1 버튼을 누른 채로 전원을 켜면 페어링 모드로 진입합니다. (최초 1회 연결 시 사용)",
+              mongolDesc: "Удирдлагын L1 товчийг дарангаа асаахад хослох горимд орно. (Анхны 1 удаагийн холболтод ашиглана)"
+            },
+            { 
+              key: "LU (▲)", 
+              name: "전진 (Forward)", 
+              mongolName: "Урагшаа явах (LU)",
+              desc: "누르면 로봇이 앞으로 시원하게 직진 주행합니다.",
+              mongolDesc: "Дарвал робот урагшаа чигээрээ хөдөлнө."
+            },
+            { 
+              key: "LD (▼)", 
+              name: "후진 (Backward)", 
+              mongolName: "Хойшоо ухрах (LD)",
+              desc: "누르면 로봇이 뒤로 안전하게 후진 주행합니다.",
+              mongolDesc: "Дарвал робот хойшоо аюулгүй ухарна."
+            },
+            { 
+              key: "LL (◀)", 
+              name: "좌회전 (Left)", 
+              mongolName: "Зүүн эргэх (LL)",
+              desc: "누르면 왼쪽으로 제자리 회전 또는 좌회전합니다.",
+              mongolDesc: "Дарвал зүүн тийш байрандаа эсвэл зөөлөн эргэнэ."
+            },
+            { 
+              key: "LR (▶)", 
+              name: "우회전 (Right)", 
+              mongolName: "Баруун эргэх (LR)",
+              desc: "누르면 오른쪽으로 제자리 회전 또는 우회전합니다.",
+              mongolDesc: "Дарвал баруун тийш байрандаа эсвэл зөөлөн эргэнэ."
+            },
+            { 
+              key: "RU (R_UP)", 
+              name: "메모리 코딩 실행", 
+              mongolName: "Санах ойн код ажиллуулах",
+              desc: "모드 12(메모리 경로 코딩)에서 저장된 명령들을 순서대로 일괄 자동 주행시키는 실행 버튼",
+              mongolDesc: "12-р горимд хадгалсан замын командуудыг дэс дараалан автоматаар явуулах товчлуур"
+            },
+            { 
+              key: "RL + RR", 
+              name: "코딩 전체 초기화(리셋)", 
+              mongolName: "Код бүрэн арилгах (Reset)",
+              desc: "모드 12에서 오른쪽 RL과 RR 버튼을 동시에 누르면 저장된 경로 코드가 백지 초기화",
+              mongolDesc: "12-р горимд баруун RL ба RR товчийг зэрэг дарахад хадгалсан зам бүрэн цэвэрлэгдэнэ"
+            }
           ]
         },
         tip: "처음 기기를 배부했을 때 학생들에게 페어링 시범을 보여주세요. '루미 SELECT 롱프레스 ➔ 조종기 L1 누르고 전원 ON' 공식을 기억하게 합니다. 페어링이 완료되면 별도의 다른 버튼을 누를 필요 없이 조종기 방향키만 누르면 즉각 주행할 수 있습니다."
@@ -2550,6 +3188,13 @@
           run: "▶️ 명령 실행: 오른쪽 4개 버튼 중 위쪽(R_UP)을 누르면 저장된 경로 일괄 주행 시작!",
           reset: "🔄 기억 지우기(초기화): 오른쪽 LEFT + RIGHT 버튼을 동시에 누르면 '띠로리~' 소리와 함께 백지 초기화!"
         },
+        mongolRemoconDetails: {
+          step1: "Бэлтгэл: Эхлэх шугам дээр 12-р горим сонгож START дарж Auto-Sensing (Шалны гэрэл мэдрэх) хийнэ!",
+          rc: "🎮 Бодит цагийн удирдлага: Дээш/доош/зүүн/баруун (LU/LD/LL/LR) дарахад шууд хөдөлнө",
+          save: "💾 Команд хадгалах: Зүүн чиглэлийн товчлуурыг дарахад дуу гарч санах ойд хадгалагдана (Уулзвар дээр 90° автоматаар эргэнэ)",
+          run: "▶️ Команд ажиллуулах: Баруун талын дээд (R_UP) товч дарвал хадгалсан замаар бүхэлд нь явна!",
+          reset: "🔄 Санах ой арилгах: Баруун талын LEFT + RIGHT товчийг зэрэг дарахад дуу гарч бүрэн цэвэрлэгдэнэ!"
+        },
         tip: "A4 라인 퍼즐(직진┃, T자┳, 십자➕) 타일로 아이들이 직접 보물섬 미로를 설계하고, 네비게이터가 보물 위치부터 거꾸로 역산해 코드를 적은 뒤 실행하는 최고의 융합 프로젝트입니다."
       }
     ];
@@ -2583,7 +3228,7 @@
 
       setTimeout(() => {
         btn.disabled = false;
-        btn.innerHTML = "<span>▶</span> 무지개 음계 들어보기";
+        btn.innerHTML = `<span class="ko-txt"><span>▶</span> 무지개 음계 들어보기</span><span class="mn-txt"><span>▶</span> Солонгын эгшиг сонсох</span>`;
       }, (notes.length * 0.18 + 0.2) * 1000);
     }
 
@@ -2612,9 +3257,88 @@
 
       setTimeout(() => {
         btn.disabled = false;
-        btn.innerHTML = "<span>▶</span> 테레민 우주 사운드 들어보기";
+        btn.innerHTML = `<span class="ko-txt"><span>▶</span> 테레민 우주 사운드 들어보기</span><span class="mn-txt"><span>▶</span> Теремин сансрын дуу сонсох</span>`;
       }, 2600);
     }
+
+    
+    const tagTranslations = {
+      "전방 적외선 센서 (입력)": "Урд IR мэдрэгч (Оролт)",
+      "Full RGB LED (출력)": "RGB LED (Гаралт)",
+      "전방 센서 (장애물 감지)": "Урд мэдрэгч (Саад)",
+      "차동 모터 (무작위 주행)": "Хөдөлгүүр (Санамсаргүй)",
+      "내부 타이머": "Дотоод цаг тоолуур",
+      "2.4GHz RF 무선 모듈": "2.4GHz RF модуль",
+      "페어링 시스템 (파란색 LED)": "Хослолт (Цэнхэр LED)",
+      "방향 조종 버튼": "Чиглэлийн товчлуур",
+      "사선 전방 센서 2개 (좌/우)": "Урд 2 мэдрэгч (Зүүн/Баруун)",
+      "독립 구동 바퀴": "Хөтлөгч дугуй",
+      "회피 알고리즘": "Бултах алгоритм",
+      "전방 적외선 센서 (일정 간격 유지)": "Урд IR (Тогтмол зай)",
+      "정·역회전 모터": "Урагш/хойш мотор",
+      "전방 센서 (좌/우 밸런스)": "Урд мэдрэгч (Тэнцвэр)",
+      "후방 후진 구동 바퀴": "Хойш ухрах дугуй",
+      "바닥 적외선 센서 모듈 2개": "Шалны 2 IR мэдрэгч",
+      "내장 자동 감도 메모리": "Санах ой (Мэдрэмж)",
+      "START 보정 버튼": "START тохируулга",
+      "바닥 초고감도 센서 2개": "Шалны 2 мэдрэгч",
+      "고속 차동 모터": "Хурдан дифференциал мотор",
+      "바닥 트랙 센서 (2cm 검지)": "Шалны замын мэдрэгч (2см)",
+      "일정 속도 크루즈 드라이브": "Cruise тогтмол хурд",
+      "전방 사선 센서 (타겟 추적)": "Урд мэдрэгч (Бай мөрдөх)",
+      "바닥 경계(테두리) 센서": "Захын хязгаар мэдрэгч",
+      "후방(꼬리) 터치 충돌 스위치": "Арын мөргөлтийн мэдрэгч",
+      "적외선 거리 센서": "IR зайн мэдрэгч",
+      "주파수 제어 스피커": "Давтамжит чанга яригч",
+      "스피커 (글리산도 효과)": "Глиссандо чанга яригч",
+      "전방 적외선 센서 (거리-주파수 변환)": "Зай-давтамжийн мэдрэгч",
+      "무선 키패드 송신 모듈": "Утасгүй дамжуулагч",
+      "RGB LED": "RGB LED",
+      "메모리 버퍼(배열)": "Санах ойн массив",
+      "십자 교차로 감지": "Уулзвар мэдрэх",
+      "조종기 프로그래밍 키": "Програмчлах товчлуур",
+      "입력과 출력": "Оролт ба Гаралт",
+      "사회정서학습(SEL)": "Сэтгэл хөдлөл (SEL)",
+      "상호작용": "Харилцан үйлдэл",
+      "조건문(If-Then)": "If-Then нөхцөл",
+      "무작위성(Random)": "Санамсаргүй (Random)",
+      "순발력": "Хурдан хариу үйлдэл",
+      "무선 페어링(Pairing)": "Утасгүй хослолт",
+      "실시간 제어(RC)": "Бодит цагийн удирдлага",
+      "공간 지각(상하좌우)": "Орон зайн баримжаа",
+      "조건 분기(If-Else)": "If-Else салаа нөхцөл",
+      "장애물 회피": "Саад тойрох",
+      "공간 인지": "Орон зайн танин мэдэхүй",
+      "피드백 제어": "Хариу үйлдэлт хяналт",
+      "일정 간격 유지": "Тогтмол зай барих",
+      "인력 및 척력": "Татах ба түлхэх хүч",
+      "척력(밀어내기)": "Түлхэх хүч",
+      "센서 밸런스 제어": "Мэдрэгчийн тэнцвэр",
+      "후방 주차": "Хойш зогсоолд орох",
+      "오토센싱(Auto-Sensing)": "Auto-Sensing тохируулга",
+      "환경 적응성": "Орчинд зохицох",
+      "센서 캘리브레이션": "Мэдрэгчийн тохиргоо",
+      "5mm 라인트레이싱": "5мм шугам дагах",
+      "피드백 루프": "Хариу үйлдлийн эргүүлэг",
+      "탈선 방지 회복 알고리즘": "Шугамаас гарахгүй байх",
+      "2cm 넓은 트랙 주행": "2см өргөн замаар явах",
+      "크루즈 컨트롤": "Cruise хурдны хяналт",
+      "군집 주행(Platooning)": "Цуваа жолоодлого",
+      "복합 조건(AND 로직)": "AND нийлмэл логик",
+      "경계 탈출 방지": "Хилээс гарахгүй байх",
+      "추적 탐색": "Байг эрж мөрдөх",
+      "무선 원격 키패드": "Утасгүй удирдлагын товч",
+      "1:1 키 매핑(Mapping)": "1:1 Товчлуурын харгалзаа",
+      "합주와 협동": "Хамтын тоглолт",
+      "거리-주파수 변환": "Зайг давтамжид хувиргах",
+      "아날로그 vs 디지털": "Аналог vs Дижитал",
+      "STEAM 융합 예술": "STEAM урлаг",
+      "꼬리잡기 게임": "Сүүл барих тоглоом",
+      "상태 머신(FSM)": "Төлөвийн машин (FSM)",
+      "순발력 배틀": "Хурдны өрсөлдөөн",
+      "순차 구조(Sequence)": "Дараалсан бүтэц",
+      "알고리즘 역산(Reverse)": "Урвуу тооцоолол (Reverse)"
+    };
 
     function renderAccordion(data) {
       const container = document.getElementById("accordionContainer");
@@ -2635,18 +3359,26 @@
           if (item.soundType === "ensemble") {
             soundDemoHtml = `
               <div class="interactive-sound-box">
-                <span style="font-size:0.85rem; color:#6b21a8; font-weight:600;">🎹 모드 10 무선 건반 소리 체험 (Web Audio)</span>
+                <span style="font-size:0.85rem; color:#6b21a8; font-weight:600;">
+                  <span class="ko-txt">🎹 모드 10 무선 건반 소리 체험 (Web Audio)</span>
+                  <span class="mn-txt">🎹 Горим 10 Утасгүй даралтат хөгжим (Web Audio)</span>
+                </span>
                 <button class="sound-demo-btn" onclick="playEnsembleDemo(this)">
-                  <span>▶</span> 무지개 음계 들어보기
+                  <span class="ko-txt"><span>▶</span> 무지개 음계 들어보기</span>
+                  <span class="mn-txt"><span>▶</span> Солонгын эгшиг сонсох</span>
                 </button>
               </div>
             `;
           } else if (item.soundType === "theremin") {
             soundDemoHtml = `
               <div class="interactive-sound-box">
-                <span style="font-size:0.85rem; color:#6b21a8; font-weight:600;">🛸 모드 11 거리-주파수 변환 테레민 소리 체험</span>
+                <span style="font-size:0.85rem; color:#6b21a8; font-weight:600;">
+                  <span class="ko-txt">🛸 모드 11 거리-주파수 변환 테레민 소리 체험</span>
+                  <span class="mn-txt">🛸 Горим 11 Зай-давтамжийн Теремин хөгжим</span>
+                </span>
                 <button class="sound-demo-btn" onclick="playThereminDemo(this)">
-                  <span>▶</span> 테레민 우주 사운드 들어보기
+                  <span class="ko-txt"><span>▶</span> 테레민 우주 사운드 들어보기</span>
+                  <span class="mn-txt"><span>▶</span> Теремин сансрын дуу сонсох</span>
                 </button>
               </div>
             `;
@@ -2655,10 +3387,13 @@
 
         let remoconBlockHtml = "";
         if (item.remoconDetails) {
+          const mnR = item.mongolRemoconDetails || {};
           remoconBlockHtml = `
             <div class="detail-block block-remocon">
               <div class="detail-label">
-                <span>🎮</span> 조종기 버튼 매핑 & 주행 가이드 (교재 18~19차시 매뉴얼)
+                <span>🎮</span>
+                <span class="ko-txt">조종기 버튼 매핑 & 주행 가이드 (교재 18~19차시 매뉴얼)</span>
+                <span class="mn-txt">Удирдлагын товчлуурын хуваарилалт & замын заавар</span>
               </div>
               <div class="detail-text" style="display:flex; flex-direction:column; gap:8px;">
                 <div style="display:flex; flex-wrap:wrap; gap:14px; align-items:center;">
@@ -2666,13 +3401,26 @@
                     <img src="image/005.png" alt="조종기 버튼" style="width:100%; height:auto; max-height:120px; object-fit:contain;">
                   </div>
                   <div style="flex:1; min-width:220px; background:white; padding:10px 14px; border-radius:6px; border:1px solid #e9d5ff; font-weight:700; color:#6b21a8; line-height:1.5;">
-                    ${item.remoconDetails.step1}
+                    <span class="ko-txt">${item.remoconDetails.step1}</span>
+                    <span class="mn-txt">${mnR.step1 || item.remoconDetails.step1}</span>
                   </div>
                 </div>
-                <div style="padding-left:4px;">${item.remoconDetails.rc}</div>
-                <div style="padding-left:4px;">${item.remoconDetails.save}</div>
-                <div style="padding-left:4px;">${item.remoconDetails.run}</div>
-                <div style="padding-left:4px;">${item.remoconDetails.reset}</div>
+                <div style="padding-left:4px;">
+                  <span class="ko-txt">${item.remoconDetails.rc}</span>
+                  <span class="mn-txt">${mnR.rc || item.remoconDetails.rc}</span>
+                </div>
+                <div style="padding-left:4px;">
+                  <span class="ko-txt">${item.remoconDetails.save}</span>
+                  <span class="mn-txt">${mnR.save || item.remoconDetails.save}</span>
+                </div>
+                <div style="padding-left:4px;">
+                  <span class="ko-txt">${item.remoconDetails.run}</span>
+                  <span class="mn-txt">${mnR.run || item.remoconDetails.run}</span>
+                </div>
+                <div style="padding-left:4px;">
+                  <span class="ko-txt">${item.remoconDetails.reset}</span>
+                  <span class="mn-txt">${mnR.reset || item.remoconDetails.reset}</span>
+                </div>
               </div>
             </div>
           `;
@@ -2684,29 +3432,40 @@
           remoteGuideHtml = `
             <div class="detail-block block-remote-guide">
               <div class="detail-label">
-                <span>🎮</span> 2.4GHz 무선 조종기 페어링(Pairing) 및 상·하·좌·우 실시간 조작 가이드
+                <span>🎮</span>
+                <span class="ko-txt">2.4GHz 무선 조종기 페어링(Pairing) 및 상·하·좌·우 실시간 조작 가이드</span>
+                <span class="mn-txt">2.4GHz Утасгүй удирдлагын хослолт (Pairing) ба бодит цагийн удирдлагын заавар</span>
               </div>
+              <div class="mn-sub">🇲🇳 2.4GHz Удирдлагатай анх холбогдох 3 алхам ба чиглэлийн товчлуурын тайлбар</div>
 
               <!-- 이미지 + 페어링 안내 2컬럼 레이아웃 -->
               <div style="display:flex; flex-wrap:wrap; gap:20px; align-items:center; margin-bottom:18px;">
                 <div style="flex: 1 1 280px; max-width:380px; background:white; border:1px solid #e9d5ff; border-radius:10px; padding:12px; text-align:center; box-shadow:0 2px 8px rgba(147,51,234,0.08);">
                   <img src="${rg.image}" alt="루미 2.4GHz 무선 조종기 버튼 매핑" style="width:100%; height:auto; max-height:220px; object-fit:contain; border-radius:6px;">
                   <div style="font-size:0.8rem; font-weight:700; color:#6b21a8; margin-top:8px;">
-                    📷 루미 전용 무선 조종기 (버튼: LU, LD, LL, LR, L1, R1, RU, RD, RL, RR)
+                    <span class="ko-txt">📷 루미 전용 무선 조종기 (버튼: LU, LD, LL, LR, L1, RU, RL, RR)</span>
+                    <span class="mn-txt">📷 Руми зориулалтын утасгүй удирдлага (Товчлуурууд: LU, LD, LL, LR, L1, RU...)</span>
                   </div>
                 </div>
 
                 <div style="flex: 1 1 320px; display:flex; flex-direction:column; gap:10px;">
                   <div style="background:white; border:1px solid #f0abfc; border-radius:8px; padding:12px 14px; font-size:0.88rem; line-height:1.65; color:var(--gray-800);">
                     <div style="font-weight:800; color:#9333ea; margin-bottom:4px; display:flex; align-items:center; gap:6px;">
-                      <span>💡</span> 한번 페어링되면 평생 자동 연결!
+                      <span>💡</span>
+                      <span class="ko-txt">한번 페어링되면 평생 자동 연결!</span>
+                      <span class="mn-txt">Нэг удаа холбоход байнга санана!</span>
                     </div>
-                    조종기와 루미는 <strong>한 번 페어링을 완료하면 내부 메모리에 영구 기억</strong>되므로, 다음 수업부터는 전원만 켜도 바로 자동 연결됩니다. <strong>처음 연결할 때만</strong> 아래의 1회 필수 페어링 절차를 진행합니다.
+                    <span class="ko-txt">조종기와 루미는 <strong>한 번 페어링을 완료하면 내부 메모리에 영구 기억</strong>되므로, 다음 수업부터는 전원만 켜도 바로 자동 연결됩니다. <strong>처음 연결할 때만</strong> 아래의 1회 필수 페어링 절차를 진행합니다.</span>
+                    <span class="mn-txt">Удирдлага ба Руми нь <strong>нэг удаа хослоход санах ойд хадгалагддаг</strong> тул дараагийн хичээлүүдэд зөвхөн асаахад л шууд холбогдоно. <strong>Зөвхөн анх удаа</strong> доорх хослох 3 алхмыг хийнэ.</span>
                   </div>
 
                   <div style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:8px; padding:10px 14px; font-size:0.85rem; color:#166534; line-height:1.6;">
-                    🎮 <strong>즉시 반응하는 원터치 실시간 조종:</strong><br>
-                    페어링이 완료되면 <strong>별도의 다른 버튼을 누르고 있을 필요 없이, 조종기 방향키(LU, LD, LL, LR)만 누르면 로봇이 즉각 반응</strong>하여 앞, 뒤, 좌, 우로 부드럽게 주행합니다!
+                    🎮 <strong>
+                      <span class="ko-txt">즉시 반응하는 원터치 실시간 조종:</span>
+                      <span class="mn-txt">Нэг даралтаар шууд удирдах:</span>
+                    </strong><br>
+                    <span class="ko-txt">페어링이 완료되면 <strong>별도의 다른 버튼을 누르고 있을 필요 없이, 조종기 방향키(LU, LD, LL, LR)만 누르면 로봇이 즉각 반응</strong>하여 앞, 뒤, 좌, 우로 부드럽게 주행합니다!</span>
+                    <span class="mn-txt">Хослолт амжилттай болсны дараа <strong>өөр ямар ч товч даралгүйгээр зөвхөн чиглэлийн товчлуурыг дарахад л</strong> урагш, хойш, зүүн, баруун тийш чөлөөтэй жолоодно!</span>
                   </div>
                 </div>
               </div>
@@ -2714,20 +3473,40 @@
               <!-- 페어링 3단계 상세 스텝 -->
               <div style="margin-bottom:16px;">
                 <div style="font-weight:800; color:#6b21a8; font-size:0.92rem; margin-bottom:8px; display:flex; align-items:center; gap:6px;">
-                  <span>🔗</span> 처음 1회 필수! 루미 & 조종기 무선 페어링(Pairing) 3단계 절차
+                  <span>🔗</span>
+                  <span class="ko-txt">처음 1회 필수! 루미 & 조종기 무선 페어링(Pairing) 3단계 절차</span>
+                  <span class="mn-txt">Анхны 1 удаагийн заавал хийх утасгүй хослолын 3 алхам</span>
                 </div>
                 <div class="remote-pairing-flow">
                   <div class="remote-pairing-step" style="border-top:3px solid #0284c7;">
-                    <div style="font-weight:800; color:#0369a1; margin-bottom:4px;">1. 루미(로봇) 페어링 모드</div>
-                    <div>루미 본체 전원을 켠 상태에서 <strong>SELECT 버튼을 3초간 길게 누르고 있습니다(Long-Press)</strong>. ➔ "삐빅~" 소리와 함께 <strong>파란색 LED가 깜박입니다</strong>.</div>
+                    <div style="font-weight:800; color:#0369a1; margin-bottom:4px;">
+                      <span class="ko-txt">1. 루미(로봇) 페어링 모드</span>
+                      <span class="mn-txt">1. Руми хослох горим</span>
+                    </div>
+                    <div>
+                      <span class="ko-txt">루미 전원을 켠 상태에서 <strong>SELECT 버튼을 3초간 길게 누릅니다</strong>. ➔ "삐빅~" 소리와 함께 <strong>파란색 LED가 깜박입니다</strong>.</span>
+                      <span class="mn-txt">Румиг асаагаад <strong>SELECT товчийг 3 секунд удаан дарна</strong>. ➔ Дуу гарч <strong>цэнхэр LED анивчина</strong>.</span>
+                    </div>
                   </div>
                   <div class="remote-pairing-step" style="border-top:3px solid #d946ef;">
-                    <div style="font-weight:800; color:#a21caf; margin-bottom:4px;">2. 조종기 페어링 모드</div>
-                    <div>조종기의 <strong>L1 버튼을 손가락으로 누른 채 전원 스위치를 켭니다</strong>. ➔ 페어링 모드로 진입하며 <strong>조종기 상단 LED가 깜박입니다</strong>.</div>
+                    <div style="font-weight:800; color:#a21caf; margin-bottom:4px;">
+                      <span class="ko-txt">2. 조종기 페어링 모드</span>
+                      <span class="mn-txt">2. Удирдлага хослох горим</span>
+                    </div>
+                    <div>
+                      <span class="ko-txt">조종기의 <strong>L1 버튼을 누른 채 전원 스위치를 켭니다</strong>. ➔ <strong>조종기 상단 LED가 깜박입니다</strong>.</span>
+                      <span class="mn-txt">Удирдлагын <strong>L1 товчийг дарангаа цахилгааныг асаана</strong>. ➔ <strong>Удирдлагын дээд LED анивчина</strong>.</span>
+                    </div>
                   </div>
                   <div class="remote-pairing-step" style="border-top:3px solid #16a34a;">
-                    <div style="font-weight:800; color:#15803d; margin-bottom:4px;">3. 자동 매칭 & 완료</div>
-                    <div>루미와 조종기가 서로 주파수를 감지하여 1:1 매칭되면 <strong>양쪽 LED 깜박임이 종료</strong>되고 정상 연결됩니다! (이후 전원만 켜도 즉시 연결)</div>
+                    <div style="font-weight:800; color:#15803d; margin-bottom:4px;">
+                      <span class="ko-txt">3. 자동 매칭 & 완료</span>
+                      <span class="mn-txt">3. Автомат холболт & Дуусах</span>
+                    </div>
+                    <div>
+                      <span class="ko-txt">서로 주파수를 감지하여 1:1 매칭되면 <strong>양쪽 LED 깜박임이 종료</strong>되고 정상 연결됩니다!</span>
+                      <span class="mn-txt">Бие биенээ мэдэрч 1:1 холбогдмогц <strong>хоёр талын LED анивчихаа больж</strong> бэлэн болно!</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -2735,16 +3514,24 @@
               <!-- 버튼별 기능 매핑표 -->
               <div>
                 <div style="font-weight:800; color:#6b21a8; font-size:0.92rem; margin-bottom:8px; display:flex; align-items:center; gap:6px;">
-                  <span>🕹️</span> 조종기 버튼별 기능 및 실시간(RC) 주행 매핑표
+                  <span>🕹️</span>
+                  <span class="ko-txt">조종기 버튼별 기능 및 실시간(RC) 주행 매핑표</span>
+                  <span class="mn-txt">Удирдлагын товчлуур тус бүрийн үүрэг ба бодит цагийн (RC) удирдлагын хүснэгт</span>
                 </div>
                 <div class="remote-ctrl-grid">
                   ${rg.controls.map(c => `
                     <div class="remote-ctrl-key">
                       <div style="display:flex; align-items:center; justify-content:space-between;">
                         <span style="font-weight:800; color:#6b21a8; background:#f3e8ff; padding:2px 8px; border-radius:4px;">${c.key}</span>
-                        <strong style="color:var(--gray-900); font-size:0.83rem;">${c.name}</strong>
+                        <strong style="color:var(--gray-900); font-size:0.83rem;">
+                          <span class="ko-txt">${c.name}</span>
+                          <span class="mn-txt">${c.mongolName || c.name}</span>
+                        </strong>
                       </div>
-                      <div style="color:var(--gray-600); font-size:0.79rem; line-height:1.45;">${c.desc}</div>
+                      <div style="color:var(--gray-600); font-size:0.79rem; line-height:1.45;">
+                        <span class="ko-txt">${c.desc}</span>
+                        <span class="mn-txt">${c.mongolDesc || c.desc}</span>
+                      </div>
                     </div>
                   `).join('')}
                 </div>
@@ -2764,12 +3551,18 @@
               <div class="detail-label" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
                 <div style="display:flex; align-items:center; gap:8px;">
                   <span style="font-size:1.15rem;">🎬</span>
-                  <span style="font-weight:800; color:#991b1b;">실제 로봇 동작 시연 영상 (Video Demonstration)</span>
+                  <span style="font-weight:800; color:#991b1b;">
+                    <span class="ko-txt">실제 로봇 동작 시연 영상 (Video Demonstration)</span>
+                    <span class="mn-txt">Бодит ажиллагааны бичлэг (Video Demonstration)</span>
+                  </span>
                   <span class="video-ratio-pill">${ratioBadge}</span>
                 </div>
                 <a href="${ytUrl}" target="_blank" rel="noopener noreferrer" class="yt-pill-btn" title="새 창에서 유튜브로 열기">
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="#ef4444"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                  <span>YouTube에서 보기 ↗</span>
+                  <span>
+                    <span class="ko-txt">YouTube에서 보기 ↗</span>
+                    <span class="mn-txt">YouTube дээр үзэх ↗</span>
+                  </span>
                 </a>
               </div>
               <div class="video-player-wrap ${ratioClass}">
@@ -2783,7 +3576,9 @@
               </div>
               <div class="video-caption-box">
                 <span style="font-size:1rem;">📌</span>
-                <span>${item.videoDesc || item.videoTitle}</span>
+                <span class="ko-txt">${item.videoDesc || item.videoTitle}</span>
+                <span class="mn-txt">${item.mongolOperation || item.mongolTitle}</span>
+                <div class="mn-sub">🇲🇳 ${item.mongolTitle} бичлэг</div>
               </div>
             </div>
           `;
@@ -2802,7 +3597,7 @@
                     <span>📚 ${item.unitFull}</span>
                     <span style="color:var(--gray-400);">•</span>
                     <span>${item.modeText}</span>
-                    ${item.videoId ? `<span class="has-video-tag">🎬 영상 재생</span>` : ''}
+                    ${item.videoId ? `<span class="has-video-tag"><span class="ko-txt">🎬 영상 재생</span><span class="mn-txt">🎬 Бичлэг үзэх</span></span>` : ''}
                   </div>
                   <div class="lesson-title-text">
                     <span class="ko-txt">${item.title}</span>
@@ -2896,9 +3691,15 @@
                   </div>
 
                   <div class="lesson-hw-tags">
-                    <span style="font-size:0.75rem; font-weight:700; color:var(--gray-500); margin-right:4px;">연계 하드웨어 & 개념:</span>
-                    ${item.sensors.map(s => `<span class="hw-tag sensor">📡 ${s}</span>`).join('')}
-                    ${item.concepts.map(c => `<span class="hw-tag concept">🧠 ${c}</span>`).join('')}
+                    <span style="font-size:0.75rem; font-weight:700; color:var(--gray-500); margin-right:4px;"><span class="ko-txt">연계 하드웨어 & 개념:</span><span class="mn-txt">Төхөөрөмж ба ойлголт:</span></span>
+                    ${item.sensors.map(s => {
+                      const mn = tagTranslations[s] || s;
+                      return `<span class="hw-tag sensor">📡 <span class="ko-txt">${s}</span><span class="mn-txt">${mn}</span></span>`;
+                    }).join('')}
+                    ${item.concepts.map(c => {
+                      const mn = tagTranslations[c] || c;
+                      return `<span class="hw-tag concept">🧠 <span class="ko-txt">${c}</span><span class="mn-txt">${mn}</span></span>`;
+                    }).join('')}
                   </div>
 
                 </div>
@@ -3053,11 +3854,14 @@
         }
 
         if (subtitleBtn) {
+          if (isFullMn) {
+            subtitleBtn.innerHTML = isSubOn ? `<span>🌐</span> Монгол хадмал унтраах` : `<span>🌐</span> Монгол хадмал асаах`;
+          } else {
+            subtitleBtn.innerHTML = isSubOn ? `<span>🌐</span> 몽골어 보조자막 끄기` : `<span>🌐</span> 몽골어 보조자막 켜기`;
+          }
           if (isSubOn) {
-            subtitleBtn.innerHTML = `<span>🌐</span> 몽골어 보조자막 끄기`;
             subtitleBtn.classList.add("active");
           } else {
-            subtitleBtn.innerHTML = `<span>🌐</span> 몽골어 보조자막 켜기`;
             subtitleBtn.classList.remove("active");
           }
         }
