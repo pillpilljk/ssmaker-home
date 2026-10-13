@@ -4995,14 +4995,14 @@
         if (langMnBtn) langMnBtn.classList.toggle("active-mn", isFullMn);
         if (langViBtn) langViBtn.classList.toggle("active-vi", isFullVi);
 
-        const searchInput = document.getElementById("lessonSearch");
-        if (searchInput) {
+        const sInput = document.getElementById("lessonSearch");
+        if (sInput) {
           if (isFullMn) {
-            searchInput.placeholder = "Хичээлийн нэр, зарчим, мэдрэгч, горимын дугаараар хайх (жишээ: теремин, санах ой, 12-р горим)...";
+            sInput.placeholder = "Хичээлийн нэр, зарчим, мэдрэгч, горимын дугаараар хайх (жишээ: теремин, санах ой, 12-р горим)...";
           } else if (isFullVi) {
-            searchInput.placeholder = "Tìm theo tên bài học, nguyên lý, cảm biến, chế độ (ví dụ: theremin, bộ nhớ, chế độ 12)...";
+            sInput.placeholder = "Tìm theo tên bài học, nguyên lý, cảm biến, chế độ (ví dụ: theremin, bộ nhớ, chế độ 12)...";
           } else {
-            searchInput.placeholder = "차시 제목, 핵심 원리, 센서, 모드 번호 검색 (예: 테레민, 메모리, 모드 12, 역산, 오토센싱)...";
+            sInput.placeholder = "차시 제목, 핵심 원리, 센서, 모드 번호 검색 (예: 테레민, 메모리, 모드 12, 역산, 오토센싱)...";
           }
         }
 
@@ -5022,30 +5022,40 @@
 
       if (subMnBtn) {
         subMnBtn.addEventListener("click", () => {
-          document.body.classList.remove("show-viet-sub");
-          document.body.classList.toggle("show-mongol-sub");
+          const wasOn = document.body.classList.contains("show-mongol-sub");
+          document.body.classList.remove("lang-mongol-full", "lang-viet-full", "show-viet-sub");
+          if (wasOn) {
+            document.body.classList.remove("show-mongol-sub");
+          } else {
+            document.body.classList.add("show-mongol-sub");
+          }
           updateLanguageUI();
         });
       }
 
       if (subViBtn) {
         subViBtn.addEventListener("click", () => {
-          document.body.classList.remove("show-mongol-sub");
-          document.body.classList.toggle("show-viet-sub");
+          const wasOn = document.body.classList.contains("show-viet-sub");
+          document.body.classList.remove("lang-mongol-full", "lang-viet-full", "show-mongol-sub");
+          if (wasOn) {
+            document.body.classList.remove("show-viet-sub");
+          } else {
+            document.body.classList.add("show-viet-sub");
+          }
           updateLanguageUI();
         });
       }
 
       if (langKoBtn) {
         langKoBtn.addEventListener("click", () => {
-          document.body.classList.remove("lang-mongol-full", "lang-viet-full");
+          document.body.classList.remove("lang-mongol-full", "lang-viet-full", "show-mongol-sub", "show-viet-sub");
           updateLanguageUI();
         });
       }
 
       if (langMnBtn) {
         langMnBtn.addEventListener("click", () => {
-          document.body.classList.remove("lang-viet-full");
+          document.body.classList.remove("lang-viet-full", "show-mongol-sub", "show-viet-sub");
           document.body.classList.add("lang-mongol-full");
           updateLanguageUI();
         });
@@ -5053,13 +5063,15 @@
 
       if (langViBtn) {
         langViBtn.addEventListener("click", () => {
-          document.body.classList.remove("lang-mongol-full");
+          document.body.classList.remove("lang-mongol-full", "show-mongol-sub", "show-viet-sub");
           document.body.classList.add("lang-viet-full");
           updateLanguageUI();
         });
       }
 
-      const navBtns = document.querySelectorAll(".nav-btn");const navBtns = document.querySelectorAll(".nav-btn");
+      updateLanguageUI();
+
+      const navBtns = document.querySelectorAll(".nav-btn");
       navBtns.forEach(btn => {
         btn.addEventListener("click", () => {
           const targetTabId = btn.getAttribute("data-tab");
