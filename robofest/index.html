@@ -142,7 +142,7 @@
       </div>
 
       <div class="p-6 sm:p-7 space-y-5">
-        <!-- 현장 교육 및 안내 배너 -->
+        <!-- 현장 교육 안내 배너 -->
         <div class="p-4 rounded-2xl bg-amber-50 border-2 border-amber-300 text-amber-950 space-y-1">
           <div class="text-xs font-extrabold text-amber-800 flex items-center gap-1.5">
             <i class="fa-solid fa-circle-info text-amber-600"></i> 연수 포털 이용 안내
@@ -333,9 +333,9 @@
         </div>
       </div>
 
-      <!-- Group 4: Official QnA -->
+      <!-- Group 4: Official QnA & Resources -->
       <div>
-        <div class="px-3 mb-1.5 text-[11px] font-bold uppercase tracking-wider text-slate-400">공식 QnA 자료</div>
+        <div class="px-3 mb-1.5 text-[11px] font-bold uppercase tracking-wider text-slate-400">공식 자료 · 바로가기</div>
         <div class="space-y-1.5">
           <a href="#qna-all" target="_blank" onclick="openEventQnAPage('all', event)" class="w-full flex items-center justify-between px-3 py-2.5 rounded-xl text-left text-sm font-semibold text-emerald-300 bg-emerald-950/50 hover:bg-emerald-900/60 border border-emerald-500/30 transition">
             <span class="flex items-center gap-2.5">
@@ -343,6 +343,20 @@
               <span>공식 QnA 모음집</span>
             </span>
             <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-bold">새창 ↗</span>
+          </a>
+          <a href="https://drive.google.com/drive/folders/1XCMHoMmEe4AVqHNnPDXVQRlbqZNT6yzE?usp=sharing" target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-between px-3 py-2 rounded-xl text-left text-xs font-semibold text-sky-200 bg-sky-950/50 hover:bg-sky-900/60 border border-sky-500/30 transition">
+            <span class="flex items-center gap-2.5">
+              <i class="fa-brands fa-google-drive w-4 text-center text-sky-400"></i>
+              <span>규정 공유 드라이브</span>
+            </span>
+            <span class="text-[10px] text-sky-300 font-bold">↗</span>
+          </a>
+          <a href="https://robofestbusan2026.com/" target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-between px-3 py-2 rounded-xl text-left text-xs font-semibold text-amber-200 bg-amber-950/50 hover:bg-amber-900/60 border border-amber-500/30 transition">
+            <span class="flex items-center gap-2.5">
+              <i class="fa-solid fa-house-flag w-4 text-center text-amber-400"></i>
+              <span>로보페스트 한국 홈페이지</span>
+            </span>
+            <span class="text-[10px] text-amber-300 font-bold">↗</span>
           </a>
         </div>
       </div>
@@ -416,9 +430,9 @@
           <!-- Key Tournament Badges -->
           <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-6 pt-5 border-t border-white/15">
             <div class="bg-white/10 rounded-xl p-3">
-              <div class="text-[11px] text-slate-300 font-medium">운영 종목 수</div>
-              <div class="text-lg font-extrabold text-white mt-0.5">총 8개 종목</div>
-              <div class="text-[11px] text-blue-200">경기 4 · 창작 4</div>
+              <div class="text-[11px] text-slate-300 font-medium">운영 종목 및 확정 팀</div>
+              <div class="text-lg font-extrabold text-white mt-0.5">8개 종목 · 159팀</div>
+              <div class="text-[11px] text-blue-200">경기 98팀 · 창작 61팀</div>
             </div>
             <div class="bg-white/10 rounded-xl p-3">
               <div class="text-[11px] text-slate-300 font-medium">참가 부문 (한국 학제)</div>
@@ -432,8 +446,61 @@
             </div>
             <div class="bg-white/10 rounded-xl p-3">
               <div class="text-[11px] text-slate-300 font-medium">창작발표종목 인기상</div>
-              <div class="text-lg font-extrabold text-white mt-0.5">온라인 투표</div>
-              <div class="text-[11px] text-sky-200">스케줄에 따라 참여 권장</div>
+              <div class="text-lg font-extrabold text-white mt-0.5">온라인 인기투표</div>
+              <div class="text-[11px] text-sky-200">14:35 이후 참여 권장</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 공식 규정 드라이브 & 로보페스트 한국 홈페이지 바로가기 카드 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="bg-white rounded-2xl border-2 border-sky-300 p-5 shadow-sm flex flex-col justify-between gap-4">
+            <div class="space-y-1.5">
+              <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-sky-50 border border-sky-200 text-sky-800 text-[11px] font-extrabold">
+                <i class="fa-brands fa-google-drive text-sky-600"></i> OFFICIAL RULES DRIVE
+              </div>
+              <h2 class="text-base sm:text-lg font-extrabold text-slate-900">규정 공유 구글 드라이브</h2>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                2027 로보페스트 국내예선 종목별 국·영문 공식 규정집, 체크리스트, 채점 루브릭 원본 파일을 열람할 수 있습니다.
+              </p>
+              <a href="https://drive.google.com/drive/folders/1XCMHoMmEe4AVqHNnPDXVQRlbqZNT6yzE?usp=sharing" target="_blank" rel="noopener noreferrer" class="block text-xs font-mono font-bold text-ltu-blue hover:text-ltu-darkblue underline break-all pt-1">
+                https://drive.google.com/drive/folders/1XCMHoMmEe4AVqHNnPDXVQRlbqZNT6yzE?usp=sharing
+              </a>
+            </div>
+            <div class="flex items-center gap-2 pt-1">
+              <a href="https://drive.google.com/drive/folders/1XCMHoMmEe4AVqHNnPDXVQRlbqZNT6yzE?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-ltu-blue hover:bg-ltu-darkblue text-white text-xs font-extrabold shadow-xs transition">
+                <i class="fa-solid fa-folder-open"></i>
+                <span>드라이브 열기</span>
+              </a>
+              <button type="button" onclick="copyTextFallback('https://drive.google.com/drive/folders/1XCMHoMmEe4AVqHNnPDXVQRlbqZNT6yzE?usp=sharing', '규정 공유 구글 드라이브 주소')" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold transition">
+                <i class="fa-regular fa-copy"></i>
+                <span>주소 복사</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl border-2 border-amber-300 p-5 shadow-sm flex flex-col justify-between gap-4">
+            <div class="space-y-1.5">
+              <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-amber-50 border border-amber-200 text-amber-900 text-[11px] font-extrabold">
+                <i class="fa-solid fa-globe text-amber-600"></i> ROBOFEST KOREA PORTAL
+              </div>
+              <h2 class="text-base sm:text-lg font-extrabold text-slate-900">로보페스트 한국 홈페이지</h2>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                2027 로보페스트 국내예선대회(부산) 공식 공지사항, 참가 안내, 대진표 및 대회 운영 정보를 확인할 수 있습니다.
+              </p>
+              <a href="https://robofestbusan2026.com/" target="_blank" rel="noopener noreferrer" class="block text-xs font-mono font-bold text-amber-800 hover:text-amber-950 underline break-all pt-1">
+                https://robofestbusan2026.com/
+              </a>
+            </div>
+            <div class="flex items-center gap-2 pt-1">
+              <a href="https://robofestbusan2026.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-amber-600 hover:bg-amber-700 text-white text-xs font-extrabold shadow-xs transition">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span>홈페이지 방문하기</span>
+              </a>
+              <button type="button" onclick="copyTextFallback('https://robofestbusan2026.com/', '로보페스트 한국 홈페이지 주소')" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold transition">
+                <i class="fa-regular fa-copy"></i>
+                <span>주소 복사</span>
+              </button>
             </div>
           </div>
         </div>
@@ -591,56 +658,56 @@
               </thead>
               <tbody class="divide-y divide-slate-200 border border-slate-200 text-slate-700 align-top">
                 <tr>
-                  <td class="py-2.5 px-3 font-extrabold text-robofest-red">1. GAME<br><span class="text-[11px] font-semibold text-slate-500">RoboPetCare</span></td>
+                  <td class="py-2.5 px-3 font-extrabold text-robofest-red">1. GAME<br><span class="text-[11px] font-semibold text-slate-500">RoboPetCare (16팀)</span></td>
                   <td class="py-2.5 px-3">자율주행 로봇이 6가지 반려동물 돌봄 과제와 게임 시작방향, 게임 종료과제(UTF)를 완수하는 2라운드 미션 경기</td>
                   <td class="py-2.5 px-3 font-mono text-xs"><strong>2분(120초)</strong><br>100점 만점<br>(최고+평균)÷2</td>
                   <td class="py-2.5 px-3 text-xs">• 시작 후 선수 즉시 이동(센서 간섭 방지)<br>• <strong>완전 정지 후</strong> 화면 숫자 확인<br>• 전체 리셋 1회만 가능(타이머 계속 진행)</td>
                   <td class="py-2.5 px-3 text-center"><button type="button" onclick="switchSection('sec-game')" class="px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-ltu-blue hover:text-white text-xs font-bold transition">이동</button></td>
                 </tr>
                 <tr class="bg-sky-50/20">
-                  <td class="py-2.5 px-3 font-extrabold text-sky-700">2. UMC<br><span class="text-[11px] font-semibold text-slate-500">미지의 미션</span></td>
+                  <td class="py-2.5 px-3 font-extrabold text-sky-700">2. UMC<br><span class="text-[11px] font-semibold text-slate-500">미지의 미션 (8팀)</span></td>
                   <td class="py-2.5 px-3">대회 당일 현장에서 공개되는 미공개 미션(Junior·Senior 부문별 과제 + 현장 추가미션)을 현장 조립·코딩 후 수행</td>
                   <td class="py-2.5 px-3 font-mono text-xs"><strong>2분(120초)</strong><br>당일 미션 공지<br>+ 현장 추가미션</td>
                   <td class="py-2.5 px-3 text-xs">• 당일 현장에서 미션 공지 후 심판 연수 진행<br>• 앱 내장 경기 타이머 및 기록시간 기입<br>• <strong>초·중고등부 모두 추가미션 숫자 입력</strong></td>
                   <td class="py-2.5 px-3 text-center"><button type="button" onclick="switchSection('sec-umc')" class="px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-ltu-blue hover:text-white text-xs font-bold transition">이동</button></td>
                 </tr>
                 <tr>
-                  <td class="py-2.5 px-3 font-extrabold text-emerald-700">3. VCC<br><span class="text-[11px] font-semibold text-slate-500">Deep Safari</span></td>
+                  <td class="py-2.5 px-3 font-extrabold text-emerald-700">3. VCC<br><span class="text-[11px] font-semibold text-slate-500">Deep Safari (10팀)</span></td>
                   <td class="py-2.5 px-3">USB 카메라 1대를 탑재한 로봇이 사파리 객체·형상을 비전/AI로 판별하여 화면 텍스트와 음성(비프음)으로 출력</td>
                   <td class="py-2.5 px-3 font-mono text-xs"><strong>팀당 5분</strong><br>Lv1(30점)<br>Lv2(60점)</td>
                   <td class="py-2.5 px-3 text-xs">• 단일 정답 100%, 복수 출력 50% 감점<br>• 6초 내 정정 실패 또는 오답 시 0점<br>• 시험 시작 후 코드 수정 일절 불가</td>
                   <td class="py-2.5 px-3 text-center"><button type="button" onclick="switchSection('sec-vcc')" class="px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-ltu-blue hover:text-white text-xs font-bold transition">이동</button></td>
                 </tr>
                 <tr class="bg-amber-50/20">
-                  <td class="py-2.5 px-3 font-extrabold text-amber-700">4. BottleSumo<br><span class="text-[11px] font-semibold text-slate-500">보틀스모</span></td>
+                  <td class="py-2.5 px-3 font-extrabold text-amber-700">4. BottleSumo<br><span class="text-[11px] font-semibold text-slate-500">보틀스모 (64팀)</span></td>
                   <td class="py-2.5 px-3">오전 타임트라이얼(생수병 밀어내기) 예선 후 오후 1:1 토너먼트(3판 2선승)로 상대 로봇·병을 링 밖으로 밀어냄</td>
                   <td class="py-2.5 px-3 font-mono text-xs"><strong>경기당 2분</strong><br>3초 지연출발<br>3판 2선승제</td>
                   <td class="py-2.5 px-3 text-xs">• <strong>Classic: 정품 LEGO·VEX IQ만 허용</strong> (가품·3D출력·개조 부품 엄격 제한)<br>• 3초 지연 출발 전 움직이면 반칙</td>
                   <td class="py-2.5 px-3 text-center"><button type="button" onclick="switchSection('sec-sumo')" class="px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-ltu-blue hover:text-white text-xs font-bold transition">이동</button></td>
                 </tr>
                 <tr>
-                  <td class="py-2.5 px-3 font-extrabold text-indigo-700">5. Exhibition<br><span class="text-[11px] font-semibold text-slate-500">창작 전시</span></td>
+                  <td class="py-2.5 px-3 font-extrabold text-indigo-700">5. Exhibition<br><span class="text-[11px] font-semibold text-slate-500">창작 전시 (32팀)</span></td>
                   <td class="py-2.5 px-3">창의적 문제해결 로봇 프로젝트를 부스에서 시연·발표하고 2인 1조 심사위원의 순회 질의응답으로 평가</td>
                   <td class="py-2.5 px-3 font-mono text-xs"><strong>팀당 11~12분</strong><br>루브릭 14항목<br>100점 환산</td>
                   <td class="py-2.5 px-3 text-xs">• 학생 본인 코드 진위 압박 질문 필수<br>• <strong>발표 4분 30초 초과 시 30초당 -1점</strong><br>• 부스 공간(1.8×2m) 초과 감점</td>
                   <td class="py-2.5 px-3 text-center"><button type="button" onclick="switchSection('sec-exh')" class="px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-ltu-blue hover:text-white text-xs font-bold transition">이동</button></td>
                 </tr>
                 <tr class="bg-pink-50/20">
-                  <td class="py-2.5 px-3 font-extrabold text-pink-700">6. RoboParade<br><span class="text-[11px] font-semibold text-slate-500">로보퍼레이드</span></td>
+                  <td class="py-2.5 px-3 font-extrabold text-pink-700">6. RoboParade<br><span class="text-[11px] font-semibold text-slate-500">로보퍼레이드 (8팀)</span></td>
                   <td class="py-2.5 px-3">예술 테마로 꾸민 자율주행 플로트가 트랙을 따라 앞차와 거리를 유지하며 행진 (오전 검수 + 오후 퍼레이드 쇼)</td>
                   <td class="py-2.5 px-3 font-mono text-xs"><strong>Jr 단일부문</strong><br>루브릭 10항목<br>100점 환산</td>
                   <td class="py-2.5 px-3 text-xs">• 앞차 감지 정지·재출발 및 속도 표시<br>• <strong>1인 단독 팀은 [5.1 팀워크] 1점 고정</strong><br>• 시계·반시계 양방향 주행 성능 평가</td>
                   <td class="py-2.5 px-3 text-center"><button type="button" onclick="switchSection('sec-parade')" class="px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-ltu-blue hover:text-white text-xs font-bold transition">이동</button></td>
                 </tr>
                 <tr>
-                  <td class="py-2.5 px-3 font-extrabold text-purple-700">7. RoboArts<br><span class="text-[11px] font-semibold text-slate-500">로보아츠</span></td>
+                  <td class="py-2.5 px-3 font-extrabold text-purple-700">7. RoboArts<br><span class="text-[11px] font-semibold text-slate-500">로보아츠 (11팀)</span></td>
                   <td class="py-2.5 px-3">시각예술·음악·공연예술과 로보틱스·AI 인터랙션을 융합한 창작 예술 프로젝트 부스 순회 평가</td>
                   <td class="py-2.5 px-3 font-mono text-xs"><strong>부스 순회심사</strong><br>루브릭 13항목<br>100점 환산</td>
                   <td class="py-2.5 px-3 text-xs">• 예술 개념(20%) + 상호작용(10%) 중점<br>• <strong>발표 4분 30초 초과 시 30초당 -1점</strong><br>• 현장 구동 시연 및 코드 완성도 검증</td>
                   <td class="py-2.5 px-3 text-center"><button type="button" onclick="switchSection('sec-arts')" class="px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-ltu-blue hover:text-white text-xs font-bold transition">이동</button></td>
                 </tr>
                 <tr class="bg-rose-50/20">
-                  <td class="py-2.5 px-3 font-extrabold text-rose-700">8. RoboMed<br><span class="text-[11px] font-semibold text-slate-500">로보메드</span></td>
+                  <td class="py-2.5 px-3 font-extrabold text-rose-700">8. RoboMed<br><span class="text-[11px] font-semibold text-slate-500">로보메드 (10팀)</span></td>
                   <td class="py-2.5 px-3">생명의료공학·재활 보조·스마트 헬스케어 문제를 해결하는 지능형 의료 로봇 프로젝트 부스 순회 평가</td>
                   <td class="py-2.5 px-3 font-mono text-xs"><strong>오후 순회심사</strong><br>루브릭 100점<br>환산 평가</td>
                   <td class="py-2.5 px-3 text-xs">• 의학적 타당성 및 센서 측정 안전성<br>• <strong>발표 4분 30초 초과 시 30초당 -1점</strong><br>• 실용성·기업가정신 및 코드 설명 검증</td>
@@ -667,7 +734,7 @@
             <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
               <div class="text-xs font-bold text-ltu-blue mb-1">1. 부문 구성 (Explorer 미운영)</div>
               <p class="text-sm text-slate-700 leading-relaxed">
-                본부 10개 종목 중 국내예선은 <strong>8개 종목</strong>을 운영하며, 연령 부문은 <strong>Junior(초5~중2)</strong>와 <strong>Senior(중3~고2)</strong> 2개 부문만 운영합니다. (Explorer 부문 없음)
+                본부 10개 종목 중 국내예선은 <strong>8개 종목(확정 159팀)</strong>을 운영하며, 연령 부문은 <strong>Junior(초5~중2)</strong>와 <strong>Senior(중3~고2)</strong> 2개 부문만 운영합니다. (Explorer 부문 없음)
               </p>
             </div>
             <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
@@ -838,7 +905,7 @@
           </div>
         </div>
 
-        <!-- 창작발표종목에 대한 온라인투표 안내 (스케줄에 따른 참여 권장) -->
+        <!-- 창작발표종목에 대한 온라인 인기투표 안내 (스케줄에 따른 참여 권장) -->
         <div class="bg-sky-50 rounded-2xl border-2 border-sky-300 p-6 shadow-sm">
           <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-3">
             <div class="flex items-center gap-3">
@@ -847,7 +914,7 @@
               </span>
               <div>
                 <span class="text-xs font-extrabold uppercase tracking-wider text-ltu-blue">오후 페스티벌 프로그램 안내</span>
-                <h2 class="text-lg font-extrabold text-slate-900">창작발표종목에 대한 온라인투표 안내 (스케줄에 따라 참여 권장)</h2>
+                <h2 class="text-lg font-extrabold text-slate-900">창작발표종목에 대한 온라인 인기투표 안내 (스케줄에 따라 참여 권장)</h2>
               </div>
             </div>
             <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-100 text-ltu-darkblue text-xs font-extrabold">
@@ -856,7 +923,7 @@
           </div>
 
           <p class="text-sm text-slate-800 leading-relaxed">
-            오후 <strong>14:35 이후</strong>부터 16:00 투표 마감 전까지 진행되는 <strong>창작발표종목(Exhibition · RoboParade · RoboArts · RoboMed)에 대한 온라인투표</strong>는 종이 스티커 대신 웹/모바일 온라인 투표로 운영됩니다. 본 지침은 강제 의무 사항이 아니며, 모든 심판·심사위원 및 운영 스탭분들께서는 <strong>본인 담당 종목의 공식 채점 및 휴식(15~20분)을 마친 뒤 여유 스케줄에 따라 창작발표종목 부스를 둘러보시며 온라인투표에 자유롭게 참여해 주시기를 권장</strong>합니다.
+            오후 <strong>14:35 이후</strong>부터 16:00 투표 마감 전까지 진행되는 <strong>창작발표종목(Exhibition · RoboArts · RoboMed)에 대한 온라인 인기투표</strong>는 종이 스티커 대신 웹/모바일 온라인 인기투표로 운영됩니다. 본 지침은 강제 의무 사항이 아니며, 모든 심판·심사위원 및 운영 스탭분들께서는 <strong>본인 담당 종목의 공식 채점 및 휴식을 마친 뒤 여유 스케줄에 따라 창작발표종목 부스를 둘러보시며 온라인 인기투표에 자유롭게 참여해 주시기를 권장</strong>합니다.
           </p>
         </div>
 
@@ -917,20 +984,20 @@
               <tr class="bg-blue-50/30">
                 <td class="py-3 px-4 font-mono font-extrabold text-ltu-blue whitespace-nowrap">13:00 ~ 14:35</td>
                 <td class="py-3 px-4 font-extrabold text-ltu-blue">오후 대회 진행 (2차 세션)</td>
-                <td class="py-3 px-4 leading-relaxed">[코딩] 2차 미션 공개 / 수정 연습 / 2차 공식 채점 | [스모] 64강~8강 토너먼트 | [창작] 부스 오후 심사 / 퍼레이드 트랙 쇼(13:30)</td>
+                <td class="py-3 px-4 leading-relaxed">[코딩] 2차 미션 공개 / 수정 연습 / 2차 공식 채점 | [스모] 32강~8강 토너먼트 | [창작] 부스 오후 심사 / 퍼레이드 트랙 쇼(13:35)</td>
                 <td class="py-3 px-4 text-xs font-semibold text-slate-700">종목별 순차 완료</td>
               </tr>
               <tr class="bg-sky-50/50">
                 <td class="py-3 px-4 font-mono font-bold text-sky-900 whitespace-nowrap">14:35 ~ 16:00</td>
                 <td class="py-3 px-4 font-bold text-sky-900">결승전 및 페스티벌</td>
-                <td class="py-3 px-4">[스모] 4강 및 결승전(15:00~) | [투표] 참가자 상호 시연/투표</td>
-                <td class="py-3 px-4 text-xs font-semibold text-ltu-blue">가중치 스티커 투표 (온라인 인기투표 진행)</td>
+                <td class="py-3 px-4">[스모] 4강 및 결승전(15:00~) | [투표] 참가자 상호 시연 / 온라인 인기투표</td>
+                <td class="py-3 px-4 text-xs font-semibold text-ltu-blue">온라인 인기투표 진행</td>
               </tr>
               <tr>
                 <td class="py-3 px-4 font-mono font-bold text-slate-900 whitespace-nowrap">16:00 ~ 16:25</td>
                 <td class="py-3 px-4 font-bold text-slate-900">피트 최종 정리 및 결과 집계</td>
                 <td class="py-3 px-4">개인 장비 패킹 및 피트 최종 정리 / 본부석 최종 점수 집계</td>
-                <td class="py-3 px-4 text-xs font-semibold text-slate-700">판넬 투표 스티커 수거</td>
+                <td class="py-3 px-4 text-xs font-semibold text-slate-700">최종 순위 확정</td>
               </tr>
               <tr class="bg-amber-50/50">
                 <td class="py-3 px-4 font-mono font-bold text-amber-900 whitespace-nowrap">16:25 ~ 17:00</td>
@@ -942,11 +1009,11 @@
           </table>
         </div>
 
-        <!-- 7개 트랙 전 종목 통합 운영 타임테이블 (전체_타임테이블 시트 원문 그대로) -->
+        <!-- 7개 트랙 전 종목 통합 운영 타임테이블 (전체 159팀 확정 기준) -->
         <div class="bg-white rounded-2xl border-2 border-slate-200 p-6 shadow-sm overflow-x-auto">
           <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-200">
             <h3 class="text-base sm:text-lg font-extrabold text-slate-900 flex items-center gap-2">
-              <i class="fa-solid fa-table-columns text-robofest-red"></i> 7개 트랙 전 종목 통합 타임테이블
+              <i class="fa-solid fa-table-columns text-robofest-red"></i> 7개 트랙 전 종목 통합 타임테이블 (확정 159팀 기준)
             </h3>
             <span class="text-xs font-semibold text-slate-500">좌우로 스크롤하여 7개 트랙 전체 일정을 한눈에 비교하세요</span>
           </div>
@@ -954,13 +1021,13 @@
             <thead>
               <tr class="bg-navy-900 text-white">
                 <th class="py-3 px-3 w-36 whitespace-nowrap">시간대</th>
-                <th class="py-3 px-3">Game (17팀)<br><span class="text-[11px] font-normal text-amber-300">(Jr 12 / Sr 5)</span></th>
+                <th class="py-3 px-3">Game (16팀)<br><span class="text-[11px] font-normal text-amber-300">(Jr 11 / Sr 5)</span></th>
                 <th class="py-3 px-3">UMC (8팀)<br><span class="text-[11px] font-normal text-sky-300">(Jr 4 / Sr 4)</span></th>
-                <th class="py-3 px-3">VCC (11팀)<br><span class="text-[11px] font-normal text-emerald-300">(Sr 11)</span></th>
-                <th class="py-3 px-3">BottleSumo (66팀)<br><span class="text-[11px] font-normal text-amber-300">(Cl 37 / Unl 29)</span></th>
+                <th class="py-3 px-3">VCC (10팀)<br><span class="text-[11px] font-normal text-emerald-300">(Sr 10)</span></th>
+                <th class="py-3 px-3">BottleSumo (64팀)<br><span class="text-[11px] font-normal text-amber-300">(Cl 36 / Unl 28)</span></th>
                 <th class="py-3 px-3">창작 A조 (16팀)<br><span class="text-[11px] font-normal text-indigo-300">(Exh Jr 16)</span></th>
-                <th class="py-3 px-3">창작 B조 (23팀)<br><span class="text-[11px] font-normal text-rose-300">(Exh Sr 16 + Med 7)</span></th>
-                <th class="py-3 px-3">창작 C조 (20팀)<br><span class="text-[11px] font-normal text-purple-300">(Arts 11 + Parade 9)</span></th>
+                <th class="py-3 px-3">창작 B조 (26팀)<br><span class="text-[11px] font-normal text-rose-300">(Exh Sr 16 + Med 10)</span></th>
+                <th class="py-3 px-3">창작 C조 (19팀)<br><span class="text-[11px] font-normal text-purple-300">(Arts 11 + Parade 8)</span></th>
               </tr>
             </thead>
             <tbody class="divide-y divide-slate-200 text-slate-700 border border-slate-200 align-top">
@@ -972,7 +1039,7 @@
                 <td class="py-3 px-3">심판 5 / 스탭 3<br><span class="text-xs font-normal text-slate-600">(경기장 5개 고정)</span></td>
                 <td class="py-3 px-3">심사 2 / 보조 1<br><span class="text-xs font-normal text-slate-600">(부스 순회 심사)</span></td>
                 <td class="py-3 px-3">심사 2 / 보조 1<br><span class="text-xs font-normal text-slate-600">(부스 순회 심사)</span></td>
-                <td class="py-3 px-3">심사 2 / 보조 1<br><span class="text-xs font-normal text-slate-600">(부스 + 퍼레이드 트랙)</span></td>
+                <td class="py-3 px-3">심사 2 / 보조 1<br><span class="text-xs font-normal text-slate-600">(퍼레이드 스탭 2명)</span></td>
               </tr>
               <tr class="bg-amber-50/70">
                 <td class="py-2.5 px-3 font-mono font-bold text-amber-950 whitespace-nowrap">07:30~08:20<br><span class="text-[11px] font-sans">(심판, 스탭 출근)</span></td>
@@ -1018,13 +1085,13 @@
               </tr>
               <tr>
                 <td class="py-3 px-3 font-mono font-bold bg-slate-50 whitespace-nowrap">13:00~16:00<br><span class="text-[11px] font-sans text-ltu-blue">(오후 대회 진행)</span></td>
-                <td class="py-3 px-3 leading-relaxed">• 13:00 2차 미션 공개<br>• 13:10 2차 코딩 및 연습 (50분)<br>• 14:00 2차 로봇 검수 제출 (10분)<br>• 14:10 2차 공식 채점 (50분)<br>• 15:00 창작 부스 관람 및 인기투표</td>
-                <td class="py-3 px-3 leading-relaxed">• 13:00 1차 공식 채점 (30분)<br>• 13:30 2차 코딩 및 연습 (50분)<br>• 14:20 2차 검수 제출 (5분)<br>• 14:25 2차 공식 채점 (30분)<br>• 14:55 부스 관람 및 인기투표</td>
-                <td class="py-3 px-3 leading-relaxed">• 13:00 2차 대비 코드 수정 (25분)<br>• 13:25 2차 시스템 재보관 (5분)<br>• 13:30 2차(Level 2) 공식 시험 (55분)<br>• 14:25 부스 관람 및 인기투표 (동점 재경기)</td>
-                <td class="py-3 px-3 leading-relaxed">• 13:00 2차 공식 연습 및 튜닝<br>• 13:20 토너먼트 본선 (32강~결승)<br>• 15:35 창작 부스 인기투표 참여</td>
-                <td class="py-3 px-3 leading-relaxed">• 13:00 오후 부스 심사 (Jr 9~16번)<br>• 14:35 심사 완료 및 휴식<br>• 14:55 특별상 교차 심사 및 상호 투표</td>
-                <td class="py-3 px-3 leading-relaxed">• 13:00 오후 부스 심사 (Sr 11~16번)<br>• 14:10 RoboMed 순회 심사 (7팀)<br>• 15:20 휴식 및 교차 심사/투표</td>
-                <td class="py-3 px-3 leading-relaxed">• 13:00 Arts 잔여 심사 / Parade 점검<br>• 13:15 퍼레이드 트랙 집합 &amp; 릴레이 소개<br>• 13:35 [퍼레이드 1R] 시계방향 주행<br>• 14:00 [퍼레이드 2R] 반시계방향 주행<br>• 14:15 기술 Q&amp;A / 14:35 교차 심사·투표</td>
+                <td class="py-3 px-3 leading-relaxed">• 13:00 2차 미션 공개<br>• 13:10 2차 코딩 및 연습 (50분)<br>• 14:00 2차 로봇 검수 제출 (10분)<br>• 14:10 2차 공식 채점 (50분)<br>• 15:00 창작 부스 관람 및 온라인 인기투표</td>
+                <td class="py-3 px-3 leading-relaxed">• 13:00 1차 공식 채점 (30분)<br>• 13:30 2차 코딩 및 연습 (50분)<br>• 14:20 2차 검수 제출 (5분)<br>• 14:25 2차 공식 채점 (30분)<br>• 14:55 부스 관람 및 온라인 인기투표</td>
+                <td class="py-3 px-3 leading-relaxed">• 13:00 2차 대비 코드 수정 (25분)<br>• 13:25 2차 시스템 재보관 (5분)<br>• 13:30 2차(Level 2) 공식 시험 (55분)<br>• 14:25 부스 관람 및 온라인 인기투표 (동점 재경기)</td>
+                <td class="py-3 px-3 leading-relaxed">• 13:00 2차 공식 연습 및 튜닝<br>• 13:20 토너먼트 본선 (32강~결승)<br>• 15:35 창작 부스 온라인 인기투표 참여</td>
+                <td class="py-3 px-3 leading-relaxed">• 13:00 오후 부스 심사 (Jr 9~16번)<br>• 14:35 심사 완료 및 휴식<br>• 14:55 온라인 인기투표 참여</td>
+                <td class="py-3 px-3 leading-relaxed">• 13:00 오후 부스 심사 (Sr 11~16번)<br>• 14:10 RoboMed 순회 심사 (10팀)<br>• 15:20 휴식 및 온라인 인기투표</td>
+                <td class="py-3 px-3 leading-relaxed">• 13:00 Arts 잔여 심사 / Parade 점검<br>• 13:15 퍼레이드 트랙 집합 &amp; 릴레이 소개<br>• 13:35 [퍼레이드 1R] 시계방향 주행<br>• 14:00 [퍼레이드 2R] 반시계방향 주행<br>• 14:15 기술 Q&amp;A / 14:35 휴식 및 온라인 인기투표</td>
               </tr>
               <tr>
                 <td class="py-3 px-3 font-mono font-bold bg-slate-50 whitespace-nowrap">16:00~17:00<br><span class="text-[11px] font-sans text-slate-500">(정리/시상식)</span></td>
@@ -1071,7 +1138,7 @@
             <span class="px-3 py-1 rounded-full bg-robofest-red text-white text-xs font-black tracking-wide">
               <i class="fa-solid fa-compass mr-1"></i>심판 첫걸음 · 종목 진행 방식 한눈에 보기
             </span>
-            <span class="text-xs font-bold text-amber-300">전담 인력: 심판 1명 + 스탭 1명 (총 17팀 · 3개 경기장 순환)</span>
+            <span class="text-xs font-bold text-amber-300">전담 인력: 심판 1명 + 스탭 1명 (총 16팀 · Jr 11 / Sr 5 · 3개 경기장 순환)</span>
           </div>
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
             <div class="bg-white/10 rounded-xl p-4 border border-white/15 space-y-1.5">
@@ -1083,7 +1150,7 @@
             <div class="bg-white/10 rounded-xl p-4 border border-white/15 space-y-1.5">
               <div class="text-xs font-extrabold text-emerald-300 uppercase tracking-wider">② 오늘 대략 어떻게 운영되나요? (연습 · 검수 · 계측)</div>
               <ul class="text-sm text-slate-100 space-y-1.5 leading-relaxed">
-                <li>• <strong>오전 1차 (10:00~12:00):</strong> 1차 미션(UTF 1) 공개 → <strong>50분 현장 코딩·연습</strong> → 10분 로봇 규격 검수·제출 → <strong>50분 1차 공식 계측</strong> (17팀 순환, 2분 주행 후 정지 상태에서 화면 숫자 확인·싸인·저장)</li>
+                <li>• <strong>오전 1차 (10:00~12:00):</strong> 1차 미션(UTF 1) 공개 → <strong>50분 현장 코딩·연습</strong> → 10분 로봇 규격 검수·제출 → <strong>50분 1차 공식 계측</strong> (16팀 순환, 2분 주행 후 정지 상태에서 화면 숫자 확인·싸인·저장)</li>
                 <li>• <strong>오후 2차 (13:00~15:00):</strong> 2차 미션(UTF 2) 공개 → <strong>50분 코딩·연습</strong> → 10분 재검수·제출 → <strong>50분 2차 공식 계측</strong> (1·2차 성적 합산으로 최종 순위 확정)</li>
               </ul>
             </div>
@@ -1121,7 +1188,7 @@
               <p class="text-sm text-slate-600 mt-0.5">자율주행 로봇이 외부 조작 없이 2분(120초) 동안 6가지 반려동물 돌봄 과제를 완수하는 경기</p>
             </div>
             <div class="text-right text-xs bg-red-50 px-3.5 py-2 rounded-xl border border-red-200">
-              <div class="font-bold text-robofest-red">전담 인력: 심판 1명 + 스탭 1명 (총 17팀)</div>
+              <div class="font-bold text-robofest-red">전담 인력: 심판 1명 + 스탭 1명 (총 16팀 · Jr 11 / Sr 5)</div>
               <div class="text-slate-600">3개 경기장 순환 운영 · 스탭 1명 리셋/검수 · 심판 1명 채점</div>
             </div>
           </div>
@@ -1336,7 +1403,7 @@
             <h3 class="text-base sm:text-lg font-extrabold text-slate-900 flex items-center gap-2">
               <i class="fa-regular fa-clock text-robofest-red"></i> GAME 종목 세부 타임테이블 및 심판·스탭·운영팀 업무
             </h3>
-            <span class="px-3 py-1 rounded-full bg-red-50 border border-red-200 text-xs font-extrabold text-robofest-red">전담 인력: 심판 1명, 스탭 1명 (총 17팀 · 3개 경기장)</span>
+            <span class="px-3 py-1 rounded-full bg-red-50 border border-red-200 text-xs font-extrabold text-robofest-red">전담 인력: 심판 1명, 스탭 1명 (총 16팀 · 3개 경기장)</span>
           </div>
           <table class="w-full min-w-[780px] text-left border-collapse text-xs sm:text-sm">
             <thead>
@@ -1404,7 +1471,7 @@
                 <td class="py-3.5 px-4 font-mono font-extrabold text-robofest-red whitespace-nowrap">11:10 ~ 12:00</td>
                 <td class="py-3.5 px-4 font-extrabold text-robofest-red">1차 공식 채점 (50분)</td>
                 <td class="py-3.5 px-4 space-y-1.5 leading-relaxed">
-                  <div class="font-bold text-slate-900">심판 1명이 순환하며 17팀 주행 측정 및 서명</div>
+                  <div class="font-bold text-slate-900">심판 1명이 순환하며 16팀 주행 측정 및 서명</div>
                   <div class="p-2.5 rounded-lg bg-white border border-red-200 space-y-1 text-xs sm:text-sm">
                     <div class="text-sky-900 font-semibold"><span class="inline-block px-1.5 py-0.5 rounded bg-sky-100 text-sky-800 text-xs font-extrabold mr-1.5">스탭</span>1번 경기장 계측팀 불러오고 팀원들 미션물 배치하도록함. 2번 경기장, 3번 경기장팀 미리 불러서 미션물등 계측경기장 방해 없도록 하면서 계측 준비</div>
                     <div class="text-robofest-red font-semibold"><span class="inline-block px-1.5 py-0.5 rounded bg-red-100 text-robofest-red text-xs font-extrabold mr-1.5">심판</span>미션물 배치 확인하고 팀ID 명찰 확인하고 계측시작</div>
@@ -1438,7 +1505,7 @@
                 <td class="py-3.5 px-4 font-mono font-extrabold text-robofest-red whitespace-nowrap">14:10 ~ 15:00</td>
                 <td class="py-3.5 px-4 font-extrabold text-robofest-red">2차 공식 채점 (50분)</td>
                 <td class="py-3.5 px-4 space-y-1.5 leading-relaxed">
-                  <div class="font-bold text-slate-900">심판 1명이 순환하며 17팀 주행 측정 및 서명</div>
+                  <div class="font-bold text-slate-900">심판 1명이 순환하며 16팀 주행 측정 및 서명</div>
                   <div class="p-2.5 rounded-lg bg-white border border-red-200 space-y-1 text-xs sm:text-sm">
                     <div class="text-sky-900 font-semibold"><span class="inline-block px-1.5 py-0.5 rounded bg-sky-100 text-sky-800 text-xs font-extrabold mr-1.5">스탭</span>1번 경기장 계측팀 불러오고 팀원들 미션물 배치하도록함. 2번 경기장, 3번 경기장팀 미리 불러서 미션물등 계측경기장 방해 없도록 하면서 계측 준비</div>
                     <div class="text-robofest-red font-semibold"><span class="inline-block px-1.5 py-0.5 rounded bg-red-100 text-robofest-red text-xs font-extrabold mr-1.5">심판</span>미션물 배치 확인하고 팀ID 명찰 확인하고 계측시작</div>
@@ -1447,8 +1514,8 @@
               </tr>
               <tr class="bg-sky-50/50">
                 <td class="py-3.5 px-4 font-mono font-bold text-sky-900 whitespace-nowrap">15:00 ~ 16:00</td>
-                <td class="py-3.5 px-4 font-bold text-sky-900">관람 및 투표 (축제)</td>
-                <td class="py-3.5 px-4">창작 발표종목 관람을 하고 추첨하고 싶은 팀 대회본부 탭으로 인기투표</td>
+                <td class="py-3.5 px-4 font-bold text-sky-900">관람 및 온라인 인기투표 (축제)</td>
+                <td class="py-3.5 px-4">창작 발표종목 관람을 하고 추천하고 싶은 팀 온라인 인기투표 참여</td>
               </tr>
               <tr>
                 <td class="py-3.5 px-4 font-mono font-bold text-slate-900 whitespace-nowrap">16:00 ~ 17:00</td>
@@ -1485,7 +1552,7 @@
             <span class="px-3 py-1 rounded-full bg-sky-500 text-navy-950 text-xs font-black tracking-wide">
               <i class="fa-solid fa-compass mr-1"></i>심판 첫걸음 · 종목 진행 방식 한눈에 보기
             </span>
-            <span class="text-xs font-bold text-sky-300">전담 인력: 통합심판 1명 + 보조 1명 (총 8팀 · 제한시간 2분)</span>
+            <span class="text-xs font-bold text-sky-300">전담 인력: 통합심판 1명 + 보조 1명 (총 8팀 · Jr 4 / Sr 4 · 제한시간 2분)</span>
           </div>
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
             <div class="bg-white/10 rounded-xl p-4 border border-white/15 space-y-1.5">
@@ -1694,8 +1761,8 @@
               </tr>
               <tr class="bg-sky-50/50">
                 <td class="py-3.5 px-4 font-mono font-bold text-sky-900 whitespace-nowrap">14:55 ~ 16:00</td>
-                <td class="py-3.5 px-4 font-bold text-sky-900">부스 관람 및 인기투표</td>
-                <td class="py-3.5 px-4">창작 발표종목 관람을 하고 추천하고 싶은 팀 대회본부 탭으로 인기투표</td>
+                <td class="py-3.5 px-4 font-bold text-sky-900">부스 관람 및 온라인 인기투표</td>
+                <td class="py-3.5 px-4">창작 발표종목 관람을 하고 추천하고 싶은 팀 온라인 인기투표 참여</td>
               </tr>
               <tr>
                 <td class="py-3.5 px-4 font-mono font-bold text-slate-900 whitespace-nowrap">16:00 ~ 17:00</td>
@@ -1732,7 +1799,7 @@
             <span class="px-3 py-1 rounded-full bg-emerald-500 text-navy-950 text-xs font-black tracking-wide">
               <i class="fa-solid fa-compass mr-1"></i>심판 첫걸음 · 종목 진행 방식 한눈에 보기
             </span>
-            <span class="text-xs font-bold text-emerald-300">전담 인력: 통합심판 1명 + 보조 1명 (Senior 11팀 · 90점 만점)</span>
+            <span class="text-xs font-bold text-emerald-300">전담 인력: 통합심판 1명 + 보조 1명 (Senior 10팀 · 90점 만점)</span>
           </div>
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
             <div class="bg-white/10 rounded-xl p-4 border border-white/15 space-y-1.5">
@@ -1782,7 +1849,7 @@
               <p class="text-sm text-slate-600 mt-0.5">머신비전, 딥러닝 객체 탐지, VLM 등 첨단 AI 모델을 활용하여 25종의 야생 동물을 실시간 식별·분류하는 최고 난이도 지능형 로봇 종목</p>
             </div>
             <div class="text-right text-xs bg-emerald-50 px-3.5 py-2 rounded-xl border border-emerald-200">
-              <div class="font-bold text-emerald-900">참가 부문: Senior (중3 ~ 고2) 단일 부문 (11팀)</div>
+              <div class="font-bold text-emerald-900">참가 부문: Senior (중3 ~ 고2) 단일 부문 (10팀)</div>
               <div class="text-emerald-700">통합심판 1명 + 보조 1명 · 총 90점 만점 (Lv1 30 + Lv2 60)</div>
             </div>
           </div>
@@ -2033,7 +2100,7 @@
             <h3 class="text-base sm:text-lg font-extrabold text-slate-900 flex items-center gap-2">
               <i class="fa-regular fa-clock text-emerald-600"></i> VCC 종목 세부 타임테이블 및 심판·스탭·운영팀 업무
             </h3>
-            <span class="px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-xs font-extrabold text-emerald-900">전담 인력: 심판 1명, 스탭 1명 (UMC 종목 같이 운영)</span>
+            <span class="px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-xs font-extrabold text-emerald-900">전담 인력: 심판 1명, 스탭 1명 (총 10팀 · UMC 종목 같이 운영)</span>
           </div>
           <table class="w-full min-w-[780px] text-left border-collapse text-xs sm:text-sm">
             <thead>
@@ -2074,7 +2141,7 @@
                 <td class="py-3.5 px-4 font-mono font-extrabold text-emerald-800 whitespace-nowrap">10:00 ~ 11:05</td>
                 <td class="py-3.5 px-4 font-extrabold text-emerald-800">공식 모니터 연습 (65분, 팀당 약6분)</td>
                 <td class="py-3.5 px-4 space-y-1.5 leading-relaxed">
-                  <div class="font-semibold text-slate-900">11팀 순차 진행 (팀당 6분: 이동·세팅 3분 + 연습 3분, 총 65분) / 종료 후 순차 보관</div>
+                  <div class="font-semibold text-slate-900">10팀 순차 진행 (팀당 6분: 이동·세팅 3분 + 연습 3분, 총 65분) / 연습 끝나면 참가팀 시스템 팀별 보관위치에 두기</div>
                   <div class="p-2.5 rounded-lg bg-white border border-emerald-200 space-y-1 text-xs sm:text-sm">
                     <div class="text-sky-900 font-semibold"><span class="inline-block px-1.5 py-0.5 rounded bg-sky-100 text-sky-800 text-xs font-extrabold mr-1.5">스탭</span>팀 순서대로 셋팅 하고 연습하는 시간 계측하여 통제. 세팅 3분 , 빨리해도 됨, / 연습 3분</div>
                     <div class="text-slate-900 font-semibold">- 원활한 진행을 위해 1팀 연습하면 옆의 책상에서 다음팀 나와서 1차 셋팅 하고 대기.</div>
@@ -2086,7 +2153,7 @@
                 <td class="py-3.5 px-4 font-mono font-extrabold text-ltu-blue whitespace-nowrap">11:05 ~ 12:00</td>
                 <td class="py-3.5 px-4 font-extrabold text-ltu-blue">1차(Level 1) 공식 시험 (55분, 팀당 5분)</td>
                 <td class="py-3.5 px-4 space-y-1.5 leading-relaxed">
-                  <div class="font-bold text-slate-900">통합심판 1명 입회, 11팀 1차 공식 시험/채점 (팀당 5분: 세팅+시험, 총 55분)</div>
+                  <div class="font-bold text-slate-900">통합심판 1명 입회, 10팀 1차 공식 시험/채점 (팀당 5분: 세팅+시험, 총 55분)</div>
                   <div class="p-2.5 rounded-lg bg-white border border-blue-200 space-y-1 text-xs sm:text-sm">
                     <div class="text-sky-900 font-semibold"><span class="inline-block px-1.5 py-0.5 rounded bg-sky-100 text-sky-800 text-xs font-extrabold mr-1.5">스탭</span>계측 팀 불러와서 대기등 질서 유지 , 시험용 ppt 슬라이드쇼 플레이</div>
                     <div class="text-robofest-red font-semibold"><span class="inline-block px-1.5 py-0.5 rounded bg-red-100 text-robofest-red text-xs font-extrabold mr-1.5">심판</span>심사를 하며 진행이 빠르기에 결과 참가팀 확인 하고 이의팀은 별도 체크하여 계측 이후 녹화 동영상 으로 확인하여 수정</div>
@@ -2115,8 +2182,8 @@
               </tr>
               <tr class="bg-sky-50/50">
                 <td class="py-3.5 px-4 font-mono font-bold text-sky-900 whitespace-nowrap">14:25 ~ 16:00</td>
-                <td class="py-3.5 px-4 font-bold text-sky-900">부스 관람 및 인기투표</td>
-                <td class="py-3.5 px-4">창작 발표종목 관람을 하고 추천하고 싶은 팀 대회본부 탭으로 인기투표 (1~3위 동점팀은 14:55 재경기 진행)</td>
+                <td class="py-3.5 px-4 font-bold text-sky-900">부스 관람 및 온라인 인기투표</td>
+                <td class="py-3.5 px-4">창작 발표종목 관람을 하고 추천하고 싶은 팀 온라인 인기투표 참여 (1~3위 동점팀은 14:55 재경기 진행)</td>
               </tr>
               <tr>
                 <td class="py-3.5 px-4 font-mono font-bold text-slate-900 whitespace-nowrap">16:00 ~ 17:00</td>
@@ -2153,7 +2220,7 @@
             <span class="px-3 py-1 rounded-full bg-amber-500 text-navy-950 text-xs font-black tracking-wide">
               <i class="fa-solid fa-compass mr-1"></i>심판 첫걸음 · 종목 진행 방식 한눈에 보기
             </span>
-            <span class="text-xs font-bold text-amber-300">전담 인력: 심판 5명 + 스탭 3명 (총 66팀 · 5개 경기장 운영)</span>
+            <span class="text-xs font-bold text-amber-300">전담 인력: 심판 5명 + 스탭 3명 (총 64팀 · Classic 36 / Unlimited 28 · 5개 경기장)</span>
           </div>
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
             <div class="bg-white/10 rounded-xl p-4 border border-white/15 space-y-1.5">
@@ -2200,7 +2267,7 @@
             <div>
               <span class="px-2.5 py-0.5 rounded bg-amber-600 text-white text-xs font-bold">경기 계열 · 서바이벌 토너먼트</span>
               <h2 class="text-2xl font-black text-slate-900 mt-1">1. BottleSumo (보틀스모) 종목 개요 및 부문별 규격</h2>
-              <p class="text-sm text-slate-600 mt-0.5">자율 이동 로봇이 경기장 테이블 위의 병(물병)과 상대 로봇을 감지하여 테이블 밖으로 밀어내고 끝까지 온전하게 생존하는 스모 경기 (총 66팀)</p>
+              <p class="text-sm text-slate-600 mt-0.5">자율 이동 로봇이 경기장 테이블 위의 병(물병)과 상대 로봇을 감지하여 테이블 밖으로 밀어내고 끝까지 온전하게 생존하는 스모 경기 (총 64팀)</p>
             </div>
             <div class="text-right text-xs bg-amber-50 px-3.5 py-2 rounded-xl border border-amber-200">
               <div class="font-bold text-amber-900">전담 인력: 심판 5명 + 스탭 3명 (5개 경기장)</div>
@@ -2285,10 +2352,10 @@
                 <thead>
                   <tr class="bg-navy-900 text-white">
                     <th class="py-2.5 px-3 w-44">항목</th>
-                    <th class="py-2.5 px-3">Jr Classic</th>
-                    <th class="py-2.5 px-3">Sr Classic</th>
-                    <th class="py-2.5 px-3">Jr Unlimited</th>
-                    <th class="py-2.5 px-3">Sr Unlimited</th>
+                    <th class="py-2.5 px-3">Jr Classic (29팀)</th>
+                    <th class="py-2.5 px-3">Sr Classic (7팀)</th>
+                    <th class="py-2.5 px-3">Jr Unlimited (21팀)</th>
+                    <th class="py-2.5 px-3">Sr Unlimited (7팀)</th>
                   </tr>
                 </thead>
                 <tbody class="divide-y divide-slate-200 border border-slate-200 text-slate-700 align-top">
@@ -2559,7 +2626,7 @@
             <h3 class="text-base sm:text-lg font-extrabold text-slate-900 flex items-center gap-2">
               <i class="fa-regular fa-clock text-amber-600"></i> BottleSumo 종목 세부 타임테이블 및 심판·스탭·운영팀 업무
             </h3>
-            <span class="px-3 py-1 rounded-full bg-amber-50 border border-amber-200 text-xs font-extrabold text-amber-900">전담 인력: 심판 5명, 스탭 3명 (총 66팀 · 5개 경기장)</span>
+            <span class="px-3 py-1 rounded-full bg-amber-50 border border-amber-200 text-xs font-extrabold text-amber-900">전담 인력: 심판 5명, 스탭 3명 (총 64팀 · 5개 경기장)</span>
           </div>
           <table class="w-full min-w-[780px] text-left border-collapse text-xs sm:text-sm">
             <thead>
@@ -2586,8 +2653,8 @@
                 <td class="py-3.5 px-4 space-y-1.5 leading-relaxed">
                   <div class="font-medium text-slate-900">참가팀 명찰 수령 및 지정 피트 착석 (외부인 출입 통제)</div>
                   <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-200 space-y-1 text-xs sm:text-sm">
-                    <div class="text-sky-900 font-semibold"><span class="inline-block px-1.5 py-0.5 rounded bg-sky-100 text-sky-800 text-xs font-extrabold mr-1.5">스탭 3명 · 심판 2명</span>접수대에서 보틀스모 주니어 ,시니어 종목 참가자확인 명찰 배부 / 9: 10분 경기장으로 이동</div>
-                    <div class="text-robofest-red font-semibold"><span class="inline-block px-1.5 py-0.5 rounded bg-red-100 text-robofest-red text-xs font-extrabold mr-1.5">심판 3명</span>경기장 학생들 자리안내, 질서유지</div>
+                    <div class="text-sky-900 font-semibold"><span class="inline-block px-1.5 py-0.5 rounded bg-sky-100 text-sky-800 text-xs font-extrabold mr-1.5">스탭 3명</span>접수대에서 보틀스모 주니어 ,시니어 종목 참가자확인 명찰 배부 / 9: 10분 경기장으로 이동</div>
+                    <div class="text-robofest-red font-semibold"><span class="inline-block px-1.5 py-0.5 rounded bg-red-100 text-robofest-red text-xs font-extrabold mr-1.5">심판 5명</span>경기장 학생들 자리안내, 질서유지</div>
                   </div>
                 </td>
               </tr>
@@ -2595,7 +2662,7 @@
                 <td class="py-3.5 px-4 font-mono font-bold text-slate-900 whitespace-nowrap">09:20 ~ 10:00</td>
                 <td class="py-3.5 px-4 font-bold text-slate-900">개회식 및 오리엔테이션</td>
                 <td class="py-3.5 px-4 space-y-1 leading-relaxed">
-                  <div>개회식 참석, 예선 방식 및 안전 수칙 안내 / 대회 타임 트라이얼 진행, 토너먼트 진행, 창작 발표종목 인기투표 안내</div>
+                  <div>개회식 참석, 예선 방식 및 안전 수칙 안내 / 대회 타임 트라이얼 진행, 토너먼트 진행, 창작 발표종목 온라인 인기투표 안내</div>
                   <div class="text-slate-900 font-semibold">- 오전 시간이 부족하기에 개회식 끝나고 시간이 되면 10시 이전에 시작</div>
                 </td>
               </tr>
@@ -2616,8 +2683,8 @@
                   <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-200 space-y-1 text-xs sm:text-sm">
                     <div class="text-slate-900 font-semibold">- 3개 테이블로 나누어 팀 번호 순서대로 줄을서서 진행</div>
                     <div class="text-slate-900 font-semibold">- 클래식 (주니어), 클래식 (시니어), 언리미티드(주니어) 먼저 3개 줄로 진행 하고 언리미티드(시니어)진행</div>
-                    <div class="text-robofest-red font-semibold">- 책상 처음 크기와 무게 체크하여 넘어가면 팀 스티커와 Front 스티커 부착 (심판과 스탭 모두 참여하며 한 테이블당 2명에서 진행)</div>
-                    <div class="text-sky-900 font-semibold">- 스탭1명 3개의 줄 종목별 및 팀 번호별 대기 하도록 안내 관리</div>
+                    <div class="text-robofest-red font-semibold">- 책상 처음 크기와 무게 체크하여 넘어가면 팀 스티커와 Front 스티커 부착 (심판 5명, 스탭 1명 한 테이블당 2명에서 진행)</div>
+                    <div class="text-sky-900 font-semibold">- 스탭 2명 3개의 줄 종목별 및 팀 번호별 대기 하도록 안내 관리</div>
                   </div>
                 </td>
               </tr>
@@ -2651,8 +2718,8 @@
               </tr>
               <tr class="bg-sky-50/50">
                 <td class="py-3.5 px-4 font-mono font-bold text-sky-900 whitespace-nowrap">15:35 ~ 16:00</td>
-                <td class="py-3.5 px-4 font-bold text-sky-900">심판단 인기투표 합류</td>
-                <td class="py-3.5 px-4">결선 종료 후 심판(3점)·스탭(2점) 창작 부스 투표 참여</td>
+                <td class="py-3.5 px-4 font-bold text-sky-900">심판단 온라인 인기투표 합류</td>
+                <td class="py-3.5 px-4">결선 종료 후 심판·스탭 창작 발표종목 온라인 인기투표 참여</td>
               </tr>
               <tr>
                 <td class="py-3.5 px-4 font-mono font-bold text-slate-900 whitespace-nowrap">16:00 ~ 17:00</td>
@@ -2739,7 +2806,7 @@
             </div>
             <div class="text-right text-xs bg-indigo-50 px-3.5 py-2 rounded-xl border border-indigo-200">
               <div class="font-bold text-indigo-900">창작 A조 (Jr 16팀, 팀당 12분) · 창작 B조 (Sr 16팀, 팀당 11~12분)</div>
-              <div class="text-indigo-700">팀 최대 5명 · 2인 1조 부스 순회 평가</div>
+              <div class="text-indigo-700">총 32팀 (최대 5명/팀) · 2인 1조 부스 순회 평가</div>
             </div>
           </div>
 
@@ -2803,14 +2870,14 @@
             <h3 class="text-base sm:text-lg font-extrabold text-slate-900 flex items-center gap-2">
               <i class="fa-regular fa-clock text-indigo-600"></i> Exhibition &amp; RoboMed (창작 A·B조) 세부 타임테이블 및 심사위원·스탭 업무
             </h3>
-            <span class="px-3 py-1 rounded-full bg-indigo-50 border border-indigo-200 text-xs font-extrabold text-indigo-900">창작 A조 (Exh Jr 16팀) · 창작 B조 (Exh Sr 16팀 + RoboMed 7팀)</span>
+            <span class="px-3 py-1 rounded-full bg-indigo-50 border border-indigo-200 text-xs font-extrabold text-indigo-900">창작 A조 (Exh Jr 16팀) · 창작 B조 (Exh Sr 16팀 + RoboMed 10팀)</span>
           </div>
           <table class="w-full min-w-[780px] text-left border-collapse text-xs sm:text-sm">
             <thead>
               <tr class="bg-navy-900 text-white">
                 <th class="py-3 px-4 w-40 whitespace-nowrap">시간</th>
                 <th class="py-3 px-4 w-56">주요 일정</th>
-                <th class="py-3 px-4">세부 운영 내용 (심사위원 A, B조 및 스탭)</th>
+                <th class="py-3 px-4">세부 운영 내용 (심사위원 4명, 스탭 2명)</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-slate-200 border border-slate-200 text-slate-700 align-top">
@@ -2830,16 +2897,14 @@
                 <td class="py-3.5 px-4 space-y-1.5 leading-relaxed">
                   <div class="font-medium text-slate-900">참가팀 명찰 수령 및 배정된 전시 부스 입장</div>
                   <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-200 space-y-1 text-xs sm:text-sm">
-                    <div class="text-sky-900 font-semibold">- 스탭 2명 : 각 Exhibition 주니어, 시니어 출석체크 및 명찰배부/ 9: 10분 경기장으로 이동</div>
-                    <div class="text-slate-900 font-semibold">- 질서유지 스탭 1명 : RoboMed 참가확인 및 명찰배부 / 9:10분 다른 종목 지각 참가자 참가확인 10:00 까지</div>
-                    <div class="text-slate-900 font-semibold">- 질서유지 스탭 1명, Parade 스탭 1명 창작전시종목 위치안내등 질서유지</div>
+                    <div class="text-sky-900 font-semibold">- 스탭 2명 : 창작전시종목 전체 입장 학생 위치안내 등 질서유지</div>
                   </div>
                 </td>
               </tr>
               <tr>
                 <td class="py-3.5 px-4 font-mono font-bold text-slate-900 whitespace-nowrap">09:20 ~ 10:00</td>
                 <td class="py-3.5 px-4 font-bold text-slate-900">개회식 및 로봇 세팅</td>
-                <td class="py-3.5 px-4">개회식 참석, 포스터/판넬 설치 및 부스 장비 세팅 / 순회 심사(11~12분) 및 투표 안내</td>
+                <td class="py-3.5 px-4">개회식 참석, 포스터/판넬 설치 및 부스 장비 세팅 / 순회 심사(11~12분) 및 온라인 인기투표 안내</td>
               </tr>
               <tr>
                 <td class="py-3.5 px-4 font-mono font-bold text-slate-900 whitespace-nowrap">10:00 ~ 10:15</td>
@@ -2866,15 +2931,15 @@
                 <td class="py-3.5 px-4 font-mono font-extrabold text-indigo-900 whitespace-nowrap">13:00 ~ 15:20</td>
                 <td class="py-3.5 px-4 font-extrabold text-indigo-900">오후 심사 (A조/B조 1부)<br>B조 RoboMed 심사</td>
                 <td class="py-3.5 px-4 space-y-1.5 leading-relaxed">
-                  <div><strong>[A조]</strong> Exh Jr 잔여 9~16번 심사 , A조 종료 후 먼저 휴식 및 특별상 교차 투표 시작</div>
-                  <div><strong>[B조]</strong> Exh Sr 11~16번 심사 - [B조] 종목 전환 휴식 후 RoboMed 7팀 순회 심사 진행</div>
+                  <div><strong>[A조]</strong> Exh Jr 잔여 9~16번 심사 , A조 종료 후 먼저 휴식 및 온라인 인기투표 참여</div>
+                  <div><strong>[B조]</strong> Exh Sr 11~16번 심사 - [B조] 종목 전환 휴식 후 RoboMed 10팀 순회 심사 진행</div>
                   <div class="text-sky-900 font-semibold">- 스탭 상동</div>
                 </td>
               </tr>
               <tr class="bg-sky-50/50">
                 <td class="py-3.5 px-4 font-mono font-bold text-sky-900 whitespace-nowrap">15:20 ~ 16:00</td>
-                <td class="py-3.5 px-4 font-bold text-sky-900">심사위원 휴식 및 인기투표</td>
-                <td class="py-3.5 px-4">메인 평가 종료 후 심사위원 휴식 후 다른 전시 참가종목 인기상 투표</td>
+                <td class="py-3.5 px-4 font-bold text-sky-900">심사위원 휴식 및 온라인 인기투표</td>
+                <td class="py-3.5 px-4">메인 평가 종료 후 심사위원 휴식 후 다른 전시 참가종목 온라인 인기투표</td>
               </tr>
               <tr>
                 <td class="py-3.5 px-4 font-mono font-bold text-slate-900 whitespace-nowrap">16:00 ~ 17:00</td>
@@ -2911,7 +2976,7 @@
             <span class="px-3 py-1 rounded-full bg-pink-500 text-white text-xs font-black tracking-wide">
               <i class="fa-solid fa-compass mr-1"></i>심판 첫걸음 · 종목 진행 방식 한눈에 보기
             </span>
-            <span class="text-xs font-bold text-pink-300">Junior 단일 부문 (9팀) · 창작 C조 (심사 2명, 보조 1명, 복도 질서유지 2명)</span>
+            <span class="text-xs font-bold text-pink-300">Junior 단일 부문 (8팀) · 창작 C조 (심사 2명, 보조 1명, 퍼레이드 스탭 2명)</span>
           </div>
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
             <div class="bg-white/10 rounded-xl p-4 border border-white/15 space-y-1.5">
@@ -2924,7 +2989,7 @@
               <div class="text-xs font-extrabold text-emerald-300 uppercase tracking-wider">② 오늘 대략 어떻게 운영되나요? (사전 검수 · 오후 퍼레이드 쇼)</div>
               <ul class="text-sm text-slate-100 space-y-1.5 leading-relaxed">
                 <li>• <strong>오전 (10:00~12:00):</strong> 전담 스탭이 사전 검수 구역에서 <strong>Test Parade Checklist(규격·후미 범퍼·시계/반시계 주행·앞차 감지·속도 제한, 최대 5회 시도)</strong>를 검수하고 번호/문자 깃발 부여</li>
-                <li>• <strong>오후 (13:00~14:35):</strong> 13:15 퍼레이드 트랙 집합 &amp; 릴레이 소개 → <strong>13:35 [1R] 시계방향 주행</strong> → <strong>14:00 [2R] 반시계방향 주행</strong> → 14:15 기술 Q&amp;A / 14:35 교차 심사·투표</li>
+                <li>• <strong>오후 (13:00~14:35):</strong> 13:15 퍼레이드 트랙 집합 &amp; 1분 릴레이 소개 → <strong>13:35 [1R] 시계방향 주행</strong> → <strong>13:50 조정 10분</strong> → <strong>14:00 [2R] 반시계방향 주행</strong> → 14:15 기술 Q&amp;A / 14:35 휴식 및 온라인 인기투표</li>
               </ul>
             </div>
           </div>
@@ -2939,7 +3004,7 @@
           <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5 text-sm text-slate-800">
             <div class="bg-white p-4 rounded-xl border border-pink-100">
               <div class="font-extrabold text-pink-800 mb-1">① 자율주행 퍼레이드 &amp; 충돌 방지</div>
-              <p>Junior 단일 부문. 장식된 자율 로봇이 트랙 선을 따라 주행하며 <strong>앞차 감지 시 정지·재출발</strong>하고 속도(7~16cm/sec)를 화면에 표시합니다.</p>
+              <p>Junior 단일 부문(8팀). 장식된 자율 로봇이 트랙 선을 따라 주행하며 <strong>앞차 감지 시 정지·재출발</strong>하고 속도(7~16cm/sec)를 화면에 표시합니다.</p>
             </div>
             <div class="bg-white p-4 rounded-xl border border-pink-100">
               <div class="font-extrabold text-pink-800 mb-1">② 시계·반시계 양방향 주행 채점</div>
@@ -2960,8 +3025,8 @@
               <p class="text-sm text-slate-600 mt-0.5">예술적 테마로 장식된 자율 로봇 플로트가 퍼레이드 트랙을 따라 앞차와 거리를 유지하며 행진하는 종목</p>
             </div>
             <div class="text-right text-xs bg-pink-50 px-3.5 py-2 rounded-xl border border-pink-200">
-              <div class="font-bold text-pink-900">국내예선 부문: Junior (초5~중2) 단일 부문 (9팀)</div>
-              <div class="text-pink-700">창작 C조 (심사 2명, 보조 1명, 복도 질서유지 2명)</div>
+              <div class="font-bold text-pink-900">국내예선 부문: Junior (초5~중2) 단일 부문 (8팀)</div>
+              <div class="text-pink-700">창작 C조 (심사 2명, 보조 1명, 퍼레이드 스탭 2명)</div>
             </div>
           </div>
 
@@ -2986,10 +3051,10 @@
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-              <h3 class="text-sm font-extrabold text-slate-900 mb-1.5">오전·오후 이원화 심사 운영 (창작 C조 원문 기준)</h3>
+              <h3 class="text-sm font-extrabold text-slate-900 mb-1.5">오전·오후 이원화 심사 운영 (창작 C조 기준)</h3>
               <ul class="text-xs sm:text-sm text-slate-700 space-y-1.5 list-disc list-inside">
-                <li><strong>오전 (10:00~12:00):</strong> 10:00 Parade 규정 체크리스트 검사 (트랙 라인트레이싱, 앞차 감지 정지·재출발, 속도 표시 7~16cm/sec 기능 검수)</li>
-                <li><strong>오후 (13:00~14:35):</strong> 13:00 Parade 점검 ➔ 13:15 퍼레이드 트랙 집합 &amp; 릴레이 소개 ➔ 13:35 [퍼레이드 1R] 시계방향 주행 ➔ 14:00 [퍼레이드 2R] 반시계방향 주행 ➔ 14:15 기술 Q&amp;A / 14:35 교차 심사·투표</li>
+                <li><strong>오전 (10:00~12:00):</strong> 10:00 Parade 규정 체크리스트 6가지 검사 (트랙 라인트레이싱, 앞차 감지 정지·재출발, 속도 표시 7~16cm/sec 기능 검수 및 번호 깃발 부여)</li>
+                <li><strong>오후 (13:00~16:00):</strong> 13:00 Parade 최종 점검 ➔ 13:15 트랙 집합 &amp; 1분 릴레이 소개 ➔ 13:35 [1R] 시계방향 주행 ➔ 13:50 조정 10분 ➔ 14:00 [2R] 반시계방향 주행 ➔ 14:15 기술 Q&amp;A / 14:35 휴식 및 온라인 인기투표</li>
               </ul>
             </div>
 
@@ -3206,14 +3271,14 @@
             <h3 class="text-base sm:text-lg font-extrabold text-slate-900 flex items-center gap-2">
               <i class="fa-regular fa-clock text-pink-600"></i> RoboParade &amp; RoboArts (창작 C조) 세부 타임테이블 및 심사위원·스탭 업무
             </h3>
-            <span class="px-3 py-1 rounded-full bg-pink-50 border border-pink-200 text-xs font-extrabold text-pink-900">창작 C조: 심사 2명, 보조 1명, Parade 복도 질서유지 2명</span>
+            <span class="px-3 py-1 rounded-full bg-pink-50 border border-pink-200 text-xs font-extrabold text-pink-900">창작 C조: 심사위원 2명, 스탭 1명, 퍼레이드 스탭 2명 (Arts 11팀 + Parade 8팀)</span>
           </div>
           <table class="w-full min-w-[780px] text-left border-collapse text-xs sm:text-sm">
             <thead>
               <tr class="bg-navy-900 text-white">
                 <th class="py-3 px-4 w-40 whitespace-nowrap">시간</th>
                 <th class="py-3 px-4 w-56">주요 일정</th>
-                <th class="py-3 px-4">세부 운영 내용 (창작 C조: 심사 2명, 보조 1명, Parade 복도 질서유지 2명)</th>
+                <th class="py-3 px-4">세부 운영 내용 (창작 C조: 심사위원 2명, 스탭 1명, 퍼레이드 스탭 2명)</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-slate-200 border border-slate-200 text-slate-700 align-top">
@@ -3230,22 +3295,29 @@
               <tr>
                 <td class="py-3.5 px-4 font-mono font-bold text-slate-900 whitespace-nowrap">08:30 ~ 09:20</td>
                 <td class="py-3.5 px-4 font-bold text-slate-900">참가자 등록</td>
-                <td class="py-3.5 px-4 space-y-1 leading-relaxed">
-                  <div>참가팀 명찰 수령 및 배정 부스 입장</div>
-                  <div class="text-sky-900 font-semibold">- 질서유지 스탭 1명, Parade 스탭 1명 창작전시종목 위치안내등 질서유지</div>
+                <td class="py-3.5 px-4 space-y-1.5 leading-relaxed">
+                  <div class="font-medium text-slate-900">참가팀 명찰 수령 및 배정된 전시 부스 입장</div>
+                  <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-200 space-y-1 text-xs sm:text-sm">
+                    <div class="text-sky-900 font-semibold">- 스탭 2명 : ART, 퍼레이드 출석체크 및 명찰배부/ 9: 10분 경기장으로 이동</div>
+                    <div class="text-slate-900 font-semibold">- Parade 스탭 1명 복도 질서유지 및 부스안내</div>
+                  </div>
                 </td>
               </tr>
               <tr>
                 <td class="py-3.5 px-4 font-mono font-bold text-slate-900 whitespace-nowrap">09:20 ~ 10:00</td>
                 <td class="py-3.5 px-4 font-bold text-slate-900">개회식 및 로봇 세팅</td>
-                <td class="py-3.5 px-4">개회식 참석, 부스·트랙 세팅 및 기능 검수 안내</td>
+                <td class="py-3.5 px-4 space-y-1 leading-relaxed">
+                  <div>개회식 참석, 부스·트랙 세팅 및 기능 검수 안내</div>
+                  <div class="text-sky-900 font-semibold">- Parade 스탭 1명 개회식장 인솔 , 1명 전시부스 통제</div>
+                </td>
               </tr>
               <tr class="bg-purple-50/40">
                 <td class="py-3.5 px-4 font-mono font-extrabold text-purple-900 whitespace-nowrap">10:00 ~ 12:00</td>
-                <td class="py-3.5 px-4 font-extrabold text-purple-900">오전 대회 진행</td>
-                <td class="py-3.5 px-4 space-y-1 leading-relaxed">
-                  <div>• <strong>10:00</strong> Arts 부스 심사 (메인 심사위원 2명)</div>
-                  <div>• <strong>10:00</strong> Parade 규정 체크리스트 검사 (보조 스탭 1명 상시 검수)</div>
+                <td class="py-3.5 px-4 font-extrabold text-purple-900">오전 공식 심사<br>(Arts 1부 &amp; Parade 검수)</td>
+                <td class="py-3.5 px-4 space-y-1.5 leading-relaxed">
+                  <div>• <strong>[C조 메인 심사위원 2명]</strong> RoboArts 1~9번 부스 심사 (팀당 12분)</div>
+                  <div>• <strong>[C조 퍼레이드 스탭]</strong> RoboParade 8팀 순차 체크리스트 검사 (규정 6가지 통과 시 깃발 부여)</div>
+                  <div class="text-sky-900 font-semibold">- 스탭 1명 참가팀과 심사위원 보이게 타이머 배치 및 동작, 주변 질서유지, 다음 발표팀 순서 안내</div>
                 </td>
               </tr>
               <tr class="bg-slate-100/80">
@@ -3253,24 +3325,48 @@
                 <td class="py-3 px-4 font-bold text-slate-700">점심시간</td>
                 <td class="py-3 px-4 font-medium text-slate-700">전원 퇴장 및 외부 개별식사</td>
               </tr>
-              <tr class="bg-pink-50/40">
-                <td class="py-3.5 px-4 font-mono font-extrabold text-pink-900 whitespace-nowrap">13:00 ~ 16:00</td>
-                <td class="py-3.5 px-4 font-extrabold text-pink-900">오후 대회 진행</td>
-                <td class="py-3.5 px-4 space-y-1 leading-relaxed">
-                  <div>• <strong>13:00</strong> Arts 잔여 심사 / Parade 점검</div>
-                  <div>• <strong>13:15</strong> 퍼레이드 트랙 집합 &amp; 릴레이 소개</div>
-                  <div>• <strong>13:35</strong> [퍼레이드 1R] 시계방향 주행</div>
-                  <div>• <strong>14:00</strong> [퍼레이드 2R] 반시계방향 주행</div>
-                  <div>• <strong>14:15</strong> 기술 Q&amp;A / <strong>14:35</strong> 교차 심사·투표</div>
+              <tr>
+                <td class="py-3 px-4 font-mono font-bold text-slate-900 whitespace-nowrap">13:00 ~ 13:15</td>
+                <td class="py-3 px-4 font-bold text-slate-900">오후 심사 1부 (Arts 2부)</td>
+                <td class="py-3 px-4 space-y-1">
+                  <div>• <strong>[C조]</strong> RoboArts 잔여 10~11번 심사 및 부스 심사 마감 (동시 Parade 최종 점검)</div>
+                  <div class="text-sky-900 font-semibold">- 스탭 상동</div>
                 </td>
+              </tr>
+              <tr class="bg-pink-50/30">
+                <td class="py-3 px-4 font-mono font-bold text-pink-900 whitespace-nowrap">13:15 ~ 13:35</td>
+                <td class="py-3 px-4 font-bold text-pink-900">퍼레이드 집합 및 소개</td>
+                <td class="py-3 px-4">퍼레이드 트랙(복도) 집합 / 팀별 로봇·테마 1분 릴레이 소개</td>
+              </tr>
+              <tr class="bg-pink-50/50">
+                <td class="py-3 px-4 font-mono font-extrabold text-pink-900 whitespace-nowrap">13:35 ~ 13:50</td>
+                <td class="py-3 px-4 font-extrabold text-pink-900">[퍼레이드 1R] 시계방향</td>
+                <td class="py-3 px-4">8팀 플로트 동시 주행 (시계방향) — 자율 주행 및 정지/재출발 평가</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4 font-mono font-bold text-slate-800 whitespace-nowrap">13:50 ~ 14:00</td>
+                <td class="py-3 px-4 font-bold text-slate-800">퍼레이드 조정 시간</td>
+                <td class="py-3 px-4">1R 주행 중 발견된 센서·기구적 오차 현장 보완 (10분)</td>
+              </tr>
+              <tr class="bg-pink-50/50">
+                <td class="py-3 px-4 font-mono font-extrabold text-pink-900 whitespace-nowrap">14:00 ~ 14:15</td>
+                <td class="py-3 px-4 font-extrabold text-pink-900">[퍼레이드 2R] 반시계방향</td>
+                <td class="py-3 px-4">8팀 플로트 동시 주행 (반시계방향) — 역방향 자율 주행 및 정지 평가</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4 font-mono font-bold text-slate-900 whitespace-nowrap">14:15 ~ 14:35</td>
+                <td class="py-3 px-4 font-bold text-slate-900">퍼레이드 기술 Q&amp;A</td>
+                <td class="py-3 px-4">심사위원단 트랙 순회하며 각 팀의 제어 코드·설계 질의응답</td>
+              </tr>
+              <tr class="bg-sky-50/50">
+                <td class="py-3 px-4 font-mono font-bold text-sky-900 whitespace-nowrap">14:35 ~ 16:00</td>
+                <td class="py-3 px-4 font-bold text-sky-900">휴식 및 온라인 인기투표</td>
+                <td class="py-3 px-4">메인 평가 종료 후 심사위원 휴식 및 창작 발표종목 온라인 인기투표</td>
               </tr>
               <tr>
                 <td class="py-3.5 px-4 font-mono font-bold text-slate-900 whitespace-nowrap">16:00 ~ 17:00</td>
-                <td class="py-3.5 px-4 font-bold text-slate-900">정리/시상식</td>
-                <td class="py-3.5 px-4 leading-relaxed">
-                  16:00 판넬 수거, 피트 정리 및 집계<br>
-                  16:25 시상식 및 폐회
-                </td>
+                <td class="py-3.5 px-4 font-bold text-slate-900">피트 최종 정리 및 시상식</td>
+                <td class="py-3.5 px-4">16:00 피트 최종 정리 및 결과 집계 -&gt; 시상식 및 폐회</td>
               </tr>
             </tbody>
           </table>
@@ -3302,7 +3398,7 @@
             <span class="px-3 py-1 rounded-full bg-purple-500 text-white text-xs font-black tracking-wide">
               <i class="fa-solid fa-compass mr-1"></i>심판 첫걸음 · 종목 진행 방식 한눈에 보기
             </span>
-            <span class="text-xs font-bold text-purple-300">Junior · Senior 총 11팀 · 창작 C조 심사위원 2명 순회 평가</span>
+            <span class="text-xs font-bold text-purple-300">Junior · Senior 총 11팀 (Jr 5 / Sr 6) · 창작 C조 심사위원 2명 순회 평가</span>
           </div>
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
             <div class="bg-white/10 rounded-xl p-4 border border-white/15 space-y-1.5">
@@ -3314,8 +3410,8 @@
             <div class="bg-white/10 rounded-xl p-4 border border-white/15 space-y-1.5">
               <div class="text-xs font-extrabold text-emerald-300 uppercase tracking-wider">② 오늘 대략 어떻게 운영되나요? (부스 세팅 · 오전/오후 순회 심사)</div>
               <ul class="text-sm text-slate-100 space-y-1.5 leading-relaxed">
-                <li>• <strong>오전 (10:00~12:00):</strong> 10:00 Arts 부스 심사 (창작 C조 심사위원 2명 부스 순회 평가 / 보조 스탭 Parade 규정 체크리스트 검사 병행)</li>
-                <li>• <strong>오후 (13:00~16:00):</strong> 13:00 Arts 잔여 심사 / Parade 점검 → 13:15 퍼레이드 트랙 집합 &amp; 릴레이 소개 → 13:35 [퍼레이드 1R] 시계방향 주행 → 14:00 [퍼레이드 2R] 반시계방향 주행 → 14:15 기술 Q&amp;A / 14:35 교차 심사·투표</li>
+                <li>• <strong>오전 (10:00~12:00):</strong> 10:00 RoboArts 1~9번 부스 심사 (팀당 12분, 창작 C조 심사위원 2명 순회 평가 / 퍼레이드 스탭 Parade 체크리스트 병행)</li>
+                <li>• <strong>오후 (13:00~16:00):</strong> 13:00~13:15 RoboArts 잔여 10~11번 심사 및 마감 → 13:15~14:35 퍼레이드 주행·기술 Q&amp;A → 14:35~16:00 휴식 및 온라인 인기투표</li>
               </ul>
             </div>
           </div>
@@ -3351,7 +3447,7 @@
               <p class="text-sm text-slate-600 mt-0.5">시각예술(드로잉·키네틱 아트) 및 공연예술(댄스·음악·촌극)과 인터랙티브 로보틱스를 결합한 종목</p>
             </div>
             <div class="text-right text-xs bg-purple-50 px-3.5 py-2 rounded-xl border border-purple-200">
-              <div class="font-bold text-purple-900">참가 부문: Junior / Senior (11팀, 최대 5명)</div>
+              <div class="font-bold text-purple-900">참가 부문: Junior / Senior (총 11팀 · Jr 5 / Sr 6)</div>
               <div class="text-purple-700">창작 C조 심사위원 2명 · 오전 1~9번 / 오후 10~11번 심사</div>
             </div>
           </div>
@@ -3433,14 +3529,14 @@
             <h3 class="text-base sm:text-lg font-extrabold text-slate-900 flex items-center gap-2">
               <i class="fa-regular fa-clock text-purple-600"></i> RoboArts &amp; RoboParade (창작 C조) 세부 타임테이블 및 심사위원·스탭 업무
             </h3>
-            <span class="px-3 py-1 rounded-full bg-purple-50 border border-purple-200 text-xs font-extrabold text-purple-900">창작 C조: 심사 2명, 보조 1명, Parade 복도 질서유지 2명</span>
+            <span class="px-3 py-1 rounded-full bg-purple-50 border border-purple-200 text-xs font-extrabold text-purple-900">창작 C조: 심사위원 2명, 스탭 1명, 퍼레이드 스탭 2명 (Arts 11팀 + Parade 8팀)</span>
           </div>
           <table class="w-full min-w-[780px] text-left border-collapse text-xs sm:text-sm">
             <thead>
               <tr class="bg-navy-900 text-white">
                 <th class="py-3 px-4 w-40 whitespace-nowrap">시간</th>
                 <th class="py-3 px-4 w-56">주요 일정</th>
-                <th class="py-3 px-4">세부 운영 내용 (창작 C조: 심사 2명, 보조 1명, Parade 복도 질서유지 2명)</th>
+                <th class="py-3 px-4">세부 운영 내용 (창작 C조: 심사위원 2명, 스탭 1명, 퍼레이드 스탭 2명)</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-slate-200 border border-slate-200 text-slate-700 align-top">
@@ -3457,22 +3553,29 @@
               <tr>
                 <td class="py-3.5 px-4 font-mono font-bold text-slate-900 whitespace-nowrap">08:30 ~ 09:20</td>
                 <td class="py-3.5 px-4 font-bold text-slate-900">참가자 등록</td>
-                <td class="py-3.5 px-4 space-y-1 leading-relaxed">
-                  <div>참가팀 명찰 수령 및 배정 부스 입장</div>
-                  <div class="text-sky-900 font-semibold">- 질서유지 스탭 1명, Parade 스탭 1명 창작전시종목 위치안내등 질서유지</div>
+                <td class="py-3.5 px-4 space-y-1.5 leading-relaxed">
+                  <div class="font-medium text-slate-900">참가팀 명찰 수령 및 배정된 전시 부스 입장</div>
+                  <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-200 space-y-1 text-xs sm:text-sm">
+                    <div class="text-sky-900 font-semibold">- 스탭 2명 : ART, 퍼레이드 출석체크 및 명찰배부/ 9: 10분 경기장으로 이동</div>
+                    <div class="text-slate-900 font-semibold">- Parade 스탭 1명 복도 질서유지 및 부스안내</div>
+                  </div>
                 </td>
               </tr>
               <tr>
                 <td class="py-3.5 px-4 font-mono font-bold text-slate-900 whitespace-nowrap">09:20 ~ 10:00</td>
                 <td class="py-3.5 px-4 font-bold text-slate-900">개회식 및 로봇 세팅</td>
-                <td class="py-3.5 px-4">개회식 참석, 부스·트랙 세팅 및 기능 검수 안내</td>
+                <td class="py-3.5 px-4 space-y-1 leading-relaxed">
+                  <div>개회식 참석, 부스·트랙 세팅 및 기능 검수 안내</div>
+                  <div class="text-sky-900 font-semibold">- Parade 스탭 1명 개회식장 인솔 , 1명 전시부스 통제</div>
+                </td>
               </tr>
               <tr class="bg-purple-50/40">
                 <td class="py-3.5 px-4 font-mono font-extrabold text-purple-900 whitespace-nowrap">10:00 ~ 12:00</td>
-                <td class="py-3.5 px-4 font-extrabold text-purple-900">오전 대회 진행</td>
-                <td class="py-3.5 px-4 space-y-1 leading-relaxed">
-                  <div>• <strong>10:00</strong> Arts 부스 심사 (메인 심사위원 2명)</div>
-                  <div>• <strong>10:00</strong> Parade 규정 체크리스트 검사 (보조 스탭 1명 상시 검수)</div>
+                <td class="py-3.5 px-4 font-extrabold text-purple-900">오전 공식 심사<br>(Arts 1부 &amp; Parade 검수)</td>
+                <td class="py-3.5 px-4 space-y-1.5 leading-relaxed">
+                  <div>• <strong>[C조 메인 심사위원 2명]</strong> RoboArts 1~9번 부스 심사 (팀당 12분)</div>
+                  <div>• <strong>[C조 퍼레이드 스탭]</strong> RoboParade 8팀 순차 체크리스트 검사 (규정 6가지 통과 시 깃발 부여)</div>
+                  <div class="text-sky-900 font-semibold">- 스탭 1명 참가팀과 심사위원 보이게 타이머 배치 및 동작, 주변 질서유지, 다음 발표팀 순서 안내</div>
                 </td>
               </tr>
               <tr class="bg-slate-100/80">
@@ -3480,24 +3583,48 @@
                 <td class="py-3 px-4 font-bold text-slate-700">점심시간</td>
                 <td class="py-3 px-4 font-medium text-slate-700">전원 퇴장 및 외부 개별식사</td>
               </tr>
-              <tr class="bg-pink-50/40">
-                <td class="py-3.5 px-4 font-mono font-extrabold text-pink-900 whitespace-nowrap">13:00 ~ 16:00</td>
-                <td class="py-3.5 px-4 font-extrabold text-pink-900">오후 대회 진행</td>
-                <td class="py-3.5 px-4 space-y-1 leading-relaxed">
-                  <div>• <strong>13:00</strong> Arts 잔여 심사 / Parade 점검</div>
-                  <div>• <strong>13:15</strong> 퍼레이드 트랙 집합 &amp; 릴레이 소개</div>
-                  <div>• <strong>13:35</strong> [퍼레이드 1R] 시계방향 주행</div>
-                  <div>• <strong>14:00</strong> [퍼레이드 2R] 반시계방향 주행</div>
-                  <div>• <strong>14:15</strong> 기술 Q&amp;A / <strong>14:35</strong> 교차 심사·투표</div>
+              <tr>
+                <td class="py-3 px-4 font-mono font-bold text-slate-900 whitespace-nowrap">13:00 ~ 13:15</td>
+                <td class="py-3 px-4 font-bold text-slate-900">오후 심사 1부 (Arts 2부)</td>
+                <td class="py-3 px-4 space-y-1">
+                  <div>• <strong>[C조]</strong> RoboArts 잔여 10~11번 심사 및 부스 심사 마감 (동시 Parade 최종 점검)</div>
+                  <div class="text-sky-900 font-semibold">- 스탭 상동</div>
                 </td>
+              </tr>
+              <tr class="bg-pink-50/30">
+                <td class="py-3 px-4 font-mono font-bold text-pink-900 whitespace-nowrap">13:15 ~ 13:35</td>
+                <td class="py-3 px-4 font-bold text-pink-900">퍼레이드 집합 및 소개</td>
+                <td class="py-3 px-4">퍼레이드 트랙(복도) 집합 / 팀별 로봇·테마 1분 릴레이 소개</td>
+              </tr>
+              <tr class="bg-pink-50/50">
+                <td class="py-3 px-4 font-mono font-extrabold text-pink-900 whitespace-nowrap">13:35 ~ 13:50</td>
+                <td class="py-3 px-4 font-extrabold text-pink-900">[퍼레이드 1R] 시계방향</td>
+                <td class="py-3 px-4">8팀 플로트 동시 주행 (시계방향) — 자율 주행 및 정지/재출발 평가</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4 font-mono font-bold text-slate-800 whitespace-nowrap">13:50 ~ 14:00</td>
+                <td class="py-3 px-4 font-bold text-slate-800">퍼레이드 조정 시간</td>
+                <td class="py-3 px-4">1R 주행 중 발견된 센서·기구적 오차 현장 보완 (10분)</td>
+              </tr>
+              <tr class="bg-pink-50/50">
+                <td class="py-3 px-4 font-mono font-extrabold text-pink-900 whitespace-nowrap">14:00 ~ 14:15</td>
+                <td class="py-3 px-4 font-extrabold text-pink-900">[퍼레이드 2R] 반시계방향</td>
+                <td class="py-3 px-4">8팀 플로트 동시 주행 (반시계방향) — 역방향 자율 주행 및 정지 평가</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4 font-mono font-bold text-slate-900 whitespace-nowrap">14:15 ~ 14:35</td>
+                <td class="py-3 px-4 font-bold text-slate-900">퍼레이드 기술 Q&amp;A</td>
+                <td class="py-3 px-4">심사위원단 트랙 순회하며 각 팀의 제어 코드·설계 질의응답</td>
+              </tr>
+              <tr class="bg-sky-50/50">
+                <td class="py-3 px-4 font-mono font-bold text-sky-900 whitespace-nowrap">14:35 ~ 16:00</td>
+                <td class="py-3 px-4 font-bold text-sky-900">휴식 및 온라인 인기투표</td>
+                <td class="py-3 px-4">메인 평가 종료 후 심사위원 휴식 및 창작 발표종목 온라인 인기투표</td>
               </tr>
               <tr>
                 <td class="py-3.5 px-4 font-mono font-bold text-slate-900 whitespace-nowrap">16:00 ~ 17:00</td>
-                <td class="py-3.5 px-4 font-bold text-slate-900">정리/시상식</td>
-                <td class="py-3.5 px-4 leading-relaxed">
-                  16:00 판넬 수거, 피트 정리 및 집계<br>
-                  16:25 시상식 및 폐회
-                </td>
+                <td class="py-3.5 px-4 font-bold text-slate-900">피트 최종 정리 및 시상식</td>
+                <td class="py-3.5 px-4">16:00 피트 최종 정리 및 결과 집계 -&gt; 시상식 및 폐회</td>
               </tr>
             </tbody>
           </table>
@@ -3529,7 +3656,7 @@
             <span class="px-3 py-1 rounded-full bg-rose-500 text-white text-xs font-black tracking-wide">
               <i class="fa-solid fa-compass mr-1"></i>심판 첫걸음 · 종목 진행 방식 한눈에 보기
             </span>
-            <span class="text-xs font-bold text-rose-300">Junior · Senior 총 7팀 · 창작 B조 심사위원 2명 오후 집중 순회 평가</span>
+            <span class="text-xs font-bold text-rose-300">Junior · Senior 총 10팀 (Jr 5 / Sr 5) · 창작 B조 심사위원 2명 오후 집중 순회 평가</span>
           </div>
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
             <div class="bg-white/10 rounded-xl p-4 border border-white/15 space-y-1.5">
@@ -3541,8 +3668,8 @@
             <div class="bg-white/10 rounded-xl p-4 border border-white/15 space-y-1.5">
               <div class="text-xs font-extrabold text-emerald-300 uppercase tracking-wider">② 오늘 대략 어떻게 운영되나요? (부스 준비 · 오후 순회 심사)</div>
               <ul class="text-sm text-slate-100 space-y-1.5 leading-relaxed">
-                <li>• <strong>오전 (08:30~12:00):</strong> 참가 등록(질서유지 스탭 담당) 및 개회식 참석, 부스 판넬·의료 로봇 장비 세팅 및 센서 최종 점검</li>
-                <li>• <strong>오후 (14:10~15:20):</strong> 창작 B조 심사위원 2명이 Exh Sr 심사 종료 후 휴식 뒤 <strong>RoboMed 7팀 부스 집중 순회 심사</strong> → 15:20 이후 휴식 및 온라인 인기투표</li>
+                <li>• <strong>오전 (08:30~12:00):</strong> 참가 등록(창작 스탭 안내) 및 개회식 참석, 부스 판넬·의료 로봇 장비 세팅 및 센서 최종 점검</li>
+                <li>• <strong>오후 (14:10~15:20):</strong> 창작 B조 심사위원 2명이 Exh Sr 심사 종료 후 휴식 뒤 <strong>RoboMed 10팀 부스 집중 순회 심사</strong> → 15:20 이후 휴식 및 온라인 인기투표</li>
               </ul>
             </div>
           </div>
@@ -3565,7 +3692,7 @@
             </div>
             <div class="bg-white p-4 rounded-xl border border-rose-100">
               <div class="font-extrabold text-robofest-red mb-1">③ 오후 14:10~15:20 집중 순회 심사</div>
-              <p>창작 B조 심사위원 2명이 Exh Sr 심사 종료 후 10분 휴식 뒤 <strong>14:10~15:20 동안 7팀</strong>을 순회 평가하며, 발표 4분 30초 초과 시 30초당 -1점 감점됩니다.</p>
+              <p>창작 B조 심사위원 2명이 Exh Sr 심사 종료 후 10분 휴식 뒤 <strong>14:10~15:20 동안 10팀</strong>을 순회 평가하며, 발표 4분 30초 초과 시 30초당 -1점 감점됩니다.</p>
             </div>
           </div>
         </div>
@@ -3578,7 +3705,7 @@
               <p class="text-sm text-slate-600 mt-0.5">생명의료공학, 재활 보조, 스마트 헬스케어 문제를 해결하는 지능형 의료 로봇 프로젝트</p>
             </div>
             <div class="text-right text-xs bg-rose-50 px-3.5 py-2 rounded-xl border border-rose-200">
-              <div class="font-bold text-rose-900">참가 부문: Junior / Senior (7팀, 최대 5명)</div>
+              <div class="font-bold text-rose-900">참가 부문: Junior / Senior (총 10팀 · Jr 5 / Sr 5)</div>
               <div class="text-rose-700">창작 B조 심사위원 2명 · 오후 14:10~15:20 순회 심사</div>
             </div>
           </div>
@@ -3681,14 +3808,14 @@
             <h3 class="text-base sm:text-lg font-extrabold text-slate-900 flex items-center gap-2">
               <i class="fa-regular fa-clock text-rose-600"></i> RoboMed &amp; Exhibition (창작 A·B조) 세부 타임테이블 및 심사위원·스탭 업무
             </h3>
-            <span class="px-3 py-1 rounded-full bg-rose-50 border border-rose-200 text-xs font-extrabold text-rose-900">창작 B조 (Exh Sr 16팀 + RoboMed 7팀) · 창작 A조 (Exh Jr 16팀)</span>
+            <span class="px-3 py-1 rounded-full bg-rose-50 border border-rose-200 text-xs font-extrabold text-rose-900">창작 B조 (Exh Sr 16팀 + RoboMed 10팀) · 창작 A조 (Exh Jr 16팀)</span>
           </div>
           <table class="w-full min-w-[780px] text-left border-collapse text-xs sm:text-sm">
             <thead>
               <tr class="bg-navy-900 text-white">
                 <th class="py-3 px-4 w-40 whitespace-nowrap">시간</th>
                 <th class="py-3 px-4 w-56">주요 일정</th>
-                <th class="py-3 px-4">세부 운영 내용 (심사위원 A, B조 및 스탭)</th>
+                <th class="py-3 px-4">세부 운영 내용 (심사위원 4명, 스탭 2명)</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-slate-200 border border-slate-200 text-slate-700 align-top">
@@ -3708,16 +3835,14 @@
                 <td class="py-3.5 px-4 space-y-1.5 leading-relaxed">
                   <div class="font-medium text-slate-900">참가팀 명찰 수령 및 배정된 전시 부스 입장</div>
                   <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-200 space-y-1 text-xs sm:text-sm">
-                    <div class="text-sky-900 font-semibold">- 스탭 2명 : 각 Exhibition 주니어, 시니어 출석체크 및 명찰배부/ 9: 10분 경기장으로 이동</div>
-                    <div class="text-slate-900 font-semibold">- 질서유지 스탭 1명 : RoboMed 참가확인 및 명찰배부 / 9:10분 다른 종목 지각 참가자 참가확인 10:00 까지</div>
-                    <div class="text-slate-900 font-semibold">- 질서유지 스탭 1명, Parade 스탭 1명 창작전시종목 위치안내등 질서유지</div>
+                    <div class="text-sky-900 font-semibold">- 스탭 2명 : 창작전시종목 전체 입장 학생 위치안내 등 질서유지</div>
                   </div>
                 </td>
               </tr>
               <tr>
                 <td class="py-3.5 px-4 font-mono font-bold text-slate-900 whitespace-nowrap">09:20 ~ 10:00</td>
                 <td class="py-3.5 px-4 font-bold text-slate-900">개회식 및 로봇 세팅</td>
-                <td class="py-3.5 px-4">개회식 참석, 포스터/판넬 설치 및 부스 장비 세팅 / 순회 심사(11~12분) 및 투표 안내</td>
+                <td class="py-3.5 px-4">개회식 참석, 포스터/판넬 설치 및 부스 장비 세팅 / 순회 심사(11~12분) 및 온라인 인기투표 안내</td>
               </tr>
               <tr>
                 <td class="py-3.5 px-4 font-mono font-bold text-slate-900 whitespace-nowrap">10:00 ~ 10:15</td>
@@ -3744,15 +3869,15 @@
                 <td class="py-3.5 px-4 font-mono font-extrabold text-rose-900 whitespace-nowrap">13:00 ~ 15:20</td>
                 <td class="py-3.5 px-4 font-extrabold text-rose-900">오후 심사 (A조/B조 1부)<br>B조 RoboMed 심사</td>
                 <td class="py-3.5 px-4 space-y-1.5 leading-relaxed">
-                  <div><strong>[A조]</strong> Exh Jr 잔여 9~16번 심사 , A조 종료 후 먼저 휴식 및 특별상 교차 투표 시작</div>
-                  <div><strong>[B조]</strong> Exh Sr 11~16번 심사 - [B조] 종목 전환 휴식 후 RoboMed 7팀 순회 심사 진행</div>
+                  <div><strong>[A조]</strong> Exh Jr 잔여 9~16번 심사 , A조 종료 후 먼저 휴식 및 온라인 인기투표 참여</div>
+                  <div><strong>[B조]</strong> Exh Sr 11~16번 심사 - [B조] 종목 전환 휴식 후 RoboMed 10팀 순회 심사 진행</div>
                   <div class="text-sky-900 font-semibold">- 스탭 상동</div>
                 </td>
               </tr>
               <tr class="bg-sky-50/50">
                 <td class="py-3.5 px-4 font-mono font-bold text-sky-900 whitespace-nowrap">15:20 ~ 16:00</td>
-                <td class="py-3.5 px-4 font-bold text-sky-900">심사위원 휴식 및 인기투표</td>
-                <td class="py-3.5 px-4">메인 평가 종료 후 심사위원 휴식 후 다른 전시 참가종목 인기상 투표</td>
+                <td class="py-3.5 px-4 font-bold text-sky-900">심사위원 휴식 및 온라인 인기투표</td>
+                <td class="py-3.5 px-4">메인 평가 종료 후 심사위원 휴식 후 다른 전시 참가종목 온라인 인기투표</td>
               </tr>
               <tr>
                 <td class="py-3.5 px-4 font-mono font-bold text-slate-900 whitespace-nowrap">16:00 ~ 17:00</td>
@@ -3821,7 +3946,7 @@
   </div>
 
   <!-- =====================================================================
-       JAVASCRIPT: Navigation, Official QnA New-Page Generator, Search, Quiz
+       JAVASCRIPT: Navigation, Official QnA New-Page Generator, Search
   ====================================================================== -->
   <script>
     const sectionTitles = {
@@ -4009,7 +4134,6 @@
     };
 
     const officialQnAData = [
-      // 1. 참가 신청·접수 (common)
       {
         id: 'Q1',
         cats: ['common'],
@@ -4050,8 +4174,6 @@
         a: '신청 종목에 따라 3~5명이 최대 인원입니다.\n• BottleSumo: 최대 3명\n• UMC: 최대 4명\n• VCC: 최대 4명 (국내예선 안내 최대 4~5명 기준)\n• Game / Exhibition / RoboArts / RoboMed / RoboParade: 최대 5명',
         basis: 'BottleSumo 최대 3명 [BottleSumo Rules 2027 V1.0, 슬라이드 4] / UMC 최대 4명 [UMC 2027 V1, 슬라이드 4] / VCC 최대 4명 [Vcc 2027 Rules V1, 슬라이드 4] / Game 최대 5명 [Game Rules 2027 V2, 슬라이드 4] / Exhibition·RoboArts·RoboMed·RoboParade 최대 5명 [각 슬라이드 3~4]'
       },
-
-      // 2. 대회 운영 일반 (common)
       {
         id: 'Q6',
         cats: ['common', 'umc'],
@@ -4117,8 +4239,6 @@
         basis: '국내예선을 통해 세계대회 출전팀 선발(부문별 대상 1팀) [국내예선 국문 Exhibition 규정, 4 페이지] / 세계대회 출전권은 본부 국가별 배정 기준(쿼터)에 따라 부여 [국내예선 국문 공통 규정, 29 페이지]',
         note: '국문 공통 규정 7페이지에 "참가자 전원 참가 인증서·메달" 문구가 있어, 참가 인증서 메달 제공 여부는 별도 확인 필요'
       },
-
-      // 3. BottleSumo (sumo)
       {
         id: 'Q14',
         cats: ['sumo'],
@@ -4157,7 +4277,7 @@
         sub: '3-2. 부품·로봇 구조',
         q: '규정에서 허용하는 브레인·모터 개수 외에, 무게를 늘리려고 작동하지 않는 브레인(컨트롤러)이나 모터를 추가로 달아도 되나요?',
         a: '브레인과 모터 개수 제한이 있는 부문에 참가하시는 경우, 해당 규정을 따라 주셔야 합니다. 규정 위반 소지를 막기 위해 실제 작동 여부와 관계없이 로봇에 물리적으로 장착된 총 개수를 기준으로 제한을 적용합니다. 무게 증량 같은 구조적 목적에는 규정 안에서 허용된 일반 구조물을 활용해 주시기 바랍니다.',
-        basis: '브레인 수: Jr Classic 1개 / Sr Classic·Unlimited 제한 없음 [BottleSumo Rules 2027 V1.0, 슬라이드 6] / 모터: Classic 최대 3개(구동부 최대 2개) / Unlimited 무제한 [슬라이드 7] / 국내예선 무게 상한: Jr Classic 1.0kg / 그 외 1.5kg (본부 원문 기준 Jr Classic 1.2kg / Sr Classic 1.5kg / Jr Unl 2.5kg / Sr Unl 3kg)'
+        basis: '브레인 수: Jr Classic 1개 / Sr Classic·Unlimited 제한 없음 [BottleSumo Rules 2027 V1.0, 슬라이드 6] / 모터: Classic 최대 3개(구동부 최대 2개) / Unlimited 무제한 [슬라이드 7] / 본부 원문 기준 Jr Classic 1.2kg / Sr Classic 1.5kg / Jr Unl 2.5kg / Sr Unl 3kg'
       },
       {
         id: 'Q19',
@@ -4280,8 +4400,6 @@
         a: '규정에 따르면 1대1 경기 기간 중 허용이 명시된 것은 배터리 교체 1회, 공압 재충전 1회입니다. 1대1 경기 시작 전 수정 시간 제공 여부는 현장 안내에 따라 주시면 감사하겠습니다. 규정에 없는 상황은 당일 심판이 판단합니다.',
         basis: 'H2H 기간 중 배터리 교체 1회·공압 재충전 1회 허용 [BottleSumo Rules 2027 V1.0, 슬라이드 20] / TT 종료 후 15분 수정 시간 [슬라이드 16] / 규정에 없는 상황은 심판 재량으로 판단, 판정은 최종 [슬라이드 23]'
       },
-
-      // 4. 전시 종목 (Exhibition, RoboArts, RoboMed, RoboParade)
       {
         id: 'Q34',
         cats: ['exhibition'],
@@ -4349,8 +4467,6 @@
         a: 'Exhibition 규정상 시연을 위한 용도라면 말씀하신 부분에 대해 별도 제한 사항은 없습니다. 다만 AI 연동 코드와 로봇 통합은 학생이 직접 작성해야 하고, 대회 당일에는 생성형 AI 등 외부 도움 없이 진행해야 하며, 심사에서는 학생이 사용한 AI의 원리와 코드를 얼마나 이해하고 설명하는지도 함께 평가합니다.\n규정에 별도로 언급되지 않은 부분은 현장 심사위원의 판단에 따라 진행되므로, 해당 안내에 따라 주시면 감사하겠습니다.',
         basis: 'AI(인공지능·머신러닝)·비전 등 첨단 기술 활용 시 점수 반영(루브릭 6번, 3%) [국내예선 국문 Exhibition 규정, 8 페이지] / 코치·부모·교사·멘토는 로봇 조립·코드 작성/수정 불가 [General Rules 2027 V1.0, 슬라이드 14] / 팀 서약: 대회 중 코치·멘토·전자기기 등 외부 도움 금지 [슬라이드 20] / 루브릭: 발표 중 코드 설명 4%, 팀 독립성 5% [12 페이지]'
       },
-
-      // 5. Game (RoboPetCare Challenge)
       {
         id: 'Q42',
         cats: ['game'],
@@ -4404,11 +4520,9 @@
         cats: ['game'],
         sub: '5. Game 현장 판정 FAQ (규정집 14장)',
         q: '[심판 판정 FAQ] ① 로봇이 경기 중 분해되어 리셋 후 다시 조립했고 이후 온전했다면 \'온전 유지\' 점수를 받나요? ② 종료 시 로봇 일부가 바닥에 닿았지만 정답을 표시 중이라면?',
-        a: '① 온전 유지 점수 인정: 채점은 런 종료 시점 기준이므로 리셋 후 재조립하여 종료 시점까지 온전했다면 인정되지만, 리셋 감점이 적용됩니다.\n② 바닥 접촉 판정: 심판이 즉시 디스플레이를 확인합니다. 로봇 일부가 필드에 남은 채 자율 정지했고 정답이면 표시 점수수는 인정되나, 테이블에서 완전히 떨어지면 미인정입니다. (바닥에 닿은 경우 종료 위치 정지 점수와 표시 점수 모두 미인정)',
+        a: '① 온전 유지 점수 인정: 채점은 런 종료 시점 기준이므로 리셋 후 재조립하여 종료 시점까지 온전했다면 인정되지만, 리셋 감점이 적용됩니다.\n② 바닥 접촉 판정: 심판이 즉시 디스플레이를 확인합니다. 로봇 일부가 필드에 남은 채 자율 정지했고 정답이면 표시 점수는 인정되나, 테이블에서 완전히 떨어지면 미인정입니다. (바닥에 닿은 경우 종료 위치 정지 점수와 표시 점수 모두 미인정)',
         basis: 'Game 규정 한글판 14장 · 자주 묻는 질문 [Game Rules 2027 V2]'
       },
-
-      // 6. VCC (Deep Safari)
       {
         id: 'Q48',
         cats: ['vcc'],
@@ -4498,9 +4612,6 @@
       });
     }
 
-    /**
-     * Build a complete standalone HTML page for a new browser tab/window
-     */
     function buildStandaloneQnAHtml(initialCatKey) {
       const meta = qnaCategoriesMeta[initialCatKey] || qnaCategoriesMeta.all;
       const serializedData = JSON.stringify(officialQnAData).replace(/</g, '\\u003c');
@@ -4645,9 +4756,6 @@
 </html>`;
     }
 
-    /**
-     * In-App Full QnA Reader Renderer (used if popup is blocked or hash #qna-... is opened directly)
-     */
     let activeInAppQnACat = 'all';
 
     function renderInAppQnAPage(catKey) {
@@ -4705,9 +4813,6 @@
       inAppSearchInput.addEventListener('input', () => renderInAppQnAPage(activeInAppQnACat));
     }
 
-    /**
-     * Open QnA in a brand-new browser tab/page (with automatic in-app fallback if blocked)
-     */
     function openEventQnAPage(catKey, event) {
       if (event) event.preventDefault();
       const targetCat = qnaCategoriesMeta[catKey] ? catKey : 'all';
@@ -4722,7 +4827,6 @@
           return;
         }
       } catch (err) {
-        // Fallback below if sandboxed iframe blocks window.open
       }
 
       renderInAppQnAPage(targetCat);
@@ -4780,6 +4884,8 @@
      * QUICK KEYWORD SEARCH
      */
     const searchIndex = [
+      { keyword: '규정 공유 구글 드라이브 홈페이지 robofestbusan2026', section: 'sec-common', title: '규정 공유 구글 드라이브 및 로보페스트 한국 홈페이지', desc: '공식 규정집 구글 드라이브 폴더 및 한국 홈페이지(robofestbusan2026.com) 바로가기' },
+      { keyword: '159팀 확정 참가팀 수 16팀 8팀 10팀 64팀 32팀 11팀', section: 'sec-common', title: '확정 참가팀 총 159팀 기준 종목·트랙 통합 안내', desc: 'Game 16팀, UMC 8팀, VCC 10팀, BottleSumo 64팀, Exh 32팀, Med 10팀, Arts 11팀, Parade 8팀' },
       { keyword: '07:30 08:20 08:30 심판 스탭 출근 리허설 업무위치 이동 등록준비', section: 'sec-common', title: '심판·스탭 출근(07:30) · 리허설 · 업무위치 이동(08:20)', desc: '전 구역 리허설(07:30~08:20) 및 참가자 등록준비(08:20~08:30) 공식 일정 안내' },
       { keyword: '휴대폰 스마트폰 온라인 인터넷 연결 적발 페널티 패널티 20% 감점 물병 2개 차감 몰수패 실격 퇴장 예외 VCC 전시', section: 'sec-common', title: '3. 휴대폰 사용 및 온라인(인터넷) 연결 제한·페널티 규정', desc: '1회 적발(점수형 -20% / 스모 TT -2병 / 토너먼트 몰수패), 2회 즉시 실격·퇴장 및 VCC·전시 제한적 예외 안내' },
       { keyword: '접속 주소 m.site.naver.com 2fMQv 테스트 계정 아이디 비밀번호 123', section: 'sec-common', title: '심사용 통합 접속 주소(https://m.site.naver.com/2fMQv) 및 테스트 계정 (123)', desc: '전 종목 심사용 통합 접속 링크 및 공통 테스트 ID·비밀번호(123) 안내' },
@@ -4788,7 +4894,7 @@
       { keyword: '50cm × 35cm 로봇 규격 크기 동영상 유튜브 심판 1명 스탭 1명', section: 'sec-game', title: 'Game (RoboPetCare) 규격·인력 및 시연 영상', desc: '심판 1명 + 스탭 1명, 50cm × 35cm 이내, 공식 시연 유튜브 영상 포함' },
       { keyword: 'UTF 출발선 종료 과제 정지 정답 표시 화면 숫자 확인 25cm y3', section: 'sec-game', title: 'Game UTF 정지·정답 표시 미션 & 문제 예시', desc: '대회본부 전달 또는 심사위원 현장 지정 가능, 정지 후 화면 숫자 확인 필수' },
       { keyword: '센서 간섭 2명 대기 경기장 이동 싸인 서명 저장 리셋', section: 'sec-game', title: 'Game 계측 통제(센서 간섭)·리셋·싸인 저장 절차', desc: '최대 2명 입장 후 시작 시 이동, 리셋 1회(타이머 계속), 정지 후 화면확인·싸인·저장' },
-      { keyword: '창작발표종목 인기상 온라인 투표 참여 권장 14:35', section: 'sec-common', title: '창작발표종목에 대한 온라인투표 안내', desc: '14:35~16:00 온라인투표 진행, 조별 휴식 후 여유 스케줄에 따라 참여 권장' },
+      { keyword: '창작발표종목 인기상 온라인 인기투표 참여 권장 14:35', section: 'sec-common', title: '창작발표종목에 대한 온라인 인기투표 안내', desc: '14:35~16:00 온라인 인기투표 진행, 조별 휴식 후 여유 스케줄에 따라 참여 권장' },
       { keyword: '1인 팀 팀워크 1점 로보퍼레이드 퍼레이드 참고영상', section: 'sec-parade', title: 'RoboParade 1인 팀 규정 및 퍼레이드 참고영상', desc: '1인 단독 참가 팀은 [5.1 팀워크·역할분담(10%)] 항목에 규정상 1점 적용, 참고영상 포함' },
       { keyword: '사전채점 사전 채점 테스트 퍼레이드 체크리스트 번호 깃발 문자 깃발 후미 범퍼 10분 공식 퍼레이드 2분 심사 퍼레이드 PAR-01', section: 'sec-parade', title: 'RoboParade 스탭 전담 사전 채점 (Test Parade Checklist · 20점)', desc: '1~6번 필수 항목(후미 범퍼·시계/반시계·속도 7~16cm/s), 시도 횟수별 깃발·점수 및 10분/2분 퍼레이드 차이 안내' },
       { keyword: '정품 레고 가품 호환 3D 출력물 Classic 보틀스모 1.2kg 1.5kg 2.5kg 3kg 12.75cm 1미터 서든데스 램프 3mm 모터 노출 터치LED', section: 'sec-sumo', title: 'BottleSumo 로봇 규격제한 · 허용 부품 · 타임트라이얼·토너먼트 규정', desc: 'Jr Classic 21cm/1.2kg, Sr Classic 1.5kg, Jr Unl 2.5kg, Sr Unl 3kg, 램프 3mm, 모터 노출 및 허용 부품표' },
@@ -4833,7 +4939,6 @@
       });
     }
 
-    // Explicitly expose handlers on window for inline HTML attributes
     window.handlePortalLogin = handlePortalLogin;
     window.toggleLoginPasswordVisibility = toggleLoginPasswordVisibility;
     window.switchSection = switchSection;
@@ -4842,7 +4947,6 @@
     window.copyTextFallback = copyTextFallback;
     window.renderInAppQnAPage = renderInAppQnAPage;
 
-    // Restore session unlock state & support #qna-... hash routes
     (function initPortalState() {
       try {
         if (sessionStorage.getItem('rf2027_portal_unlocked') === 'true') {
